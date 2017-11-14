@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/CellRange.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/CellReference.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/DataType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/Evaluator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/Function.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/NumberValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/StringValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/function/Value.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="JavaFxApplication.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evaluator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellReference.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellRange.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#636#637#0" expanded="true" />
+                <element signature="e#665#666#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#882#883#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/DataType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringValue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/StringValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#201#202#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberValue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/NumberValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/Value.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Cell.java" />
+        <option value="$PROJECT_DIR$/src/sample/CellValueType.java" />
+        <option value="$PROJECT_DIR$/src/sample/CellValue.java" />
+        <option value="$PROJECT_DIR$/src/main/CellValue.java" />
+        <option value="$PROJECT_DIR$/src/main/temp.txt" />
+        <option value="$PROJECT_DIR$/src/main/Window.java" />
+        <option value="/CSS Fragment (Table.java:353).css" />
+        <option value="$PROJECT_DIR$/src/main/TableView.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/Cell.java" />
+        <option value="$PROJECT_DIR$/src/function/Tokens.java" />
+        <option value="$PROJECT_DIR$/src/function/DataType.java" />
+        <option value="$PROJECT_DIR$/src/function/Token.java" />
+        <option value="$PROJECT_DIR$/src/function/Value.java" />
+        <option value="$PROJECT_DIR$/src/function/Label.java" />
+        <option value="$PROJECT_DIR$/src/function/StringValue.java" />
+        <option value="$PROJECT_DIR$/src/function/DoubleValue.java" />
+        <option value="$PROJECT_DIR$/src/function/NumberValue.java" />
+        <option value="$PROJECT_DIR$/src/function/Function.java" />
+        <option value="$PROJECT_DIR$/src/function/Evaluator.java" />
+        <option value="$PROJECT_DIR$/src/function/CellReference.java" />
+        <option value="$PROJECT_DIR$/src/function/CellRange.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="function" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="controlsfx-8.40.14.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="controlsfx-8.40.14.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="controlsfx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="controlsfx-8.40.14.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="controlsfx" type="462c0819:PsiDirectoryNode" />
+              <item name="spreadsheet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="controlsfx-8.40.14.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="controlsfx" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Spreadsheet" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1508300431606" duration="1329000" />
+      <workItem from="1508302733809" duration="523000" />
+      <workItem from="1509508833175" duration="3515000" />
+      <workItem from="1509582809375" duration="5738000" />
+      <workItem from="1509622981640" duration="8586000" />
+      <workItem from="1509688452592" duration="2476000" />
+      <workItem from="1509778734565" duration="12807000" />
+      <workItem from="1509845446100" duration="2154000" />
+      <workItem from="1509936275336" duration="1282000" />
+      <workItem from="1509949672855" duration="1908000" />
+      <workItem from="1509979806637" duration="131000" />
+      <workItem from="1510032323041" duration="436000" />
+      <workItem from="1510111743918" duration="3941000" />
+      <workItem from="1510204080620" duration="1147000" />
+      <workItem from="1510404448769" duration="437000" />
+      <workItem from="1510405105862" duration="408000" />
+      <workItem from="1510540095129" duration="7364000" />
+      <workItem from="1510583024836" duration="4841000" />
+      <workItem from="1510626549164" duration="5120000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="65445000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28324324" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/textfield/CustomPasswordField.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/decoration/Decorator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/FilterBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/Filter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/property/editor/DefaultPropertyEditorFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/table/model/TableModelRow.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/table/model/JavaFXTableModels.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/table/model/TableModelValueFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/table/model/TableModelTableView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/table/model/JavaFXTableModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/table/TableViewUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/StringConverterWithFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/action/ActionMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.controlsfx">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.controlsfx</OriginalElement>
+          <nodes>
+            <node x="13558.0" y="7001.0">org.controlsfx.control.WorldMapView.Location</node>
+            <node x="2811.0" y="23926.0">org.controlsfx.control.spreadsheet.SpreadsheetCellType.DoubleType</node>
+            <node x="1942.5" y="2202.0">org.controlsfx.control.CheckComboBox</node>
+            <node x="11575.5" y="7094.0">org.controlsfx.control.SnapshotView.Boundary</node>
+            <node x="9458.0" y="23195.0">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor</node>
+            <node x="441.5" y="840.0">org.controlsfx.glyphfont.INamedCharacter</node>
+            <node x="8222.0" y="23789.0">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.TextAreaEditor</node>
+            <node x="9044.0" y="23789.0">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DoubleEditor</node>
+            <node x="9744.0" y="7001.5">org.controlsfx.control.SnapshotView.Css</node>
+            <node x="18066.5" y="0.0">org.controlsfx.control.spreadsheet.Grid</node>
+            <node x="13211.0" y="1813.5">org.controlsfx.control.WorldMapView</node>
+            <node x="23407.15" y="0.0">org.controlsfx.control.action.ActionUtils</node>
+            <node x="3161.0" y="7094.0">org.controlsfx.control.SegmentedBar.StyleableProperties</node>
+            <node x="5466.0" y="23944.5">org.controlsfx.control.spreadsheet.SpreadsheetCellType.IntegerType</node>
+            <node x="8480.0" y="616.5">org.controlsfx.control.ControlsFXControl</node>
+            <node x="23076.65" y="1542.0">org.controlsfx.control.action.ActionUtils.MenuItemPropertiesMapChangeListener</node>
+            <node x="18043.0" y="728.0">org.controlsfx.control.spreadsheet.GridBase</node>
+            <node x="14413.0" y="2183.5">org.controlsfx.control.MaskerPane</node>
+            <node x="8793.0" y="2091.0">org.controlsfx.control.Rating</node>
+            <node x="9309.0" y="1943.0">org.controlsfx.control.MasterDetailPane</node>
+            <node x="0.0" y="0.0">org.controlsfx.glyphfont.GlyphFont</node>
+            <node x="1429.5" y="543.0">org.controlsfx.control.IndexedCheckModel</node>
+            <node x="20490.0" y="23195.0">org.controlsfx.property.editor.PropertyEditor</node>
+            <node x="15233.0" y="23480.0">org.controlsfx.control.decoration.GraphicDecoration</node>
+            <node x="6202.0" y="24521.0">org.controlsfx.control.action.ActionProxy</node>
+            <node x="9408.0" y="7131.5">org.controlsfx.control.MasterDetailPane.Placeholder</node>
+            <node x="17302.0" y="0.0">org.controlsfx.control.PopOver</node>
+            <node x="13968.0" y="2183.5">org.controlsfx.control.InfoOverlay</node>
+            <node x="15503.75" y="23195.0">org.controlsfx.control.decoration.Decoration</node>
+            <node x="9983.0" y="24521.0">org.controlsfx.dialog.DialogUtils</node>
+            <node x="3873.0" y="23944.0">org.controlsfx.control.spreadsheet.SpreadsheetCellType.ListType</node>
+            <node x="9240.0" y="24521.0">org.controlsfx.property.BeanPropertyUtils</node>
+            <node x="8287.5" y="7002.0">org.controlsfx.control.PropertySheet.Item</node>
+            <node x="16373.0" y="1246.0">org.controlsfx.control.spreadsheet.SpreadsheetCellBase</node>
+            <node x="2253.0" y="24655.0">org.controlsfx.control.action.DefaultActionFactory</node>
+            <node x="22143.65" y="0.0">org.controlsfx.control.textfield.AutoCompletionBinding</node>
+            <node x="2253.0" y="24521.0">org.controlsfx.control.action.AnnotatedActionFactory</node>
+            <node x="10480.0" y="23807.5">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.StringEditor</node>
+            <node x="2572.5" y="2257.5">org.controlsfx.control.SegmentedButton</node>
+            <node x="20800.5" y="0.0">org.controlsfx.control.Notifications</node>
+            <node x="2089.0" y="23195.0">org.controlsfx.control.table.TableFilter</node>
+            <node x="23060.0" y="23195.0">org.controlsfx.control.ToggleSwitch</node>
+            <node x="4190.5" y="7094.0">org.controlsfx.control.PlusMinusSlider.StyleableProperties</node>
+            <node x="25641.0" y="23195.0">org.controlsfx.control.textfield.CustomTextField</node>
+            <node x="873.5" y="7056.0">org.controlsfx.control.CheckListView.CheckListViewBitSetCheckModel</node>
+            <node x="16101.0" y="23688.0">org.controlsfx.property.editor.NumericField.DoubleValidator</node>
+            <node x="4451.0" y="2165.0">org.controlsfx.control.PlusMinusSlider</node>
+            <node x="17912.0" y="23195.0">org.controlsfx.control.GridCell</node>
+            <node x="14245.0" y="23367.0">org.controlsfx.dialog.FontSelectorDialog.FontPanel</node>
+            <node x="5815.0" y="2072.5">org.controlsfx.control.BreadCrumbBar</node>
+            <node x="21406.5" y="1543.0">org.controlsfx.dialog.Wizard.Flow</node>
+            <node x="15028.0" y="0.0">org.controlsfx.control.spreadsheet.SpreadsheetView</node>
+            <node x="6658.0" y="23868.0">org.controlsfx.control.table.TableRowExpanderColumn.ToggleCell</node>
+            <node x="18821.5" y="23195.0">org.controlsfx.dialog.ProgressDialog</node>
+            <node x="13931.0" y="7075.0">org.controlsfx.control.WorldMapView.CountryView</node>
+            <node x="18961.0" y="617.0">org.controlsfx.tools.Borders.EtchedBorders</node>
+            <node x="4796.0" y="24521.0">org.controlsfx.control.table.model.TableModelRow</node>
+            <node x="18705.0" y="1154.5">org.controlsfx.tools.Borders.Border</node>
+            <node x="9792.0" y="1554.5">org.controlsfx.control.NotificationPane</node>
+            <node x="414.0" y="24521.0">org.controlsfx.control.textfield.TextFields</node>
+            <node x="0.0" y="24521.0">org.controlsfx.property.editor.AbstractObjectField</node>
+            <node x="4389.0" y="24521.0">org.controlsfx.control.spreadsheet.Picker</node>
+            <node x="696.5" y="2313.0">org.controlsfx.control.CheckListView</node>
+            <node x="6488.0" y="24521.0">org.controlsfx.tools.Utils</node>
+            <node x="3842.0" y="2313.0">org.controlsfx.control.TaskProgressView</node>
+            <node x="0.0" y="24038.5">org.controlsfx.validation.decoration.StyleClassValidationDecoration</node>
+            <node x="20743.5" y="1172.0">org.controlsfx.control.Notifications.NotificationPopupHandler</node>
+            <node x="2868.0" y="24521.0">org.controlsfx.tools.SVGLoader</node>
+            <node x="10825.0" y="24521.0">org.controlsfx.validation.Severity</node>
+            <node x="2282.0" y="24109.0">org.controlsfx.control.table.TableFilter.Builder</node>
+            <node x="6778.5" y="23195.0">org.controlsfx.control.table.TableRowExpanderColumn</node>
+            <node x="17626.0" y="23517.0">org.controlsfx.control.cell.MediaImageCell</node>
+            <node x="24078.65" y="1598.0">org.controlsfx.control.action.ActionUtils.ActionTextBehavior</node>
+            <node x="23514.0" y="23195.0">org.controlsfx.control.spreadsheet.GridChange</node>
+            <node x="8973.0" y="394.0">org.controlsfx.control.CheckTreeView.CheckTreeViewCheckModel</node>
+            <node x="8534.0" y="24521.0">org.controlsfx.dialog.LoginDialog</node>
+            <node x="22389.9" y="1679.0">org.controlsfx.control.textfield.AutoCompletionBinding.FetchSuggestionsTask</node>
+            <node x="24828.65" y="1717.0">org.controlsfx.control.action.AnnotatedCheckAction</node>
+            <node x="25404.65" y="1489.0">org.controlsfx.control.action.ActionCheck</node>
+            <node x="6637.0" y="1351.0">org.controlsfx.control.RangeSlider</node>
+            <node x="1632.5" y="7056.0">org.controlsfx.control.CheckComboBox.CheckComboBoxBitSetCheckModel</node>
+            <node x="7879.0" y="23195.0">org.controlsfx.tools.Duplicatable</node>
+            <node x="21434.0" y="0.0">org.controlsfx.dialog.Wizard</node>
+            <node x="14937.0" y="4799.5">org.controlsfx.control.spreadsheet.SpreadsheetView.SpanType</node>
+            <node x="23591.65" y="1542.0">org.controlsfx.control.action.ActionUtils.ButtonPropertiesMapChangeListener</node>
+            <node x="1573.0" y="24521.0">org.controlsfx.validation.Validator</node>
+            <node x="100.5" y="803.0">org.controlsfx.glyphfont.FontAwesome</node>
+            <node x="5718.0" y="24521.0">org.controlsfx.control.table.model.JavaFXTableModel</node>
+            <node x="15756.0" y="4799.0">org.controlsfx.control.spreadsheet.SpreadsheetView.ColumnWidthEvent</node>
+            <node x="20367.0" y="23366.0">org.controlsfx.property.editor.AbstractPropertyEditor</node>
+            <node x="11966.0" y="7038.5">org.controlsfx.control.GridView.StyleableProperties</node>
+            <node x="12653.0" y="1906.0">org.controlsfx.control.HiddenSidesPane</node>
+            <node x="21474.0" y="23553.0">org.controlsfx.tools.ValueExtractor.ObservableValueExtractor</node>
+            <node x="11934.0" y="1998.5">org.controlsfx.control.GridView</node>
+            <node x="25037.0" y="23195.0">org.controlsfx.property.editor.Editors</node>
+            <node x="15214.0" y="4799.0">org.controlsfx.control.spreadsheet.SpreadsheetView.RowHeightEvent</node>
+            <node x="21079.75" y="23195.0">org.controlsfx.tools.ValueExtractor</node>
+            <node x="12055.0" y="23195.0">org.controlsfx.validation.ValidationSupport</node>
+            <node x="24912.65" y="1358.0">org.controlsfx.control.action.ActionGroup</node>
+            <node x="3342.0" y="23926.0">org.controlsfx.control.spreadsheet.SpreadsheetCellType.DateType</node>
+            <node x="24383.65" y="1358.0">org.controlsfx.control.action.AnnotatedAction</node>
+            <node x="5287.0" y="24521.0">org.controlsfx.glyphfont.GlyphFontRegistry</node>
+            <node x="26088.0" y="23195.0">org.controlsfx.control.textfield.CustomPasswordField</node>
+            <node x="4404.0" y="23944.5">org.controlsfx.control.spreadsheet.SpreadsheetCellType.StringType</node>
+            <node x="22114.0" y="1470.0">org.controlsfx.control.textfield.AutoCompletionBinding.ISuggestionRequest</node>
+            <node x="7052.0" y="23701.0">org.controlsfx.control.table.TableRowExpanderColumn.TableRowDataFeatures</node>
+            <node x="1376.0" y="24020.0">org.controlsfx.validation.decoration.CompoundValidationDecoration</node>
+            <node x="11507.0" y="24521.0">org.controlsfx.control.table.model.TableModelTableView</node>
+            <node x="2621.75" y="7093.5">org.controlsfx.control.SegmentedBar.SegmentView</node>
+            <node x="12809.0625" y="3893.0">org.controlsfx.control.WorldMapView.Country</node>
+            <node x="20816.5" y="1974.0">org.controlsfx.control.Notifications.NotificationPopupHandler.CustomTransition</node>
+            <node x="688.0" y="23403.0">org.controlsfx.validation.decoration.AbstractValidationDecoration</node>
+            <node x="18005.0" y="23554.0">org.controlsfx.control.cell.ImageGridCell</node>
+            <node x="8111.5" y="7094.0">org.controlsfx.control.PropertySheet.Mode</node>
+            <node x="18784.0" y="23329.0">org.controlsfx.dialog.ProgressDialog.WorkerProgressPane</node>
+            <node x="8633.0" y="23807.5">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.ObjectEditor</node>
+            <node x="19655.5" y="0.0">org.controlsfx.tools.Borders</node>
+            <node x="16227.25" y="23195.0">org.controlsfx.property.editor.NumericField</node>
+            <node x="10495.0" y="6816.0">org.controlsfx.control.SnapshotView.SelectionSizeUpdater</node>
+            <node x="12377.0" y="24521.0">org.controlsfx.control.PrefixSelectionChoiceBox</node>
+            <node x="19575.928571428572" y="1974.0">org.controlsfx.tools.Borders.StrokeBorder</node>
+            <node x="22316.0" y="23195.0">org.controlsfx.control.decoration.Decorator</node>
+            <node x="1541.5" y="0.0">org.controlsfx.control.CheckModel</node>
+            <node x="10891.0" y="23807.5">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.IntegerEditor</node>
+            <node x="5952.0" y="7075.0">org.controlsfx.control.BreadCrumbBar.BreadCrumbActionEvent</node>
+            <node x="17031.0" y="2190.5">org.controlsfx.control.spreadsheet.SpreadsheetCell.CornerPosition</node>
+            <node x="19262.0" y="23195.0">org.controlsfx.control.spreadsheet.Filter</node>
+            <node x="8150.0" y="24521.0">org.controlsfx.property.editor.DefaultPropertyEditorFactory</node>
+            <node x="20846.0" y="23553.0">org.controlsfx.tools.ValueExtractor.NodeValueExtractor</node>
+            <node x="17538.0" y="2727.0">org.controlsfx.control.PopOver.ArrowLocation</node>
+            <node x="3736.0" y="7000.5">org.controlsfx.control.SegmentedBar.Segment</node>
+            <node x="22366.0" y="1432.0">org.controlsfx.control.textfield.AutoCompletionBinding.AutoCompletionEvent</node>
+            <node x="16599.0" y="0.0">org.controlsfx.control.spreadsheet.SpreadsheetCell</node>
+            <node x="266.25" y="1049.0">org.controlsfx.glyphfont.FontAwesome.Glyph</node>
+            <node x="688.0" y="23872.0">org.controlsfx.validation.decoration.GraphicValidationDecoration</node>
+            <node x="4935.0" y="23944.5">org.controlsfx.control.spreadsheet.SpreadsheetCellType.ObjectType</node>
+            <node x="16462.0" y="23688.0">org.controlsfx.property.editor.NumericField.LongValidator</node>
+            <node x="13844.0" y="23422.5">org.controlsfx.dialog.FontSelectorDialog.FontStyle</node>
+            <node x="14091.75" y="23195.0">org.controlsfx.dialog.FontSelectorDialog</node>
+            <node x="10395.0" y="1129.0">org.controlsfx.control.SnapshotView</node>
+            <node x="18386.0" y="23572.5">org.controlsfx.control.cell.ColorGridCell</node>
+            <node x="24624.9" y="0.0">org.controlsfx.control.action.Action</node>
+            <node x="24406.0" y="23195.0">org.controlsfx.control.action.ActionMap</node>
+            <node x="10456.0" y="24521.0">org.controlsfx.dialog.WizardPane</node>
+            <node x="16830.0" y="23195.0">org.controlsfx.control.spreadsheet.SpreadsheetViewSelectionModel</node>
+            <node x="6941.0" y="24521.0">org.controlsfx.control.table.model.TableModelValueFactory</node>
+            <node x="11041.0" y="24521.0">org.controlsfx.control.table.model.JavaFXTableModels</node>
+            <node x="7621.0" y="24521.0">org.controlsfx.control.spreadsheet.StringConverterWithFormat</node>
+            <node x="20122.0" y="469.0">org.controlsfx.tools.Borders.LineBorders</node>
+            <node x="4138.5" y="23195.0">org.controlsfx.control.spreadsheet.SpreadsheetCellType</node>
+            <node x="7771.0" y="23329.0">org.controlsfx.glyphfont.Glyph</node>
+            <node x="4773.5" y="7038.0">org.controlsfx.control.PlusMinusSlider.PlusMinusEvent</node>
+            <node x="3692.0" y="24521.0">org.controlsfx.control.table.TableViewUtils</node>
+            <node x="5179.0" y="2276.0">org.controlsfx.control.HyperlinkLabel</node>
+            <node x="16326.25" y="23516.0">org.controlsfx.property.editor.NumericField.NumericValidator</node>
+            <node x="18091.0" y="2086.0">org.controlsfx.control.spreadsheet.GridBase.MapBasedRowHeightFactory</node>
+            <node x="11327.0" y="23195.0">org.controlsfx.validation.ValidationResult</node>
+            <node x="19616.0" y="23195.0">org.controlsfx.control.PrefixSelectionComboBox</node>
+            <node x="14695.0" y="23195.0">org.controlsfx.validation.ValidationMessage</node>
+            <node x="14690.0" y="23553.0">org.controlsfx.validation.SimpleValidationMessage</node>
+            <node x="6680.5" y="6983.0">org.controlsfx.control.RangeSlider.StyleableProperties</node>
+            <node x="12750.0" y="23195.0">org.controlsfx.control.spreadsheet.SpreadsheetColumn</node>
+            <node x="12013.0" y="24521.0">org.controlsfx.dialog.ExceptionDialog</node>
+            <node x="19224.0" y="23329.0">org.controlsfx.control.spreadsheet.FilterBase</node>
+            <node x="8011.0" y="2054.0">org.controlsfx.control.PropertySheet</node>
+            <node x="9131.5" y="17.5">org.controlsfx.control.CheckTreeView</node>
+            <node x="3120.5" y="2017.0">org.controlsfx.control.SegmentedBar</node>
+            <node x="24032.0" y="23195.0">org.controlsfx.tools.Platform</node>
+            <node x="11490.0" y="2109.5">org.controlsfx.control.StatusBar</node>
+            <node x="19563.0" y="968.5">org.controlsfx.tools.Borders.EmptyBorders</node>
+            <node x="13311.0" y="7094.0">org.controlsfx.control.WorldMapView.SelectionMode</node>
+            <node x="7306.0" y="1943.0">org.controlsfx.control.ListSelectionView</node>
+            <node x="9898.0" y="23752.0">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DateEditor</node>
+            <node x="9455.0" y="23770.5">org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.ListEditor</node>
+            <node x="6022.0" y="23195.0">org.controlsfx.dialog.CommandLinksDialog</node>
+            <node x="770.5" y="23195.0">org.controlsfx.validation.decoration.ValidationDecoration</node>
+            <node x="8287.5" y="10504.0">org.controlsfx.property.BeanProperty</node>
+            <node x="15721.0" y="23591.0">org.controlsfx.control.decoration.StyleClassDecoration</node>
+            <node x="1326.5" y="2054.0">org.controlsfx.control.CheckBitSetModelBase</node>
+            <node x="21525.0" y="1714.0">org.controlsfx.dialog.Wizard.LinearFlow</node>
+            <node x="6041.0" y="23664.0">org.controlsfx.dialog.CommandLinksDialog.CommandLinksButtonType</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.controlsfx.control.PropertySheet.Item" target="org.controlsfx.control.PropertySheet">
+              <point x="0.0" y="-171.5" />
+              <point x="8594.5" y="3868.0" />
+              <point x="8582.5" y="3868.0" />
+              <point x="190.5" y="432.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellType.ObjectType" target="org.controlsfx.control.spreadsheet.SpreadsheetCellType">
+              <point x="127.75" y="-172.0" />
+              <point x="5318.25" y="23876.0" />
+              <point x="4543.041666666667" y="23876.0" />
+              <point x="149.04166666666697" y="320.5" />
+            </edge>
+            <edge source="org.controlsfx.tools.Borders.LineBorders" target="org.controlsfx.tools.Borders">
+              <point x="0.0" y="-727.5" />
+              <point x="20402.0" y="449.0" />
+              <point x="19903.3" y="449.0" />
+              <point x="70.79999999999927" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.WorldMapView.Location" target="org.controlsfx.control.WorldMapView">
+              <point x="0.0" y="-172.5" />
+              <point x="13734.5" y="3868.0" />
+              <point x="13671.625" y="3868.0" />
+              <point x="92.125" y="672.5" />
+            </edge>
+            <edge source="org.controlsfx.control.action.AnnotatedCheckAction" target="org.controlsfx.control.action.ActionCheck">
+              <point x="117.75" y="-42.0" />
+              <point x="25181.9" y="1692.0" />
+              <point x="25490.15" y="1692.0" />
+              <point x="0.0" y="23.5" />
+            </edge>
+            <edge source="org.controlsfx.tools.Borders.StrokeBorder" target="org.controlsfx.tools.Borders">
+              <point x="96.25" y="-135.5" />
+              <point x="19864.678571428572" y="1949.0" />
+              <point x="20692.5" y="1949.0" />
+              <point x="20692.5" y="439.0" />
+              <point x="19974.1" y="439.0" />
+              <point x="141.59999999999854" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.property.editor.AbstractPropertyEditor" target="org.controlsfx.property.editor.PropertyEditor">
+              <point x="0.0" y="-191.5" />
+              <point x="0.0" y="60.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellType.IntegerType" target="org.controlsfx.control.spreadsheet.SpreadsheetCellType">
+              <point x="127.75" y="-172.0" />
+              <point x="5849.25" y="23856.0" />
+              <point x="4628.208333333334" y="23856.0" />
+              <point x="234.20833333333394" y="320.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellType.DoubleType" target="org.controlsfx.control.spreadsheet.SpreadsheetCellType">
+              <point x="-127.75" y="-190.5" />
+              <point x="2938.75" y="23856.0" />
+              <point x="4159.791666666667" y="23856.0" />
+              <point x="-234.20833333333303" y="320.5" />
+            </edge>
+            <edge source="org.controlsfx.tools.ValueExtractor.NodeValueExtractor" target="org.controlsfx.tools.ValueExtractor">
+              <point x="0.0" y="-79.5" />
+              <point x="21150.0" y="23528.0" />
+              <point x="21295.5" y="23528.0" />
+              <point x="-215.75" y="154.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetView.SpanType" target="org.controlsfx.control.spreadsheet.SpreadsheetView">
+              <point x="0.0" y="-135.0" />
+              <point x="15065.5" y="4774.0" />
+              <point x="15177.0" y="4774.0" />
+              <point x="-298.0" y="2374.5" />
+            </edge>
+            <edge source="org.controlsfx.validation.decoration.GraphicValidationDecoration" target="org.controlsfx.validation.decoration.AbstractValidationDecoration">
+              <point x="0.0" y="-302.0" />
+              <point x="0.0" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.Notifications.NotificationPopupHandler.CustomTransition" target="org.controlsfx.control.Notifications.NotificationPopupHandler">
+              <point x="0.0" y="-117.0" />
+              <point x="0.0" y="376.0" />
+            </edge>
+            <edge source="org.controlsfx.dialog.Wizard.Flow" target="org.controlsfx.dialog.Wizard">
+              <point x="0.0" y="-60.5" />
+              <point x="21633.0" y="1518.0" />
+              <point x="21592.75" y="1518.0" />
+              <point x="-158.75" y="746.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.IntegerEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="-97.75" y="-154.5" />
+              <point x="10988.75" y="23682.0" />
+              <point x="9830.32142857143" y="23682.0" />
+              <point x="163.82142857142935" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckListView.CheckListViewBitSetCheckModel" target="org.controlsfx.control.CheckListView">
+              <point x="-182.5" y="-117.5" />
+              <point x="1056.0" y="3868.0" />
+              <point x="1001.5" y="3868.0" />
+              <point x="0.0" y="173.0" />
+            </edge>
+            <edge source="org.controlsfx.control.table.TableRowExpanderColumn.TableRowDataFeatures" target="org.controlsfx.control.table.TableRowExpanderColumn">
+              <point x="0.0" y="-247.0" />
+              <point x="7389.0" y="23676.0" />
+              <point x="7286.25" y="23676.0" />
+              <point x="169.25" y="228.0" />
+            </edge>
+            <edge source="org.controlsfx.dialog.FontSelectorDialog.FontPanel" target="org.controlsfx.dialog.FontSelectorDialog">
+              <point x="0.0" y="-339.5" />
+              <point x="14445.0" y="23342.0" />
+              <point x="14313.75" y="23342.0" />
+              <point x="74.0" y="61.0" />
+            </edge>
+            <edge source="org.controlsfx.control.BreadCrumbBar" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-413.5" />
+              <point x="6216.0" y="1079.0" />
+              <point x="8633.725" y="1079.0" />
+              <point x="-82.77499999999964" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.action.AnnotatedCheckAction" target="org.controlsfx.control.action.AnnotatedAction">
+              <point x="-117.75" y="-42.0" />
+              <point x="24946.4" y="1692.0" />
+              <point x="24638.15" y="1692.0" />
+              <point x="0.0" y="154.5" />
+            </edge>
+            <edge source="org.controlsfx.control.action.ActionUtils.ButtonPropertiesMapChangeListener" target="org.controlsfx.control.action.ActionUtils">
+              <point x="0.0" y="-135.5" />
+              <point x="0.0" y="746.0" />
+            </edge>
+            <edge source="org.controlsfx.control.table.TableFilter.Builder" target="org.controlsfx.control.table.TableFilter">
+              <point x="0.0" y="-117.0" />
+              <point x="0.0" y="432.0" />
+            </edge>
+            <edge source="org.controlsfx.tools.Borders.StrokeBorder" target="org.controlsfx.tools.Borders.Border">
+              <point x="-96.25" y="-135.5" />
+              <point x="19672.178571428572" y="1949.0" />
+              <point x="18823.0" y="1949.0" />
+              <point x="0.0" y="42.0" />
+            </edge>
+            <edge source="org.controlsfx.validation.decoration.CompoundValidationDecoration" target="org.controlsfx.validation.decoration.AbstractValidationDecoration">
+              <point x="0.0" y="-154.0" />
+              <point x="1710.0" y="23847.0" />
+              <point x="1244.6666666666665" y="23847.0" />
+              <point x="222.66666666666652" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.StringEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="97.75" y="-154.5" />
+              <point x="10773.25" y="23692.0" />
+              <point x="9800.535714285714" y="23692.0" />
+              <point x="134.03571428571377" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.validation.decoration.AbstractValidationDecoration" target="org.controlsfx.validation.decoration.ValidationDecoration">
+              <point x="0.0" y="-209.5" />
+              <point x="0.0" y="79.0" />
+            </edge>
+            <edge source="org.controlsfx.control.SegmentedButton" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-228.5" />
+              <point x="2836.5" y="1029.0" />
+              <point x="8515.475" y="1029.0" />
+              <point x="-201.02499999999964" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.GridBase.MapBasedRowHeightFactory" target="org.controlsfx.control.spreadsheet.GridBase">
+              <point x="0.0" y="-80.0" />
+              <point x="0.0" y="654.0" />
+            </edge>
+            <edge source="org.controlsfx.control.RangeSlider" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-1135.0" />
+              <point x="6961.5" y="1089.0" />
+              <point x="8657.375" y="1089.0" />
+              <point x="-59.125" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellBase" target="org.controlsfx.control.spreadsheet.SpreadsheetCell">
+              <point x="0.0" y="-1061.0" />
+              <point x="16692.0" y="1221.0" />
+              <point x="16758.5" y="1221.0" />
+              <point x="-159.5" y="598.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DoubleEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="-97.75" y="-173.0" />
+              <point x="9141.75" y="23712.0" />
+              <point x="9592.035714285714" y="23712.0" />
+              <point x="-74.46428571428623" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.tools.Borders.EtchedBorders" target="org.controlsfx.tools.Borders">
+              <point x="0.0" y="-579.5" />
+              <point x="19252.0" y="449.0" />
+              <point x="19761.7" y="449.0" />
+              <point x="-70.79999999999927" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckComboBox.CheckComboBoxBitSetCheckModel" target="org.controlsfx.control.CheckComboBox">
+              <point x="189.0" y="-117.5" />
+              <point x="2199.5" y="3868.0" />
+              <point x="2247.5" y="3868.0" />
+              <point x="0.0" y="284.0" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckComboBox.CheckComboBoxBitSetCheckModel" target="org.controlsfx.control.CheckBitSetModelBase">
+              <point x="-189.0" y="-117.5" />
+              <point x="1821.5" y="3868.0" />
+              <point x="1773.5" y="3868.0" />
+              <point x="149.0" y="432.0" />
+            </edge>
+            <edge source="org.controlsfx.property.editor.NumericField.LongValidator" target="org.controlsfx.property.editor.NumericField.NumericValidator">
+              <point x="-80.75" y="-98.5" />
+              <point x="16542.75" y="23663.0" />
+              <point x="16511.5" y="23663.0" />
+              <point x="61.75" y="61.0" />
+            </edge>
+            <edge source="org.controlsfx.glyphfont.FontAwesome.Glyph" target="org.controlsfx.glyphfont.FontAwesome">
+              <point x="-68.75" y="-11050.5" />
+              <point x="335.0" y="1024.0" />
+              <point x="261.0" y="1024.0" />
+              <point x="0.0" y="98.0" />
+            </edge>
+            <edge source="org.controlsfx.property.editor.NumericField.DoubleValidator" target="org.controlsfx.property.editor.NumericField">
+              <point x="-85.25" y="-98.5" />
+              <point x="16186.25" y="23663.0" />
+              <point x="16236.125" y="23663.0" />
+              <point x="16236.125" y="23491.0" />
+              <point x="16301.416666666668" y="23491.0" />
+              <point x="-148.33333333333212" y="135.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetView.RowHeightEvent" target="org.controlsfx.control.spreadsheet.SpreadsheetView">
+              <point x="0.0" y="-135.5" />
+              <point x="0.0" y="2374.5" />
+            </edge>
+            <edge source="org.controlsfx.control.action.ActionUtils.ActionTextBehavior" target="org.controlsfx.control.action.ActionUtils">
+              <point x="0.0" y="-79.5" />
+              <point x="24208.65" y="1517.0" />
+              <point x="24103.81666666667" y="1517.0" />
+              <point x="278.66666666666674" y="746.0" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckListView.CheckListViewBitSetCheckModel" target="org.controlsfx.control.CheckBitSetModelBase">
+              <point x="182.5" y="-117.5" />
+              <point x="1421.0" y="3868.0" />
+              <point x="1475.5" y="3868.0" />
+              <point x="-149.0" y="432.0" />
+            </edge>
+            <edge source="org.controlsfx.validation.decoration.StyleClassValidationDecoration" target="org.controlsfx.validation.decoration.AbstractValidationDecoration">
+              <point x="0.0" y="-135.5" />
+              <point x="334.0" y="23847.0" />
+              <point x="799.3333333333335" y="23847.0" />
+              <point x="-222.66666666666652" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.action.DefaultActionFactory" target="org.controlsfx.control.action.AnnotatedActionFactory">
+              <point x="0.0" y="-98.0" />
+              <point x="0.0" y="42.0" />
+            </edge>
+            <edge source="org.controlsfx.property.editor.NumericField.LongValidator" target="org.controlsfx.property.editor.NumericField">
+              <point x="80.75" y="-98.5" />
+              <point x="16704.25" y="23663.0" />
+              <point x="16660.375" y="23663.0" />
+              <point x="16660.375" y="23491.0" />
+              <point x="16598.083333333332" y="23491.0" />
+              <point x="148.33333333333212" y="135.5" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckBitSetModelBase" target="org.controlsfx.control.IndexedCheckModel">
+              <point x="0.0" y="-432.0" />
+              <point x="0.0" y="153.5" />
+            </edge>
+            <edge source="org.controlsfx.control.action.ActionUtils.MenuItemPropertiesMapChangeListener" target="org.controlsfx.control.action.ActionUtils">
+              <point x="0.0" y="-135.5" />
+              <point x="23324.15" y="1517.0" />
+              <point x="23546.483333333334" y="1517.0" />
+              <point x="-278.6666666666667" y="746.0" />
+            </edge>
+            <edge source="org.controlsfx.tools.Borders.EmptyBorders" target="org.controlsfx.tools.Borders">
+              <point x="0.0" y="-228.0" />
+              <point x="0.0" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.SnapshotView.Boundary" target="org.controlsfx.control.SnapshotView">
+              <point x="0.0" y="-79.5" />
+              <point x="11668.0" y="3868.0" />
+              <point x="11290.833333333334" y="3868.0" />
+              <point x="358.33333333333394" y="1357.0" />
+            </edge>
+            <edge source="org.controlsfx.control.ListSelectionView" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-543.0" />
+              <point x="7648.5" y="1099.0" />
+              <point x="8681.025" y="1099.0" />
+              <point x="-35.475000000000364" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.PropertySheet.Mode" target="org.controlsfx.control.PropertySheet">
+              <point x="0.0" y="-79.5" />
+              <point x="8189.5" y="3868.0" />
+              <point x="8201.5" y="3868.0" />
+              <point x="-190.5" y="432.0" />
+            </edge>
+            <edge source="org.controlsfx.control.RangeSlider.StyleableProperties" target="org.controlsfx.control.RangeSlider">
+              <point x="0.0" y="-190.5" />
+              <point x="0.0" y="1135.0" />
+            </edge>
+            <edge source="org.controlsfx.control.StatusBar" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-376.5" />
+              <point x="11702.0" y="1069.0" />
+              <point x="8822.925" y="1069.0" />
+              <point x="106.42499999999927" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckComboBox" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-284.0" />
+              <point x="2247.5" y="1019.0" />
+              <point x="8491.825" y="1019.0" />
+              <point x="-224.67499999999927" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCell.CornerPosition" target="org.controlsfx.control.spreadsheet.SpreadsheetCell">
+              <point x="0.0" y="-116.5" />
+              <point x="17144.0" y="1221.0" />
+              <point x="17077.5" y="1221.0" />
+              <point x="159.5" y="598.0" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckTreeView.CheckTreeViewCheckModel" target="org.controlsfx.control.CheckTreeView">
+              <point x="159.5" y="-302.5" />
+              <point x="0.0" y="154.5" />
+            </edge>
+            <edge source="org.controlsfx.validation.SimpleValidationMessage" target="org.controlsfx.validation.ValidationMessage">
+              <point x="0.0" y="-210.0" />
+              <point x="0.0" y="154.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.ListEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="-105.75" y="-191.5" />
+              <point x="9560.75" y="23732.0" />
+              <point x="9651.607142857143" y="23732.0" />
+              <point x="-14.892857142856883" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.control.HyperlinkLabel" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-210.0" />
+              <point x="5487.0" y="1069.0" />
+              <point x="8610.075" y="1069.0" />
+              <point x="-106.42499999999927" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.cell.MediaImageCell" target="org.controlsfx.control.GridCell">
+              <point x="0.0" y="-154.0" />
+              <point x="17805.5" y="23492.0" />
+              <point x="18003.166666666668" y="23492.0" />
+              <point x="-182.33333333333212" y="136.0" />
+            </edge>
+            <edge source="org.controlsfx.control.Rating" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-395.0" />
+              <point x="9041.0" y="1109.0" />
+              <point x="8728.325" y="1109.0" />
+              <point x="11.825000000000728" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.cell.ImageGridCell" target="org.controlsfx.control.GridCell">
+              <point x="0.0" y="-117.0" />
+              <point x="0.0" y="136.0" />
+            </edge>
+            <edge source="org.controlsfx.dialog.Wizard.LinearFlow" target="org.controlsfx.dialog.Wizard">
+              <point x="113.25" y="-117.0" />
+              <point x="21864.75" y="1689.0" />
+              <point x="21870.0" y="1689.0" />
+              <point x="21870.0" y="1518.0" />
+              <point x="21910.25" y="1518.0" />
+              <point x="158.75" y="746.5" />
+            </edge>
+            <edge source="org.controlsfx.control.InfoOverlay" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-302.5" />
+              <point x="14180.5" y="1029.0" />
+              <point x="8917.525" y="1029.0" />
+              <point x="201.02499999999964" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.PlusMinusSlider.StyleableProperties" target="org.controlsfx.control.PlusMinusSlider">
+              <point x="0.0" y="-79.5" />
+              <point x="4472.0" y="3868.0" />
+              <point x="4628.0" y="3868.0" />
+              <point x="-177.0" y="321.0" />
+            </edge>
+            <edge source="org.controlsfx.control.WorldMapView" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-672.5" />
+              <point x="13579.5" y="1039.0" />
+              <point x="8893.875" y="1039.0" />
+              <point x="177.375" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.SegmentedBar.StyleableProperties" target="org.controlsfx.control.SegmentedBar">
+              <point x="0.0" y="-79.5" />
+              <point x="0.0" y="469.0" />
+            </edge>
+            <edge source="org.controlsfx.control.MaskerPane" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-302.5" />
+              <point x="14652.5" y="1019.0" />
+              <point x="8941.175" y="1019.0" />
+              <point x="224.67499999999927" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellType.ListType" target="org.controlsfx.control.spreadsheet.SpreadsheetCellType">
+              <point x="-127.75" y="-172.5" />
+              <point x="4000.75" y="23896.0" />
+              <point x="4330.125" y="23896.0" />
+              <point x="-63.875" y="320.5" />
+            </edge>
+            <edge source="org.controlsfx.tools.ValueExtractor.ObservableValueExtractor" target="org.controlsfx.tools.ValueExtractor">
+              <point x="0.0" y="-79.5" />
+              <point x="21872.5" y="23528.0" />
+              <point x="21727.0" y="23528.0" />
+              <point x="215.75" y="154.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.ObjectEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="97.75" y="-154.5" />
+              <point x="8926.25" y="23702.0" />
+              <point x="9562.25" y="23702.0" />
+              <point x="-104.25" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.FilterBase" target="org.controlsfx.control.spreadsheet.Filter">
+              <point x="0.0" y="-228.5" />
+              <point x="0.0" y="42.0" />
+            </edge>
+            <edge source="org.controlsfx.control.textfield.AutoCompletionBinding.FetchSuggestionsTask" target="org.controlsfx.control.textfield.AutoCompletionBinding">
+              <point x="94.0" y="-117.5" />
+              <point x="22671.9" y="1654.0" />
+              <point x="22908.5" y="1654.0" />
+              <point x="22908.5" y="1407.0" />
+              <point x="22883.65" y="1407.0" />
+              <point x="296.0" y="691.0" />
+            </edge>
+            <edge source="org.controlsfx.glyphfont.FontAwesome.Glyph" target="org.controlsfx.glyphfont.INamedCharacter">
+              <point x="68.75" y="-11050.5" />
+              <point x="472.5" y="1024.0" />
+              <point x="546.5" y="1024.0" />
+              <point x="0.0" y="61.0" />
+            </edge>
+            <edge source="org.controlsfx.control.CheckTreeView.CheckTreeViewCheckModel" target="org.controlsfx.control.CheckModel">
+              <point x="-159.5" y="-302.5" />
+              <point x="9132.5" y="369.0" />
+              <point x="1790.5" y="369.0" />
+              <point x="83.0" y="172.0" />
+            </edge>
+            <edge source="org.controlsfx.control.table.TableRowExpanderColumn.ToggleCell" target="org.controlsfx.control.table.TableRowExpanderColumn">
+              <point x="0.0" y="-80.0" />
+              <point x="6845.0" y="23676.0" />
+              <point x="6947.75" y="23676.0" />
+              <point x="-169.25" y="228.0" />
+            </edge>
+            <edge source="org.controlsfx.control.decoration.GraphicDecoration" target="org.controlsfx.control.decoration.Decoration">
+              <point x="0.0" y="-209.5" />
+              <point x="15467.0" y="23455.0" />
+              <point x="15590.75" y="23455.0" />
+              <point x="-87.0" y="117.5" />
+            </edge>
+            <edge source="org.controlsfx.property.BeanProperty" target="org.controlsfx.control.PropertySheet.Item">
+              <point x="0.0" y="-358.0" />
+              <point x="0.0" y="171.5" />
+            </edge>
+            <edge source="org.controlsfx.control.MasterDetailPane" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-543.0" />
+              <point x="9540.5" y="1099.0" />
+              <point x="8751.975" y="1099.0" />
+              <point x="35.475000000000364" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.SegmentedBar.SegmentView" target="org.controlsfx.control.SegmentedBar">
+              <point x="0.0" y="-80.0" />
+              <point x="2750.75" y="3868.0" />
+              <point x="3226.5" y="3868.0" />
+              <point x="-212.0" y="469.0" />
+            </edge>
+            <edge source="org.controlsfx.tools.Borders.Border" target="org.controlsfx.tools.Borders">
+              <point x="0.0" y="-42.0" />
+              <point x="18823.0" y="439.0" />
+              <point x="19690.9" y="439.0" />
+              <point x="-141.59999999999854" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellType.StringType" target="org.controlsfx.control.spreadsheet.SpreadsheetCellType">
+              <point x="-127.75" y="-172.0" />
+              <point x="4531.75" y="23906.0" />
+              <point x="4415.291666666667" y="23906.0" />
+              <point x="21.29166666666697" y="320.5" />
+            </edge>
+            <edge source="org.controlsfx.glyphfont.Glyph" target="org.controlsfx.tools.Duplicatable">
+              <point x="0.0" y="-432.0" />
+              <point x="0.0" y="42.0" />
+            </edge>
+            <edge source="org.controlsfx.control.WorldMapView.SelectionMode" target="org.controlsfx.control.WorldMapView">
+              <point x="0.0" y="-79.5" />
+              <point x="13424.5" y="3868.0" />
+              <point x="13487.375" y="3868.0" />
+              <point x="-92.125" y="672.5" />
+            </edge>
+            <edge source="org.controlsfx.control.PlusMinusSlider.PlusMinusEvent" target="org.controlsfx.control.PlusMinusSlider">
+              <point x="0.0" y="-135.5" />
+              <point x="5138.0" y="3868.0" />
+              <point x="4982.0" y="3868.0" />
+              <point x="177.0" y="321.0" />
+            </edge>
+            <edge source="org.controlsfx.control.NotificationPane" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-931.5" />
+              <point x="10083.5" y="1089.0" />
+              <point x="8775.625" y="1089.0" />
+              <point x="59.125" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.SnapshotView" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-1357.0" />
+              <point x="10932.5" y="1079.0" />
+              <point x="8799.275" y="1079.0" />
+              <point x="82.77499999999964" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.GridBase" target="org.controlsfx.control.spreadsheet.Grid">
+              <point x="0.0" y="-654.0" />
+              <point x="0.0" y="339.0" />
+            </edge>
+            <edge source="org.controlsfx.control.PropertySheet" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-432.0" />
+              <point x="8392.0" y="1109.0" />
+              <point x="8704.675" y="1109.0" />
+              <point x="-11.825000000000728" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.dialog.Wizard.LinearFlow" target="org.controlsfx.dialog.Wizard.Flow">
+              <point x="-113.25" y="-117.0" />
+              <point x="21638.25" y="1689.0" />
+              <point x="21633.0" y="1689.0" />
+              <point x="0.0" y="60.5" />
+            </edge>
+            <edge source="org.controlsfx.control.textfield.AutoCompletionBinding.AutoCompletionEvent" target="org.controlsfx.control.textfield.AutoCompletionBinding">
+              <point x="0.0" y="-98.5" />
+              <point x="22632.0" y="1407.0" />
+              <point x="22587.65" y="1407.0" />
+              <point x="0.0" y="691.0" />
+            </edge>
+            <edge source="org.controlsfx.control.TaskProgressView" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-173.0" />
+              <point x="4136.5" y="1049.0" />
+              <point x="8562.775" y="1049.0" />
+              <point x="-153.72500000000036" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.glyphfont.FontAwesome" target="org.controlsfx.glyphfont.GlyphFont">
+              <point x="0.0" y="-98.0" />
+              <point x="0.0" y="376.5" />
+            </edge>
+            <edge source="org.controlsfx.control.action.AnnotatedAction" target="org.controlsfx.control.action.Action">
+              <point x="0.0" y="-154.5" />
+              <point x="24638.15" y="1333.0" />
+              <point x="24759.15" y="1333.0" />
+              <point x="-134.25" y="654.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetView.ColumnWidthEvent" target="org.controlsfx.control.spreadsheet.SpreadsheetView">
+              <point x="0.0" y="-135.5" />
+              <point x="16042.0" y="4774.0" />
+              <point x="15773.0" y="4774.0" />
+              <point x="298.0" y="2374.5" />
+            </edge>
+            <edge source="org.controlsfx.control.PopOver.ArrowLocation" target="org.controlsfx.control.PopOver">
+              <point x="0.0" y="-264.5" />
+              <point x="0.0" y="1338.5" />
+            </edge>
+            <edge source="org.controlsfx.control.SnapshotView.SelectionSizeUpdater" target="org.controlsfx.control.SnapshotView">
+              <point x="0.0" y="-357.5" />
+              <point x="0.0" y="1357.0" />
+            </edge>
+            <edge source="org.controlsfx.control.GridView" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-487.5" />
+              <point x="12283.5" y="1059.0" />
+              <point x="8846.575" y="1059.0" />
+              <point x="130.07500000000073" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.GridView.StyleableProperties" target="org.controlsfx.control.GridView">
+              <point x="0.0" y="-135.0" />
+              <point x="0.0" y="487.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellType.DateType" target="org.controlsfx.control.spreadsheet.SpreadsheetCellType">
+              <point x="127.75" y="-190.5" />
+              <point x="3725.25" y="23886.0" />
+              <point x="4287.541666666667" y="23886.0" />
+              <point x="-106.45833333333303" y="320.5" />
+            </edge>
+            <edge source="org.controlsfx.control.WorldMapView.CountryView" target="org.controlsfx.control.WorldMapView">
+              <point x="0.0" y="-98.5" />
+              <point x="14067.0" y="3868.0" />
+              <point x="13855.875" y="3868.0" />
+              <point x="276.375" y="672.5" />
+            </edge>
+            <edge source="org.controlsfx.property.editor.NumericField.DoubleValidator" target="org.controlsfx.property.editor.NumericField.NumericValidator">
+              <point x="85.25" y="-98.5" />
+              <point x="16356.75" y="23663.0" />
+              <point x="16388.0" y="23663.0" />
+              <point x="-61.75" y="61.0" />
+            </edge>
+            <edge source="org.controlsfx.control.textfield.AutoCompletionBinding.FetchSuggestionsTask" target="org.controlsfx.control.textfield.AutoCompletionBinding.ISuggestionRequest">
+              <point x="-94.0" y="-117.5" />
+              <point x="22483.9" y="1654.0" />
+              <point x="22230.0" y="1654.0" />
+              <point x="0.0" y="60.5" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DateEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="140.5" y="-210.0" />
+              <point x="10319.5" y="23712.0" />
+              <point x="9740.964285714286" y="23712.0" />
+              <point x="74.46428571428623" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.control.Notifications.NotificationPopupHandler" target="org.controlsfx.control.Notifications">
+              <point x="0.0" y="-376.0" />
+              <point x="0.0" y="561.0" />
+            </edge>
+            <edge source="org.controlsfx.control.cell.ColorGridCell" target="org.controlsfx.control.GridCell">
+              <point x="0.0" y="-98.5" />
+              <point x="18562.5" y="23492.0" />
+              <point x="18367.833333333332" y="23492.0" />
+              <point x="182.33333333333212" y="136.0" />
+            </edge>
+            <edge source="org.controlsfx.control.BreadCrumbBar.BreadCrumbActionEvent" target="org.controlsfx.control.BreadCrumbBar">
+              <point x="0.0" y="-98.5" />
+              <point x="0.0" y="413.5" />
+            </edge>
+            <edge source="org.controlsfx.dialog.CommandLinksDialog.CommandLinksButtonType" target="org.controlsfx.dialog.CommandLinksDialog">
+              <point x="0.0" y="-302.5" />
+              <point x="0.0" y="209.5" />
+            </edge>
+            <edge source="org.controlsfx.dialog.FontSelectorDialog.FontStyle" target="org.controlsfx.dialog.FontSelectorDialog">
+              <point x="0.0" y="-284.0" />
+              <point x="14034.5" y="23342.0" />
+              <point x="14165.75" y="23342.0" />
+              <point x="-74.0" y="61.0" />
+            </edge>
+            <edge source="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.TextAreaEditor" target="org.controlsfx.control.spreadsheet.SpreadsheetCellEditor">
+              <point x="97.75" y="-173.0" />
+              <point x="8515.25" y="23682.0" />
+              <point x="9502.67857142857" y="23682.0" />
+              <point x="-163.82142857142935" y="228.5" />
+            </edge>
+            <edge source="org.controlsfx.control.SegmentedBar" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-469.0" />
+              <point x="3438.5" y="1039.0" />
+              <point x="8539.125" y="1039.0" />
+              <point x="-177.375" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.property.editor.NumericField.NumericValidator" target="org.controlsfx.property.editor.NumericField">
+              <point x="0.0" y="-61.0" />
+              <point x="0.0" y="135.5" />
+            </edge>
+            <edge source="org.controlsfx.control.IndexedCheckModel" target="org.controlsfx.control.CheckModel">
+              <point x="0.0" y="-153.5" />
+              <point x="-83.0" y="172.0" />
+            </edge>
+            <edge source="org.controlsfx.control.action.ActionGroup" target="org.controlsfx.control.action.Action">
+              <point x="0.0" y="-154.5" />
+              <point x="25148.65" y="1333.0" />
+              <point x="25027.65" y="1333.0" />
+              <point x="134.25" y="654.0" />
+            </edge>
+            <edge source="org.controlsfx.control.SnapshotView.Css" target="org.controlsfx.control.SnapshotView">
+              <point x="0.0" y="-172.0" />
+              <point x="10084.0" y="3868.0" />
+              <point x="10574.166666666666" y="3868.0" />
+              <point x="-358.33333333333394" y="1357.0" />
+            </edge>
+            <edge source="org.controlsfx.control.HiddenSidesPane" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-580.0" />
+              <point x="12922.0" y="1049.0" />
+              <point x="8870.225" y="1049.0" />
+              <point x="153.72500000000036" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.control.MasterDetailPane.Placeholder" target="org.controlsfx.control.MasterDetailPane">
+              <point x="0.0" y="-42.0" />
+              <point x="0.0" y="543.0" />
+            </edge>
+            <edge source="org.controlsfx.control.decoration.StyleClassDecoration" target="org.controlsfx.control.decoration.Decoration">
+              <point x="0.0" y="-98.5" />
+              <point x="15888.5" y="23455.0" />
+              <point x="15764.75" y="23455.0" />
+              <point x="87.0" y="117.5" />
+            </edge>
+            <edge source="org.controlsfx.control.SegmentedBar.Segment" target="org.controlsfx.control.SegmentedBar">
+              <point x="0.0" y="-173.0" />
+              <point x="3908.0" y="3868.0" />
+              <point x="3650.5" y="3868.0" />
+              <point x="212.0" y="469.0" />
+            </edge>
+            <edge source="org.controlsfx.control.textfield.AutoCompletionBinding.ISuggestionRequest" target="org.controlsfx.control.textfield.AutoCompletionBinding">
+              <point x="0.0" y="-60.5" />
+              <point x="22230.0" y="1407.0" />
+              <point x="22291.65" y="1407.0" />
+              <point x="-296.0" y="691.0" />
+            </edge>
+            <edge source="org.controlsfx.control.PlusMinusSlider" target="org.controlsfx.control.ControlsFXControl">
+              <point x="0.0" y="-321.0" />
+              <point x="4805.0" y="1059.0" />
+              <point x="8586.425" y="1059.0" />
+              <point x="-130.07500000000073" y="80.0" />
+            </edge>
+            <edge source="org.controlsfx.dialog.ProgressDialog.WorkerProgressPane" target="org.controlsfx.dialog.ProgressDialog">
+              <point x="0.0" y="-228.5" />
+              <point x="0.0" y="42.0" />
+            </edge>
+            <edge source="org.controlsfx.control.WorldMapView.Country" target="org.controlsfx.control.WorldMapView">
+              <point x="0.0" y="-3280.5" />
+              <point x="12924.5625" y="3868.0" />
+              <point x="13303.125" y="3868.0" />
+              <point x="-276.375" y="672.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4" x="8599.0" y="3510.0" />
+          <SelectedNodes>
+            <node>org.controlsfx.control.WorldMapView.Location</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType.DoubleType</node>
+            <node>org.controlsfx.control.CheckComboBox</node>
+            <node>org.controlsfx.control.SnapshotView.Boundary</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor</node>
+            <node>org.controlsfx.glyphfont.INamedCharacter</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.TextAreaEditor</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DoubleEditor</node>
+            <node>org.controlsfx.control.SnapshotView.Css</node>
+            <node>org.controlsfx.control.spreadsheet.Grid</node>
+            <node>org.controlsfx.control.WorldMapView</node>
+            <node>org.controlsfx.control.action.ActionUtils</node>
+            <node>org.controlsfx.control.SegmentedBar.StyleableProperties</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType.IntegerType</node>
+            <node>org.controlsfx.control.ControlsFXControl</node>
+            <node>org.controlsfx.control.action.ActionUtils.MenuItemPropertiesMapChangeListener</node>
+            <node>org.controlsfx.control.spreadsheet.GridBase</node>
+            <node>org.controlsfx.control.MaskerPane</node>
+            <node>org.controlsfx.control.Rating</node>
+            <node>org.controlsfx.control.MasterDetailPane</node>
+            <node>org.controlsfx.glyphfont.GlyphFont</node>
+            <node>org.controlsfx.control.IndexedCheckModel</node>
+            <node>org.controlsfx.property.editor.PropertyEditor</node>
+            <node>org.controlsfx.control.decoration.GraphicDecoration</node>
+            <node>org.controlsfx.control.action.ActionProxy</node>
+            <node>org.controlsfx.control.MasterDetailPane.Placeholder</node>
+            <node>org.controlsfx.control.PopOver</node>
+            <node>org.controlsfx.control.InfoOverlay</node>
+            <node>org.controlsfx.control.decoration.Decoration</node>
+            <node>org.controlsfx.dialog.DialogUtils</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType.ListType</node>
+            <node>org.controlsfx.property.BeanPropertyUtils</node>
+            <node>org.controlsfx.control.PropertySheet.Item</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellBase</node>
+            <node>org.controlsfx.control.action.DefaultActionFactory</node>
+            <node>org.controlsfx.control.textfield.AutoCompletionBinding</node>
+            <node>org.controlsfx.control.action.AnnotatedActionFactory</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.StringEditor</node>
+            <node>org.controlsfx.control.SegmentedButton</node>
+            <node>org.controlsfx.control.Notifications</node>
+            <node>org.controlsfx.control.table.TableFilter</node>
+            <node>org.controlsfx.control.ToggleSwitch</node>
+            <node>org.controlsfx.control.PlusMinusSlider.StyleableProperties</node>
+            <node>org.controlsfx.control.textfield.CustomTextField</node>
+            <node>org.controlsfx.control.CheckListView.CheckListViewBitSetCheckModel</node>
+            <node>org.controlsfx.property.editor.NumericField.DoubleValidator</node>
+            <node>org.controlsfx.control.PlusMinusSlider</node>
+            <node>org.controlsfx.control.GridCell</node>
+            <node>org.controlsfx.dialog.FontSelectorDialog.FontPanel</node>
+            <node>org.controlsfx.control.BreadCrumbBar</node>
+            <node>org.controlsfx.dialog.Wizard.Flow</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetView</node>
+            <node>org.controlsfx.control.table.TableRowExpanderColumn.ToggleCell</node>
+            <node>org.controlsfx.dialog.ProgressDialog</node>
+            <node>org.controlsfx.control.WorldMapView.CountryView</node>
+            <node>org.controlsfx.tools.Borders.EtchedBorders</node>
+            <node>org.controlsfx.control.table.model.TableModelRow</node>
+            <node>org.controlsfx.tools.Borders.Border</node>
+            <node>org.controlsfx.control.NotificationPane</node>
+            <node>org.controlsfx.control.textfield.TextFields</node>
+            <node>org.controlsfx.property.editor.AbstractObjectField</node>
+            <node>org.controlsfx.control.spreadsheet.Picker</node>
+            <node>org.controlsfx.control.CheckListView</node>
+            <node>org.controlsfx.tools.Utils</node>
+            <node>org.controlsfx.control.TaskProgressView</node>
+            <node>org.controlsfx.validation.decoration.StyleClassValidationDecoration</node>
+            <node>org.controlsfx.control.Notifications.NotificationPopupHandler</node>
+            <node>org.controlsfx.tools.SVGLoader</node>
+            <node>org.controlsfx.validation.Severity</node>
+            <node>org.controlsfx.control.table.TableFilter.Builder</node>
+            <node>org.controlsfx.control.table.TableRowExpanderColumn</node>
+            <node>org.controlsfx.control.cell.MediaImageCell</node>
+            <node>org.controlsfx.control.action.ActionUtils.ActionTextBehavior</node>
+            <node>org.controlsfx.control.spreadsheet.GridChange</node>
+            <node>org.controlsfx.control.CheckTreeView.CheckTreeViewCheckModel</node>
+            <node>org.controlsfx.dialog.LoginDialog</node>
+            <node>org.controlsfx.control.textfield.AutoCompletionBinding.FetchSuggestionsTask</node>
+            <node>org.controlsfx.control.action.AnnotatedCheckAction</node>
+            <node>org.controlsfx.control.action.ActionCheck</node>
+            <node>org.controlsfx.control.RangeSlider</node>
+            <node>org.controlsfx.control.CheckComboBox.CheckComboBoxBitSetCheckModel</node>
+            <node>org.controlsfx.tools.Duplicatable</node>
+            <node>org.controlsfx.dialog.Wizard</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetView.SpanType</node>
+            <node>org.controlsfx.control.action.ActionUtils.ButtonPropertiesMapChangeListener</node>
+            <node>org.controlsfx.validation.Validator</node>
+            <node>org.controlsfx.glyphfont.FontAwesome</node>
+            <node>org.controlsfx.control.table.model.JavaFXTableModel</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetView.ColumnWidthEvent</node>
+            <node>org.controlsfx.property.editor.AbstractPropertyEditor</node>
+            <node>org.controlsfx.control.GridView.StyleableProperties</node>
+            <node>org.controlsfx.control.HiddenSidesPane</node>
+            <node>org.controlsfx.tools.ValueExtractor.ObservableValueExtractor</node>
+            <node>org.controlsfx.control.GridView</node>
+            <node>org.controlsfx.property.editor.Editors</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetView.RowHeightEvent</node>
+            <node>org.controlsfx.tools.ValueExtractor</node>
+            <node>org.controlsfx.validation.ValidationSupport</node>
+            <node>org.controlsfx.control.action.ActionGroup</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType.DateType</node>
+            <node>org.controlsfx.control.action.AnnotatedAction</node>
+            <node>org.controlsfx.glyphfont.GlyphFontRegistry</node>
+            <node>org.controlsfx.control.textfield.CustomPasswordField</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType.StringType</node>
+            <node>org.controlsfx.control.textfield.AutoCompletionBinding.ISuggestionRequest</node>
+            <node>org.controlsfx.control.table.TableRowExpanderColumn.TableRowDataFeatures</node>
+            <node>org.controlsfx.validation.decoration.CompoundValidationDecoration</node>
+            <node>org.controlsfx.control.table.model.TableModelTableView</node>
+            <node>org.controlsfx.control.SegmentedBar.SegmentView</node>
+            <node>org.controlsfx.control.WorldMapView.Country</node>
+            <node>org.controlsfx.control.Notifications.NotificationPopupHandler.CustomTransition</node>
+            <node>org.controlsfx.validation.decoration.AbstractValidationDecoration</node>
+            <node>org.controlsfx.control.cell.ImageGridCell</node>
+            <node>org.controlsfx.control.PropertySheet.Mode</node>
+            <node>org.controlsfx.dialog.ProgressDialog.WorkerProgressPane</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.ObjectEditor</node>
+            <node>org.controlsfx.tools.Borders</node>
+            <node>org.controlsfx.property.editor.NumericField</node>
+            <node>org.controlsfx.control.SnapshotView.SelectionSizeUpdater</node>
+            <node>org.controlsfx.control.PrefixSelectionChoiceBox</node>
+            <node>org.controlsfx.tools.Borders.StrokeBorder</node>
+            <node>org.controlsfx.control.decoration.Decorator</node>
+            <node>org.controlsfx.control.CheckModel</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.IntegerEditor</node>
+            <node>org.controlsfx.control.BreadCrumbBar.BreadCrumbActionEvent</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCell.CornerPosition</node>
+            <node>org.controlsfx.control.spreadsheet.Filter</node>
+            <node>org.controlsfx.property.editor.DefaultPropertyEditorFactory</node>
+            <node>org.controlsfx.tools.ValueExtractor.NodeValueExtractor</node>
+            <node>org.controlsfx.control.PopOver.ArrowLocation</node>
+            <node>org.controlsfx.control.SegmentedBar.Segment</node>
+            <node>org.controlsfx.control.textfield.AutoCompletionBinding.AutoCompletionEvent</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCell</node>
+            <node>org.controlsfx.glyphfont.FontAwesome.Glyph</node>
+            <node>org.controlsfx.validation.decoration.GraphicValidationDecoration</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType.ObjectType</node>
+            <node>org.controlsfx.property.editor.NumericField.LongValidator</node>
+            <node>org.controlsfx.dialog.FontSelectorDialog.FontStyle</node>
+            <node>org.controlsfx.dialog.FontSelectorDialog</node>
+            <node>org.controlsfx.control.SnapshotView</node>
+            <node>org.controlsfx.control.cell.ColorGridCell</node>
+            <node>org.controlsfx.control.action.Action</node>
+            <node>org.controlsfx.control.action.ActionMap</node>
+            <node>org.controlsfx.dialog.WizardPane</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetViewSelectionModel</node>
+            <node>org.controlsfx.control.table.model.TableModelValueFactory</node>
+            <node>org.controlsfx.control.table.model.JavaFXTableModels</node>
+            <node>org.controlsfx.control.spreadsheet.StringConverterWithFormat</node>
+            <node>org.controlsfx.tools.Borders.LineBorders</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellType</node>
+            <node>org.controlsfx.glyphfont.Glyph</node>
+            <node>org.controlsfx.control.PlusMinusSlider.PlusMinusEvent</node>
+            <node>org.controlsfx.control.table.TableViewUtils</node>
+            <node>org.controlsfx.control.HyperlinkLabel</node>
+            <node>org.controlsfx.property.editor.NumericField.NumericValidator</node>
+            <node>org.controlsfx.control.spreadsheet.GridBase.MapBasedRowHeightFactory</node>
+            <node>org.controlsfx.validation.ValidationResult</node>
+            <node>org.controlsfx.control.PrefixSelectionComboBox</node>
+            <node>org.controlsfx.validation.ValidationMessage</node>
+            <node>org.controlsfx.validation.SimpleValidationMessage</node>
+            <node>org.controlsfx.control.RangeSlider.StyleableProperties</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetColumn</node>
+            <node>org.controlsfx.dialog.ExceptionDialog</node>
+            <node>org.controlsfx.control.spreadsheet.FilterBase</node>
+            <node>org.controlsfx.control.PropertySheet</node>
+            <node>org.controlsfx.control.CheckTreeView</node>
+            <node>org.controlsfx.control.SegmentedBar</node>
+            <node>org.controlsfx.tools.Platform</node>
+            <node>org.controlsfx.control.StatusBar</node>
+            <node>org.controlsfx.tools.Borders.EmptyBorders</node>
+            <node>org.controlsfx.control.WorldMapView.SelectionMode</node>
+            <node>org.controlsfx.control.ListSelectionView</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.DateEditor</node>
+            <node>org.controlsfx.control.spreadsheet.SpreadsheetCellEditor.ListEditor</node>
+            <node>org.controlsfx.dialog.CommandLinksDialog</node>
+            <node>org.controlsfx.validation.decoration.ValidationDecoration</node>
+            <node>org.controlsfx.property.BeanProperty</node>
+            <node>org.controlsfx.control.decoration.StyleClassDecoration</node>
+            <node>org.controlsfx.control.CheckBitSetModelBase</node>
+            <node>org.controlsfx.dialog.Wizard.LinearFlow</node>
+            <node>org.controlsfx.dialog.CommandLinksDialog.CommandLinksButtonType</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4032">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/spreadsheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4536">
+          <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/impl/org/controlsfx/spreadsheet/TableViewSpanSelectionModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/picker.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/pinSpreadsheetView.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/Picker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/impl/org/controlsfx/spreadsheet/CellView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetCellEditor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7112">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="501" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetCellBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/impl/org/controlsfx/spreadsheet/SelectedCellsMapTemp.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2992">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetViewSelectionModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/GridBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TableColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetCellType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="237" column="36" lean-forward="false" selection-start-line="237" selection-start-column="36" selection-end-line="237" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/Java Sources/controlsfx-8.40.14/controlsfx-8.40.14.jar!/org/controlsfx/control/spreadsheet/SpreadsheetColumn.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CellValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/GridPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20104">
+          <caret line="847" column="33" lean-forward="false" selection-start-line="847" selection-start-column="33" selection-end-line="847" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5054">
+          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/TableView.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TableCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/cell/TextFieldTableCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/temp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="72" lean-forward="false" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/NumberValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/StringValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/DataType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaFXApp</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.4.9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spreadsheet</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -18,18 +18,18 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import org.controlsfx.control.spreadsheet.GridBase;
-import org.controlsfx.control.spreadsheet.SpreadsheetCell;
-import org.controlsfx.control.spreadsheet.SpreadsheetCellType;
-import org.controlsfx.control.spreadsheet.SpreadsheetView;
 
-public class Main extends Application {
+
+public class Main extends Application{
     @Override
     public void start(Stage stage) throws Exception {
-        Table table = new Table();
+        MainWindow mainWindow = new MainWindow();
+        stage.setTitle("Spreadsheet");
+        stage.setScene(new Scene(mainWindow, 1024, 768));
+        stage.show();
     }
-
     public static void main(String[] args) {
         launch(args);
     }
+
 }

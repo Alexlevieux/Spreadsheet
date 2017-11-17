@@ -10,15 +10,18 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 
+import java.util.ArrayList;
+import java.util.Set;
 
-public class Cell extends TextField implements Observable, InvalidationListener {
+
+public class Cell extends TextField implements Observable{
     Property value;
     String temp;
     String computedValue;
+    Set<Cell> references;
 
-    public Cell(String value) {
-       // setValue(value);
-//        value = new SimpleStringProperty("");
+
+    public Cell() {
         setText("");
         setEditable(false);
         setCursor(Cursor.DEFAULT);
@@ -48,9 +51,6 @@ public class Cell extends TextField implements Observable, InvalidationListener 
         });
     }
 
-    public Cell() {
-        this(null);
-    }
 
     public Object getValue() {
         try {
@@ -79,18 +79,9 @@ public class Cell extends TextField implements Observable, InvalidationListener 
             this.value = new SimpleStringProperty(value);
         };
     }
-    @Override
-    public void addListener(InvalidationListener listener) {
 
+    public void addRef(Cell target) {
+        this.references.add(target);
     }
 
-    @Override
-    public void removeListener(InvalidationListener listener) {
-
-    }
-
-    @Override
-    public void invalidated(Observable observable) {
-
-    }
 }

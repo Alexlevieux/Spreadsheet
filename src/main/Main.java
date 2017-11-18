@@ -1,5 +1,8 @@
 package main;
 
+import function.Evaluator;
+import function.ParserException;
+import function.Value;
 import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -19,17 +22,20 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
-public class Main extends Application{
-    @Override
-    public void start(Stage stage) throws Exception {
-        MainWindow mainWindow = new MainWindow();
-        stage.setTitle("Spreadsheet");
-        stage.setScene(new Scene(mainWindow, 1024, 768));
-        stage.show();
-    }
-    public static void main(String[] args) {
-        launch(args);
+
+public class Main /*extends Application*/{
+//    @Override
+//    public void start(Stage stage) throws Exception {
+//
+//    }
+    public static void main(String[] args) throws ParserException{
+        System.out.println(Evaluator.evaluate("sum()+sum(5*6,5+7,average(5,4))"));
+//        launch(args);
     }
 
 }

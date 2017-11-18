@@ -1,10 +1,38 @@
 package function;
 
-public abstract class Function<ReturnType extends DataType> implements Value {
-    private ReturnType returnType;
-    private int MAX_ARGS;
-    public Function(int maxArgs){
-        MAX_ARGS = maxArgs;
+public class Function implements Token {
+    private FunctionType functionType;
+    private int args;
+
+    public Function(FunctionType functionType) {
+        this.functionType = functionType;
+        this.args = 0;
     }
-    public abstract ReturnType compute(Value... values) throws Exception;
+
+    public void incArgs() throws ParserException {
+        ++args;
+        if (args > functionType.getMaxArgs())
+            throw new ParserException("Too many arguments for function " + functionType.name());
+    }
+
+    public void decArgs() {
+        --args;
+    }
+
+    public int getArgs() {
+        return args;
+    }
+
+    public void setArgs(int args) {
+        this.args = args;
+    }
+
+    public FunctionType getFunctionType() {
+        return functionType;
+    }
+
+    @Override
+    public String toString() {
+        return getFunctionType().name() + "(" + getArgs() + ")";
+    }
 }

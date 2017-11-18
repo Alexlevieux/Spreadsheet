@@ -1,6 +1,6 @@
 package function;
 
-public class CellReference implements Value{
+public class CellReference implements Token{
     private int col;
     private int row;
     public CellReference(int col, int row){

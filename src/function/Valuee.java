@@ -1,13 +1,12 @@
 package function;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
-public class Value<Type extends Comparable> implements Token, Comparable {
+@Deprecated
+public class Valuee<Type extends Comparable> implements Token, Comparable {
     private Type value;
 
-    public Value(Type value) {
+    public Valuee(Type value) {
         setValue(value);
     }
 
@@ -29,7 +28,7 @@ public class Value<Type extends Comparable> implements Token, Comparable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Value<?> value1 = (Value<?>) o;
+        Valuee<?> value1 = (Valuee<?>) o;
 
         return value != null ? value.equals(value1.value) : value1.value == null;
     }
@@ -44,7 +43,7 @@ public class Value<Type extends Comparable> implements Token, Comparable {
         if (this == o) return 0;
         if (o == null || getClass() != o.getClass()) return -1;
 
-        Value<?> val = (Value<?>) o;
+        Valuee<?> val = (Valuee<?>) o;
 //        System.out.println(value + " compare " + val.getValue());
         if (value.equals(val.getValue())) {
             return 0;

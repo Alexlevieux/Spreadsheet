@@ -1,6 +1,11 @@
 package function;
 
-import java.lang.reflect.Array;
+import com.sun.xml.internal.bind.v2.TODO;
+import value.BooleanValue;
+import value.DoubleValue;
+import value.StringValue;
+import value.Value;
+
 import java.util.*;
 
 import static function.Operator.*;
@@ -109,18 +114,19 @@ public class Evaluator {
                     functionStack.push(function);
                 } else {
                     try {
-                        Double d = Double.parseDouble(s);
-                        outputQueue.add(new Value<>(d));
+                        outputQueue.add(new DoubleValue(Double.valueOf(s)));
                     } catch (NumberFormatException e) {
-                        if (s.charAt(0) == '"' && s.charAt(s.length() - 1) == '"')
-                            outputQueue.add(new Value<>(s));
-                        else {
-                            if (s.matches("[A-Za-z]+[0-9]+")) {
-                                outputQueue.add(new CellReference(0, 0));
-                            } else if (s.matches("[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
-                                outputQueue.add(new CellRange(0, 0, 0, 0));
-                            } else throw new ParserException("Invalid token: " + s);
-                        }
+                        if (s.toLowerCase().equals("true") || s.toLowerCase().equals("false")) {
+                            outputQueue.add(new BooleanValue(Boolean.valueOf(s)));
+                        } else if (s.charAt(0) == '"' && s.charAt(s.length() - 1) == '"')
+                            outputQueue.add(new StringValue(s));
+//                        else {
+//                            if (s.matches("[A-Za-z]+[0-9]+")) {
+//                                outputQueue.add(new CellReference(0, 0));
+//                            } else if (s.matches("[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
+//                                outputQueue.add(new CellRange(table, 0, 0, 0, 0));
+//                            } else throw new ParserException("Invalid token: " + s);
+//                        }
                     }
                 }
             }
@@ -149,49 +155,49 @@ public class Evaluator {
 
         Value call(Token token) throws ParserException {
             postFix.remove(postFix.size() - 1);
-            if (token instanceof Value) return (Value) token;
+            if (token instanceof value.Value) return (value.Value) token;
             try {
                 if (token instanceof Operator) {
                     Operator op = (Operator) token;
                     if (op.getArgs() == 2) {
-                        Value rightOperand = call(postFix.get(postFix.size() - 1));
-                        Value leftOperand = call(postFix.get(postFix.size() - 1));
+                        value.Value rightOperand = call(postFix.get(postFix.size() - 1));
+                        value.Value leftOperand = call(postFix.get(postFix.size() - 1));
                         switch (op) {
                             case ADD:
-                                return new Value<>(new Double(leftOperand.getValue().toString())
+                                return new DoubleValue(new Double(leftOperand.getValue().toString())
                                         + new Double(rightOperand.getValue().toString()));
                             case SUB:
-                                return new Value<>(new Double(leftOperand.getValue().toString())
+                                return new DoubleValue(new Double(leftOperand.getValue().toString())
                                         - new Double(rightOperand.getValue().toString()));
                             case MUL:
-                                return new Value<>(new Double(leftOperand.getValue().toString())
+                                return new DoubleValue(new Double(leftOperand.getValue().toString())
                                         * new Double(rightOperand.getValue().toString()));
                             case DIV:
-                                return new Value<>(new Double(leftOperand.getValue().toString())
+                                return new DoubleValue(new Double(leftOperand.getValue().toString())
                                         / new Double(rightOperand.getValue().toString()));
                             case EXP:
-                                return new Value<>(Math.pow(new Double(leftOperand.getValue().toString()),
+                                return new DoubleValue(Math.pow(new Double(leftOperand.getValue().toString()),
                                         new Double(rightOperand.getValue().toString())));
                             case CONCAT:
-                                return new Value<>(leftOperand.getValue().toString()
+                                return new StringValue(leftOperand.getValue().toString()
                                         + rightOperand.getValue().toString());
                             case EQ:
-                                return new Value<>(leftOperand.getValue().equals(rightOperand.getValue()));
+                                return new BooleanValue(leftOperand.getValue().equals(rightOperand.getValue()));
                             case NEQ:
-                                return new Value<>(!leftOperand.getValue().equals(rightOperand.getValue()));
+                                return new BooleanValue(!leftOperand.getValue().equals(rightOperand.getValue()));
                             case GT:
-                                return new Value<>(leftOperand.getValue().compareTo(rightOperand.getValue()) > 0);
+                                return new BooleanValue(leftOperand.getValue().compareTo(rightOperand.getValue()) > 0);
                             case LT:
-                                return new Value<>(leftOperand.getValue().compareTo(rightOperand.getValue()) < 0);
+                                return new BooleanValue(leftOperand.getValue().compareTo(rightOperand.getValue()) < 0);
                             case GE:
-                                return new Value<>(leftOperand.getValue().compareTo(rightOperand.getValue()) >= 0);
+                                return new BooleanValue(leftOperand.getValue().compareTo(rightOperand.getValue()) >= 0);
                             case LE:
-                                return new Value<>(leftOperand.getValue().compareTo(rightOperand.getValue()) <= 0);
+                                return new BooleanValue(leftOperand.getValue().compareTo(rightOperand.getValue()) <= 0);
                         }
                     } else if (op.getArgs() == 1) {
-                        Value operand = call(postFix.get(postFix.size() - 1));
+                        value.Value operand = call(postFix.get(postFix.size() - 1));
                         if (op == PERCENT)
-                            return new Value<>(((Double) (operand.getValue())) / 100);
+                            return new DoubleValue(((Double) (operand.getValue())) / 100);
                     }
                 }
             } catch (NumberFormatException e) {
@@ -200,24 +206,37 @@ public class Evaluator {
             if (token instanceof Function) {
                 Function function = (Function) token;
                 int args = function.getArgs();
-                ArrayList<Value> values = new ArrayList<>();
+                ArrayList<value.Value> values = new ArrayList<>();
                 for (int i = 0; i < args; ++i) {
-                    Value arg = call(postFix.get(postFix.size() - 1));
+                    value.Value arg = call(postFix.get(postFix.size() - 1));
                     values.add(arg);
                 }
+                // TODO: 11/20/2017 implement other functions
                 switch (function.getFunctionType()) {
                     case SUM:
                         return sum(values);
                     case AVERAGE:
                         return average(values);
+                    case STDDEV:
+                        return stddev(values);
+                    case VAR:
+                        return variance(values);
                     default:
                         return null;
                 }
             }
+            // TODO: 11/20/2017 implement evaluation of CellReference, and add dependents
+            if(token instanceof CellReference){
+
+            }
+            // TODO: 11/20/2017 implement evaluation of CellRange
+            if(token instanceof CellRange){
+
+            }
             return null;
         }
 
-        Value<Double> sum(List<Value> values) {
+        DoubleValue sum(List<Value> values) {
             Double temp = 0.0;
             for (Value value : values) {
                 try {
@@ -226,10 +245,10 @@ public class Evaluator {
                     temp += 0;
                 }
             }
-            return new Value<>(temp);
+            return new DoubleValue(temp);
         }
 
-        Value<Double> average(List<Value> values) {
+        DoubleValue average(List<Value> values) {
             Double temp = 0.0;
             int amt = 0;
             for (Value value : values) {
@@ -240,7 +259,28 @@ public class Evaluator {
                     temp += 0;
                 }
             }
-            return new Value<>(temp / amt);
+            return new DoubleValue(temp / amt);
         }
+
+        DoubleValue variance(List<Value> values) {
+            Double avg = average(values).getValue();
+            Double temp = 0.0;
+            int amt = 0;
+            for (Value value : values) {
+                try {
+                    temp += ((Double) value.getValue() - avg) * ((Double) value.getValue() - avg);
+                    ++amt;
+                } catch (Exception e) {
+                    temp += 0;
+                }
+            }
+            return new DoubleValue(temp / amt);
+        }
+
+        DoubleValue stddev(List<Value> values) {
+            return new DoubleValue(Math.sqrt(variance(values).getValue()));
+        }
+
+        // TODO: 11/20/2017 implement min, max, count, countblank(must be a cellrange)
     }
 }

@@ -113,6 +113,7 @@ public class Table extends GridPane {
         return focusedRow;
     }
 
-
-
+    public ArrayList<ArrayList<Cell>> getCells() {
+        return cells;
+    }
 }

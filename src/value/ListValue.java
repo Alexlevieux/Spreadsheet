@@ -3,6 +3,7 @@ package value;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class ListValue extends IncomparableValue {
     private ArrayList<ComparableValue> list;
 

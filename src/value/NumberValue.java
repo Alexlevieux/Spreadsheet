@@ -1,12 +1,12 @@
 package value;
 
-public class DoubleValue extends ComparableValue {
+public class NumberValue extends ComparableValue {
     private Double value;
 
-    public DoubleValue(Double value) {
+    public NumberValue(Double value) {
         setValue(value);
     }
-    public DoubleValue(Integer value){
+    public NumberValue(Integer value){
         this(value.doubleValue());
     }
 
@@ -23,5 +23,10 @@ public class DoubleValue extends ComparableValue {
     @Override
     public int getTypeID() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(Math.floor(value) - value < 1e-9 ? value.intValue() : value);
     }
 }

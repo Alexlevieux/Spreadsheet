@@ -4,6 +4,7 @@ import main.Cell;
 import main.Table;
 import value.ListValue;
 
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class CellRange extends CellReference{
     private int leftCol;
     private int rightCol;
@@ -34,6 +35,7 @@ public class CellRange extends CellReference{
                 if (cell == null) {
                     getTable().addCell(i, j);
                 }
+                cell = getTable().getCells().get(i).get(j);
                 list.add(cell.getValue());
             }
         }

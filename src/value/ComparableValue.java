@@ -19,4 +19,7 @@ public abstract class ComparableValue extends Value implements Comparable {
                 getTypeID() - otherValue.getTypeID() :
                 getValue().compareTo(otherValue.getValue());
     }
+
+    @Override
+    public abstract String toString();
 }

@@ -9,6 +9,7 @@ import javafx.scene.layout.RowConstraints;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+@SuppressWarnings("WeakerAccess")
 public class Table extends GridPane {
     private static final int MAX_COLUMN = 32767;
     private static final int MAX_ROW = 32767;
@@ -28,7 +29,7 @@ public class Table extends GridPane {
         cells = new ArrayList<>(PREF_COLUMN);
         for (int i = 0; i < PREF_COLUMN; ++i) {
             cells.add(new ArrayList<>(PREF_ROW));
-            for(int j=0; j<PREF_ROW; j++){
+            for (int j = 0; j < PREF_ROW; j++) {
                 cells.get(i).add(null);
             }
         }
@@ -44,26 +45,26 @@ public class Table extends GridPane {
         focusedColumn = 0;
         focusedRow = 0;
         setOnKeyPressed(e -> {
-            if (e.getCode() == KeyCode.ENTER) {
-                setFocusedRow(getFocusedRow()+1);
-                cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
-            }
+//            if (e.getCode() == KeyCode.ENTER) {
+//                setFocusedRow(getFocusedRow() + 1);
+//                cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
+//            }
             if (e.getCode() == KeyCode.UP) {
-                setFocusedRow(getFocusedRow()-1);
+                setFocusedRow(getFocusedRow() - 1);
                 cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
             }
             if (e.getCode() == KeyCode.DOWN) {
-                setFocusedRow(getFocusedRow()+1);
+                setFocusedRow(getFocusedRow() + 1);
                 cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
             }
             if (e.getCode() == KeyCode.LEFT) {
                 //fokus gerak ke kiri
-                setFocusedColumn(getFocusedColumn()-1);
+                setFocusedColumn(getFocusedColumn() - 1);
                 cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
             }
             if (e.getCode() == KeyCode.RIGHT) {
                 //fokus gerak ke kanan
-                setFocusedColumn(getFocusedColumn()+1);
+                setFocusedColumn(getFocusedColumn() + 1);
                 cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
             }
 
@@ -74,13 +75,13 @@ public class Table extends GridPane {
             if (cells.get(col).get(row) == null) {
                 int colt = getFocusedColumn();
                 int rowt = getFocusedRow();
-                if (cells.get(colt).get(rowt)!= null && cells.get(colt).get(rowt).getText().length() == 0) {
+                if (cells.get(colt).get(rowt) != null && cells.get(colt).get(rowt).getText().length() == 0) {
                     getChildren().remove(cells.get(colt).get(rowt));
-                   cells.get(colt).set(rowt, null);
+                    cells.get(colt).set(rowt, null);
                     setFocusedRow(-1);
                     setFocusedColumn(-1);
                 }
-                cells.get(col).set(row,new Cell());
+                cells.get(col).set(row, new Cell());
                 Cell cell = cells.get(col).get(row);
                 setFocusedColumn(col);
                 setFocusedRow(row);
@@ -97,12 +98,12 @@ public class Table extends GridPane {
 
     public void setFocusedColumn(int focusedColumn) {
         if (focusedColumn >= 0) this.focusedColumn = focusedColumn;
-    //    System.out.println(focusedColumn);
+        //    System.out.println(focusedColumn);
     }
 
     public void setFocusedRow(int focusedRow) {
         if (focusedRow >= 0) this.focusedRow = focusedRow;
-       //  System.out.println(focusedRow);
+        //  System.out.println(focusedRow);
     }
 
     public int getFocusedColumn() {
@@ -117,7 +118,7 @@ public class Table extends GridPane {
         return cells;
     }
 
-    public void addCell(int row, int col) {
-        cells.get(row).add(col,new Cell());
+    public void addCell(int col, int row) {
+        cells.get(col).add(row, new Cell());
     }
 }

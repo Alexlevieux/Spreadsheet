@@ -1,7 +1,7 @@
 package main;
 
+import exception.*;
 import function.Evaluator;
-import function.ParserException;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.property.Property;
@@ -13,6 +13,7 @@ import javafx.scene.Cursor;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
+import value.ComparableValue;
 import value.Value;
 
 import javax.swing.text.html.parser.Parser;
@@ -21,8 +22,8 @@ import java.util.Set;
 
 
 public class Cell extends TextField {
-    Value value;
-    String valueUnprocessed;
+    ComparableValue value;
+    String unprocessedValue;
     ArrayList<Cell> dependants;
 
 
@@ -33,10 +34,10 @@ public class Cell extends TextField {
         setStyle("-fx-background-radius: 0");
         setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER && isEditable()) {
-             //   System.out.println(getText());
-             //   setValue();
+                //   System.out.println(getText());
+                //   setValue();
 
-             //   System.out.println(getValue());
+                //   System.out.println(getValue());
                 setEditable(false);
             } else if (event.getCode() == KeyCode.ENTER && !isEditable()) {
                 setEditable(true);
@@ -53,25 +54,42 @@ public class Cell extends TextField {
     }
 
 
-    public Value getValue() {
+    public ComparableValue getValue() {
         return value;
     }
 
-    public void setValue(Value value) {
+    public void setValue(ComparableValue value) {
         this.value = value;
+        setText(this.value.toString());
     }
 
     public void compute() {
         try {
-            Evaluator.evaluate(this);
-        } catch(ParserException e) {
-            System.out.println("Parser error!");
+            setValue(Evaluator.evaluate(this));
+        } catch (DivisionByZeroException e) {
+            setText("#DIV/0");
+        } catch (InvalidArgumentException e) {
+            setText("#ARGS!");
+        } catch (InvalidReferenceException e) {
+            setText("#REF!");
+        } catch (InvalidTokenException e) {
+            setText("#NAME?");
+        } catch (InvalidValueException e) {
+            setText("#VALUE!");
+        } catch (NumberException e) {
+            setText("#NUM!");
+        } catch (ParserException e) {
+            System.out.println(e.getMessage());
         }
     }
 
 
-    public void addRef(Cell target) {
+    public void addDependant(Cell target) {
         this.dependants.add(target);
+    }
+
+    public String getUnprocessedValue() {
+        return unprocessedValue;
     }
 
 

@@ -4,6 +4,7 @@ import main.Cell;
 import main.Table;
 import value.Value;
 
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class CellSingle extends CellReference {
     private int col;
     private int row;
@@ -32,7 +33,7 @@ public class CellSingle extends CellReference {
 
     public Value getValue() {
         try {
-            return (Value) getTable().getCells().get(col-1).get(row-1).getValue();
+            return getTable().getCells().get(col-1).get(row-1).getValue();
         } catch (NullPointerException e) {
             return null;
         }

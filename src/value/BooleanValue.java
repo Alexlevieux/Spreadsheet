@@ -1,6 +1,6 @@
 package value;
 
-public class BooleanValue extends ComparableValue{
+public class BooleanValue extends ComparableValue {
     private Boolean value;
 
     public BooleanValue(Boolean value) {
@@ -19,6 +19,11 @@ public class BooleanValue extends ComparableValue{
 
     @Override
     public void setValue(Comparable value) {
-        this.value = (Boolean)value;
+        this.value = (Boolean) value;
+    }
+
+    @Override
+    public String toString() {
+        return value ? "TRUE" : "FALSE";
     }
 }

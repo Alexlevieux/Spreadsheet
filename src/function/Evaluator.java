@@ -11,7 +11,7 @@ import java.util.*;
 import static function.Operator.*;
 import static function.Symbol.*;
 
-@SuppressWarnings("Duplicates")
+@SuppressWarnings({"Duplicates", "WeakerAccess", "UnusedReturnValue", "unused", "UnusedAssignment"})
 public class Evaluator {
     private static HashMap<String, Token> tokenMap = new HashMap<>();
     private static Cell tempCell;
@@ -116,12 +116,12 @@ public class Evaluator {
                     functionStack.push(function);
                 } else {
                     try {
-                        outputQueue.add(new DoubleValue(Double.valueOf(s)));
+                        outputQueue.add(new NumberValue(Double.valueOf(s)));
                     } catch (NumberFormatException e) {
                         if (s.toLowerCase().equals("true") || s.toLowerCase().equals("false")) {
                             outputQueue.add(new BooleanValue(Boolean.valueOf(s)));
                         } else if (s.charAt(0) == '"' && s.charAt(s.length() - 1) == '"')
-                            outputQueue.add(new StringValue(s));
+                            outputQueue.add(new StringValue(s.substring(1, s.length() - 1)));
                         else {
                             if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]")) {
                                 outputQueue.add(cellNameToReference(s));
@@ -139,16 +139,18 @@ public class Evaluator {
         return outputQueue;
     }
 
-    public static Value evaluate(Cell cell) throws ParserException {
+    public static ComparableValue evaluate(Cell cell) throws ParserException {
         tempCell = cell;
-        return evaluate(cell.getText());
+        ComparableValue result = evaluate(cell.getUnprocessedValue());
+        tempCell = null;
+        return result;
     }
 
-    public static Value evaluate(String expression) throws ParserException {
+    public static ComparableValue evaluate(String expression) throws ParserException {
         ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
         ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
         Computer c = new Computer(tokens);
-        return c.compute();
+        return (ComparableValue) c.compute();
     }
 
     public static CellSingle cellNameToReference(String text) throws ParserException {
@@ -232,28 +234,28 @@ public class Evaluator {
                         Value leftOperand = call(postFix.get(postFix.size() - 1));
                         switch (op) {
                             case ADD:
-                                return new DoubleValue(((DoubleValue) leftOperand).getValue()
-                                        + ((DoubleValue) rightOperand).getValue());
+                                return new NumberValue(((NumberValue) leftOperand).getValue()
+                                        + ((NumberValue) rightOperand).getValue());
                             case SUB:
-                                return new DoubleValue(((DoubleValue) leftOperand).getValue()
-                                        - ((DoubleValue) rightOperand).getValue());
+                                return new NumberValue(((NumberValue) leftOperand).getValue()
+                                        - ((NumberValue) rightOperand).getValue());
                             case MUL:
-                                return new DoubleValue(((DoubleValue) leftOperand).getValue()
-                                        * ((DoubleValue) rightOperand).getValue());
+                                return new NumberValue(((NumberValue) leftOperand).getValue()
+                                        * ((NumberValue) rightOperand).getValue());
                             case DIV:
-                                if (((DoubleValue) rightOperand).getValue() == 0)
+                                if (((NumberValue) rightOperand).getValue() == 0)
                                     throw new DivisionByZeroException("");
-                                return new DoubleValue(((DoubleValue) leftOperand).getValue()
-                                        / ((DoubleValue) rightOperand).getValue());
+                                return new NumberValue(((NumberValue) leftOperand).getValue()
+                                        / ((NumberValue) rightOperand).getValue());
                             case EXP:
-                                Double left = ((DoubleValue) leftOperand).getValue();
-                                Double right = ((DoubleValue) rightOperand).getValue();
+                                Double left = ((NumberValue) leftOperand).getValue();
+                                Double right = ((NumberValue) rightOperand).getValue();
                                 Double ans = Math.pow(left, right);
                                 if (left < 0 && Math.floor(right) - right > 1e-9)
                                     throw new NumberException("Root of negative number");
                                 if (left == 0 && right == 0)
                                     throw new NumberException("0 to the 0th power");
-                                return new DoubleValue(ans);
+                                return new NumberValue(ans);
                             case CONCAT:
                                 return new StringValue(leftOperand.getValue().toString()
                                         + rightOperand.getValue().toString());
@@ -281,7 +283,7 @@ public class Evaluator {
                     } else if (op.getArgs() == 1) {
                         value.Value operand = call(postFix.get(postFix.size() - 1));
                         if (op == PERCENT)
-                            return new DoubleValue(((Double) (operand.getValue())) / 100);
+                            return new NumberValue(((Double) (operand.getValue())) / 100);
                     }
                 } catch (NumberFormatException e) {
                     throw new ParserException("Invalid numerical operand for numerical operator");
@@ -318,75 +320,76 @@ public class Evaluator {
                         return null;
                 }
             }
-            // TODO: 11/20/2017 implement add dependants
             if (token instanceof CellSingle) {
+                ((CellSingle) token).addDependant(tempCell);
                 return ((CellSingle) token).getValue();
             }
-            // TODO: 11/20/2017 implement add dependants
             if (token instanceof CellRange) {
+                ((CellRange) token).addDependant(tempCell);
                 return ((CellRange) token).getValue();
             }
             return null;
         }
 
-        DoubleValue sum(List<Value> values) {
+        NumberValue sum(List<Value> values) {
             Double temp = 0.0;
             for (Value value : values) {
-                if (value instanceof DoubleValue)
+                if (value instanceof NumberValue)
                     temp += (Double) value.getValue();
                 else if (value instanceof BooleanValue)
                     temp += (Boolean) value.getValue() ? 1 : 0;
                 else if (value instanceof ListValue) {
                     ArrayList<ComparableValue> comparableValues = ((ListValue) value).getValue();
                     for (ComparableValue val : comparableValues) {
-                        if (val instanceof DoubleValue)
+                        if (val instanceof NumberValue)
                             temp += (Double) value.getValue();
                         else if (val instanceof BooleanValue)
                             temp += (Boolean) val.getValue() ? 1 : 0;
                     }
                 }
             }
-            return new DoubleValue(temp);
+            return new NumberValue(temp);
         }
 
-        DoubleValue average(List<Value> values) {
-            DoubleValue sum = sum(values);
-            DoubleValue count = count(values);
-            return new DoubleValue(sum.getValue() / count.getValue());
+        NumberValue average(List<Value> values) {
+            NumberValue sum = sum(values);
+            NumberValue count = count(values);
+            return new NumberValue(sum.getValue() / count.getValue());
         }
 
-        DoubleValue variance(List<Value> values) {
+        NumberValue variance(List<Value> values) {
             Double avg = average(values).getValue();
             Double temp = 0.0;
             int amt = count(values).getValue().intValue();
             for (Value value : values) {
-                if (value instanceof DoubleValue) {
+                if (value instanceof NumberValue) {
                     temp += ((Double) value.getValue() - avg) * ((Double) value.getValue() - avg);
                 } else if (value instanceof ListValue) {
                     ArrayList<ComparableValue> comparableValues = ((ListValue) value).getValue();
                     for (ComparableValue val : comparableValues) {
-                        if (val instanceof DoubleValue)
+                        if (val instanceof NumberValue)
                             temp += ((Double) val.getValue() - avg) * ((Double) val.getValue() - avg);
                     }
                 }
             }
-            return new DoubleValue(temp / amt);
+            return new NumberValue(temp / amt);
         }
 
-        DoubleValue stddev(List<Value> values) {
-            return new DoubleValue(Math.sqrt(variance(values).getValue()));
+        NumberValue stddev(List<Value> values) {
+            return new NumberValue(Math.sqrt(variance(values).getValue()));
         }
 
-        // FIXME: 01-Dec-17 Support listValue
         Value min(List<Value> values) {
             ArrayList<ComparableValue> val = new ArrayList<>();
             for (Value v : values) {
-                val.add((ComparableValue) v);
+                if (v instanceof ComparableValue)
+                    val.add((ComparableValue) v);
+                else if (v instanceof ListValue)
+                    val.addAll(((ListValue) v).getValue());
             }
             return Collections.min(val);
         }
 
-        // FIXME: 01-Dec-17 Support listValue
         Value max(List<Value> values) {
             ArrayList<ComparableValue> val = new ArrayList<>();
             for (Value v : values) {
@@ -398,25 +401,26 @@ public class Evaluator {
             return Collections.max(val);
         }
 
-        DoubleValue count(List<Value> values) {
+        NumberValue count(List<Value> values) {
             Integer count = 0;
             for (Value value : values) {
-                if (value instanceof DoubleValue) ++count;
+                if (value instanceof NumberValue) ++count;
                 else if (value instanceof ListValue) {
                     ArrayList<ComparableValue> comparableValues = ((ListValue) value).getValue();
                     for (ComparableValue val : comparableValues) {
-                        if (val instanceof DoubleValue) ++count;
+                        if (val instanceof NumberValue) ++count;
                     }
                 }
             }
-            return new DoubleValue(count);
+            return new NumberValue(count);
         }
 
 
-        DoubleValue countblank(List<Value> values) throws ParserException{
-            if(values.size() != 1) throw new ParserException("Too many arguments for this function");
-            if(!(values.get(0) instanceof ListValue)) throw new InvalidArgumentException("Wrong argument for this function");
-            return new DoubleValue(((ListValue) values.get(0)).size() - count(values).getValue());
+        NumberValue countblank(List<Value> values) throws ParserException {
+            if (values.size() != 1) throw new ParserException("Too many arguments for this function");
+            if (!(values.get(0) instanceof ListValue))
+                throw new InvalidArgumentException("Wrong argument for this function");
+            return new NumberValue(((ListValue) values.get(0)).size() - count(values).getValue());
         }
     }
 }

@@ -42,10 +42,26 @@ public class CellRange extends CellReference{
         return list;
     }
 
+    @Override
     public void addDependant(Cell cell) {
         for (int i = leftCol; i <= rightCol; ++i) {
             for (int j = topRow; j <= bottomRow; ++j) {
-                getTable().getCells().get(i).get(j).addDependant(cell);
+                Cell ref = getTable().getCells().get(i).get(j);
+                if(ref == null) getTable().addCell(i, j);
+                ref = getTable().getCells().get(i).get(j);
+                ref.addDependant(cell);
+            }
+        }
+    }
+
+    @Override
+    public void removeDependant(Cell cell) {
+        for (int i = leftCol; i <= rightCol; ++i) {
+            for (int j = topRow; j <= bottomRow; ++j) {
+                Cell ref = getTable().getCells().get(i).get(j);
+                if(ref == null) getTable().addCell(i, j);
+                ref = getTable().getCells().get(i).get(j);
+                ref.removeDependant(cell);
             }
         }
     }
@@ -65,5 +81,18 @@ public class CellRange extends CellReference{
     @Override
     public String toString() {
         return getTable() + ": (" + leftCol + ", " + topRow + "):(" + rightCol + ", " + bottomRow + ")";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CellRange cellRange = (CellRange) o;
+
+        if (getLeftCol() != cellRange.getLeftCol()) return false;
+        if (getRightCol() != cellRange.getRightCol()) return false;
+        if (getTopRow() != cellRange.getTopRow()) return false;
+        return getBottomRow() == cellRange.getBottomRow();
     }
 }

@@ -1,6 +1,7 @@
 package main;
 
 import exception.*;
+import function.CellReference;
 import function.Evaluator;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
@@ -14,6 +15,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import value.ComparableValue;
+import value.ErrorValue;
 import value.Value;
 
 import javax.swing.text.html.parser.Parser;
@@ -25,6 +27,7 @@ public class Cell extends TextField {
     ComparableValue value;
     String unprocessedValue;
     ArrayList<Cell> dependants;
+    ArrayList<CellReference> precedents;
 
 
     public Cell() {
@@ -64,33 +67,59 @@ public class Cell extends TextField {
     }
 
     public void compute() {
+        ComparableValue val;
         try {
-            setValue(Evaluator.evaluate(this));
+            val = Evaluator.evaluate(this);
         } catch (DivisionByZeroException e) {
-            setText("#DIV/0");
+            val = new ErrorValue(ErrorType.DIVZERO);
         } catch (InvalidArgumentException e) {
-            setText("#ARGS!");
+            val = new ErrorValue(ErrorType.ARGS);
         } catch (InvalidReferenceException e) {
-            setText("#REF!");
+            val = new ErrorValue(ErrorType.REF);
         } catch (InvalidTokenException e) {
-            setText("#NAME?");
+            val = new ErrorValue(ErrorType.NAME);
         } catch (InvalidValueException e) {
-            setText("#VALUE!");
+            val = new ErrorValue(ErrorType.VALUE);
         } catch (NumberException e) {
-            setText("#NUM!");
+            val = new ErrorValue(ErrorType.NUM);
         } catch (ParserException e) {
+            val = new ErrorValue(ErrorType.ERROR);
             System.out.println(e.getMessage());
         }
+        setValue(val);
+        setText(val.toString());
     }
 
 
     public void addDependant(Cell target) {
         this.dependants.add(target);
     }
+    public void removeDependant(Cell target){
+        this.dependants.remove(target);
+    }
+    public void removeAllDependants(){
+        this.dependants.clear();
+    }
+
+    public void addPrecedent(CellReference precedent){
+        this.precedents.add(precedent);
+    }
+    public void removePrecedent(CellReference precedent){
+        this.precedents.remove(precedent);
+    }
+    public void removeAllPrecedents(){
+        this.dependants.clear();
+    }
 
     public String getUnprocessedValue() {
         return unprocessedValue;
     }
 
+    public ArrayList<CellReference> getPrecedents() {
+        return new ArrayList<>(precedents);
+    }
 
+    public ArrayList<Cell> getDependants() {
+        return new ArrayList<>(dependants);
+    }
 }

@@ -44,7 +44,38 @@ public class CellSingle extends CellReference {
         return getTable() + ": " + col + ", " + row;
     }
 
+    @Override
     public void addDependant(Cell cell){
+        Cell ref = getTable().getCells().get(col).get(row);
+        if(ref == null) getTable().addCell(col, row);
+        ref = getTable().getCells().get(col).get(row);
+        ref.addDependant(cell);
+    }
 
+    @Override
+    public void removeDependant(Cell cell) {
+        Cell ref = getTable().getCells().get(col).get(row);
+        if(ref == null) getTable().addCell(col, row);
+        ref = getTable().getCells().get(col).get(row);
+        ref.removeDependant(cell);
+    }
+
+    public Cell getCell(){
+        Cell ref = getTable().getCells().get(col).get(row);
+        if(ref == null) getTable().addCell(col, row);
+        ref = getTable().getCells().get(col).get(row);
+        return ref;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CellSingle that = (CellSingle) o;
+
+        if (getCol() != that.getCol()) return false;
+        return getRow() == that.getRow();
     }
 }

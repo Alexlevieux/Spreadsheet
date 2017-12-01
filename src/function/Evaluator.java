@@ -14,8 +14,7 @@ import static function.Symbol.*;
 @SuppressWarnings({"Duplicates", "WeakerAccess", "UnusedReturnValue", "unused", "UnusedAssignment"})
 public class Evaluator {
     private static HashMap<String, Token> tokenMap = new HashMap<>();
-    private static Cell tempCell;
-
+    private static Computer computer;
     static {
         tokenMap.put("+", ADD);
         tokenMap.put("-", SUB);
@@ -124,9 +123,9 @@ public class Evaluator {
                             outputQueue.add(new StringValue(s.substring(1, s.length() - 1)));
                         else {
                             if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]")) {
-                                outputQueue.add(cellNameToReference(s));
+                                outputQueue.add(computer.cellNameToReference(s));
                             } else if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
-                                outputQueue.add(cellNameToRange(s));
+                                outputQueue.add(computer.cellNameToRange(s));
                             } else {
                                 throw new InvalidTokenException("Invalid token: " + s);
                             }
@@ -140,88 +139,60 @@ public class Evaluator {
     }
 
     public static ComparableValue evaluate(Cell cell) throws ParserException {
-        tempCell = cell;
+        computer = new Computer(cell);
         ComparableValue result = evaluate(cell.getUnprocessedValue());
-        tempCell = null;
         return result;
     }
 
     public static ComparableValue evaluate(String expression) throws ParserException {
         ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
         ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
-        Computer c = new Computer(tokens);
-        return (ComparableValue) c.compute();
-    }
-
-    public static CellSingle cellNameToReference(String text) throws ParserException {
-        String[] sheet_cell = text.split("!");
-        int rowNumber, colNumber;
-        String cellName, sheetName;
-        Table tableRef = null;
-        if (sheet_cell.length == 1) {
-            cellName = sheet_cell[0];
-            tableRef = (Table) tempCell.getParent();
-        } else if (sheet_cell.length == 2) {
-            throw new UnsupportedOperationException("Referencing from another sheet is not yet supported");
-        } else throw new ParserException("Invalid cell name");
-        String[] cellTokens = cellName.split("(?<=[A-Za-z])(?=[0-9])");
-        if (cellTokens.length != 2) throw new ParserException("Invalid cell name");
-        String colLetter = cellTokens[0].toUpperCase();
-        rowNumber = Integer.valueOf(cellTokens[1]);
-        colNumber = 0;
-        for (int i = 0; i < colLetter.length(); ++i) {
-            colNumber = colNumber * 26 + (colLetter.charAt(i) - 'A' + 1);
-        }
-        return new CellSingle(tableRef, colNumber, rowNumber);
-    }
-
-    public static CellRange cellNameToRange(String text) throws ParserException {
-        String[] sheet_cell = text.split("!");
-        int rowNumber1, colNumber1;
-        int rowNumber2, colNumber2;
-        String cellRangeName, sheetName;
-        Table tableRef = null;
-        if (sheet_cell.length == 1) {
-            cellRangeName = sheet_cell[0];
-            tableRef = (Table) tempCell.getParent();
-        } else if (sheet_cell.length == 2) {
-            throw new UnsupportedOperationException("Referencing from another sheet is not yet supported");
-        } else throw new ParserException("Invalid cell name");
-        String[] cellTokens = cellRangeName.split("(?<=[A-Za-z])(?=[0-9])|:");
-        System.out.println(Arrays.toString(cellTokens));
-        if (cellTokens.length != 4) throw new ParserException("Invalid cell name");
-        String colLetter1 = cellTokens[0].toUpperCase();
-        String colLetter2 = cellTokens[2].toUpperCase();
-        rowNumber1 = Integer.valueOf(cellTokens[1]);
-        rowNumber2 = Integer.valueOf(cellTokens[3]);
-        colNumber1 = 0;
-        for (int i = 0; i < colLetter1.length(); ++i) {
-            colNumber1 = colNumber1 * 26 + (colLetter1.charAt(i) - 'A' + 1);
-        }
-        colNumber2 = 0;
-        for (int i = 0; i < colLetter2.length(); ++i) {
-            colNumber2 = colNumber2 * 26 + (colLetter2.charAt(i) - 'A' + 1);
-        }
-        return new CellRange(
-                tableRef,
-                Math.min(colNumber1, colNumber2),
-                Math.min(rowNumber1, rowNumber2),
-                Math.max(colNumber1, colNumber2),
-                Math.max(rowNumber1, rowNumber2)
-        );
+        computer.setPostFix(tokens);
+        return (ComparableValue) computer.compute();
     }
 
     @SuppressWarnings("unchecked")
     private static class Computer {
+        private Cell tempCell;
         private List<Token> postFix;
+        private List<CellReference> newPrecedents;
+        private List<CellReference> oldPrecedents;
 
-        Computer(List<Token> postfix) {
-            this.postFix = postfix;
+        Computer(Cell cell) {
+            tempCell = cell;
+            oldPrecedents = cell.getPrecedents();
+            newPrecedents = new ArrayList<>();
+        }
+
+        public void setPostFix(List<Token> postFix) {
+            this.postFix = postFix;
         }
 
         Value compute() throws ParserException {
-            return call(postFix.get(postFix.size() - 1));
+            Value result = null;
+            List<CellReference> tempPrecedent = new ArrayList<>(oldPrecedents);
+            try{
+                result = call(postFix.get(postFix.size() - 1));
+            } catch(ParserException e){
+                for(CellReference ref : tempPrecedent)
+                    ref.removeDependant(tempCell);
+                tempCell.removeAllPrecedents();
+                throw e;
+            }
+
+            tempPrecedent.removeAll(newPrecedents);
+            for(CellReference ref : tempPrecedent) {
+                ref.removeDependant(tempCell);
+                tempCell.removePrecedent(ref);
+            }
+            newPrecedents.removeAll(oldPrecedents);
+            for(CellReference ref : newPrecedents){
+                ref.addDependant(tempCell);
+                tempCell.addPrecedent(ref);
+            }
+            return result;
         }
+
 
         Value call(Token token) throws ParserException {
             postFix.remove(postFix.size() - 1);
@@ -232,6 +203,8 @@ public class Evaluator {
                     if (op.getArgs() == 2) {
                         Value rightOperand = call(postFix.get(postFix.size() - 1));
                         Value leftOperand = call(postFix.get(postFix.size() - 1));
+                        if(leftOperand instanceof ErrorValue) return leftOperand;
+                        if(rightOperand instanceof ErrorValue) return rightOperand;
                         switch (op) {
                             case ADD:
                                 return new NumberValue(((NumberValue) leftOperand).getValue()
@@ -252,9 +225,9 @@ public class Evaluator {
                                 Double right = ((NumberValue) rightOperand).getValue();
                                 Double ans = Math.pow(left, right);
                                 if (left < 0 && Math.floor(right) - right > 1e-9)
-                                    throw new NumberException("Root of negative number");
+                                    return new ErrorValue(ErrorType.NUM);
                                 if (left == 0 && right == 0)
-                                    throw new NumberException("0 to the 0th power");
+                                    return new ErrorValue(ErrorType.NUM);
                                 return new NumberValue(ans);
                             case CONCAT:
                                 return new StringValue(leftOperand.getValue().toString()
@@ -281,12 +254,13 @@ public class Evaluator {
                                                 .compareTo(((ComparableValue) rightOperand).getValue()) <= 0);
                         }
                     } else if (op.getArgs() == 1) {
-                        value.Value operand = call(postFix.get(postFix.size() - 1));
+                        Value operand = call(postFix.get(postFix.size() - 1));
+                        if(operand instanceof ErrorValue) return operand;
                         if (op == PERCENT)
                             return new NumberValue(((Double) (operand.getValue())) / 100);
                     }
                 } catch (NumberFormatException e) {
-                    throw new ParserException("Invalid numerical operand for numerical operator");
+                    throw new InvalidValueException("Invalid Operand");
                 } catch (ClassCastException e) {
                     throw new InvalidValueException("Invalid operand");
                 }
@@ -297,6 +271,7 @@ public class Evaluator {
                 ArrayList<Value> values = new ArrayList<>();
                 for (int i = 0; i < args; ++i) {
                     Value arg = call(postFix.get(postFix.size() - 1));
+                    if(arg instanceof ErrorValue) return arg;
                     values.add(arg);
                 }
                 switch (function.getFunctionType()) {
@@ -321,11 +296,11 @@ public class Evaluator {
                 }
             }
             if (token instanceof CellSingle) {
-                ((CellSingle) token).addDependant(tempCell);
+                newPrecedents.add((CellSingle) token);
                 return ((CellSingle) token).getValue();
             }
             if (token instanceof CellRange) {
-                ((CellRange) token).addDependant(tempCell);
+                newPrecedents.add((CellRange) token);
                 return ((CellRange) token).getValue();
             }
             return null;
@@ -351,9 +326,10 @@ public class Evaluator {
             return new NumberValue(temp);
         }
 
-        NumberValue average(List<Value> values) {
+        NumberValue average(List<Value> values){
             NumberValue sum = sum(values);
             NumberValue count = count(values);
+            if(count.getValue() == 0) return new NumberValue(0);
             return new NumberValue(sum.getValue() / count.getValue());
         }
 
@@ -415,12 +391,69 @@ public class Evaluator {
             return new NumberValue(count);
         }
 
-
         NumberValue countblank(List<Value> values) throws ParserException {
             if (values.size() != 1) throw new ParserException("Too many arguments for this function");
             if (!(values.get(0) instanceof ListValue))
                 throw new InvalidArgumentException("Wrong argument for this function");
             return new NumberValue(((ListValue) values.get(0)).size() - count(values).getValue());
+        }
+
+        public CellSingle cellNameToReference(String text) throws ParserException {
+            String[] sheet_cell = text.split("!");
+            int rowNumber, colNumber;
+            String cellName, sheetName;
+            Table tableRef = null;
+            if (sheet_cell.length == 1) {
+                cellName = sheet_cell[0];
+                tableRef = (Table) tempCell.getParent();
+            } else if (sheet_cell.length == 2) {
+                throw new UnsupportedOperationException("Referencing from another sheet is not yet supported");
+            } else throw new ParserException("Invalid cell name");
+            String[] cellTokens = cellName.split("(?<=[A-Za-z])(?=[0-9])");
+            if (cellTokens.length != 2) throw new ParserException("Invalid cell name");
+            String colLetter = cellTokens[0].toUpperCase();
+            rowNumber = Integer.valueOf(cellTokens[1]);
+            colNumber = 0;
+            for (int i = 0; i < colLetter.length(); ++i) {
+                colNumber = colNumber * 26 + (colLetter.charAt(i) - 'A' + 1);
+            }
+            return new CellSingle(tableRef, colNumber, rowNumber);
+        }
+
+        public CellRange cellNameToRange(String text) throws ParserException {
+            String[] sheet_cell = text.split("!");
+            int rowNumber1, colNumber1;
+            int rowNumber2, colNumber2;
+            String cellRangeName, sheetName;
+            Table tableRef = null;
+            if (sheet_cell.length == 1) {
+                cellRangeName = sheet_cell[0];
+                tableRef = (Table) tempCell.getParent();
+            } else if (sheet_cell.length == 2) {
+                throw new UnsupportedOperationException("Referencing from another sheet is not yet supported");
+            } else throw new ParserException("Invalid cell name");
+            String[] cellTokens = cellRangeName.split("(?<=[A-Za-z])(?=[0-9])|:");
+            System.out.println(Arrays.toString(cellTokens));
+            if (cellTokens.length != 4) throw new ParserException("Invalid cell name");
+            String colLetter1 = cellTokens[0].toUpperCase();
+            String colLetter2 = cellTokens[2].toUpperCase();
+            rowNumber1 = Integer.valueOf(cellTokens[1]);
+            rowNumber2 = Integer.valueOf(cellTokens[3]);
+            colNumber1 = 0;
+            for (int i = 0; i < colLetter1.length(); ++i) {
+                colNumber1 = colNumber1 * 26 + (colLetter1.charAt(i) - 'A' + 1);
+            }
+            colNumber2 = 0;
+            for (int i = 0; i < colLetter2.length(); ++i) {
+                colNumber2 = colNumber2 * 26 + (colLetter2.charAt(i) - 'A' + 1);
+            }
+            return new CellRange(
+                    tableRef,
+                    Math.min(colNumber1, colNumber2),
+                    Math.min(rowNumber1, rowNumber2),
+                    Math.max(colNumber1, colNumber2),
+                    Math.max(rowNumber1, rowNumber2)
+            );
         }
     }
 }

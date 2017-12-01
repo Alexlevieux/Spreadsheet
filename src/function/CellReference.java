@@ -1,6 +1,7 @@
 package function;
 
 import function.Token;
+import main.Cell;
 import main.Table;
 import value.Value;
 
@@ -12,4 +13,6 @@ public abstract class CellReference implements Token{
     public Table getTable() {
         return table;
     }
+    public abstract void addDependant(Cell cell);
+    public abstract void removeDependant(Cell cell);
 }

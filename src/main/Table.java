@@ -119,6 +119,6 @@ public class Table extends GridPane {
     }
 
     public void addCell(int col, int row) {
-        cells.get(col).add(row, new Cell());
+        cells.get(col).set(row, new Cell());
     }
 }

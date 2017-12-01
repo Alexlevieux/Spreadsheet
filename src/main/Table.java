@@ -116,4 +116,8 @@ public class Table extends GridPane {
     public ArrayList<ArrayList<Cell>> getCells() {
         return cells;
     }
+
+    public void addCell(int row, int col) {
+        cells.get(row).add(col,new Cell());
+    }
 }

@@ -1,24 +1,29 @@
 package main;
 
+import function.Evaluator;
+import function.ParserException;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.property.Property;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.scene.Cursor;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
+import value.Value;
 
+import javax.swing.text.html.parser.Parser;
 import java.util.ArrayList;
 import java.util.Set;
 
 
-public class Cell extends TextField implements Observable{
-    Property value;
-    String temp;
-    String computedValue;
-    Set<Cell> references;
+public class Cell extends TextField {
+    Value value;
+    String valueUnprocessed;
+    ArrayList<Cell> dependants;
 
 
     public Cell() {
@@ -26,15 +31,11 @@ public class Cell extends TextField implements Observable{
         setEditable(false);
         setCursor(Cursor.DEFAULT);
         setStyle("-fx-background-radius: 0");
-        setOnAction(e -> {
-            temp = getText();
-            computedValue = temp;
-        });
-
         setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER && isEditable()) {
              //   System.out.println(getText());
-                setValue(getText());
+             //   setValue();
+
              //   System.out.println(getValue());
                 setEditable(false);
             } else if (event.getCode() == KeyCode.ENTER && !isEditable()) {
@@ -52,36 +53,26 @@ public class Cell extends TextField implements Observable{
     }
 
 
-    public Object getValue() {
+    public Value getValue() {
+        return value;
+    }
+
+    public void setValue(Value value) {
+        this.value = value;
+    }
+
+    public void compute() {
         try {
-            SimpleDoubleProperty d = (SimpleDoubleProperty) valueProperty();
-            return d.get();
-        } catch (ClassCastException e) {
-            SimpleStringProperty d = (SimpleStringProperty) valueProperty();
-            return d.get();
+            Evaluator.evaluate(this);
+        } catch(ParserException e) {
+            System.out.println("Parser error!");
         }
     }
 
-    public Property valueProperty() {
-        try {
-            SimpleDoubleProperty d = (SimpleDoubleProperty) value;
-            return d;
-        }  catch (ClassCastException e) {
-            SimpleStringProperty s  = (SimpleStringProperty) value;
-            return s;
-        }
-    }
-
-    public void setValue(String value) {
-        try {
-            this.value = new SimpleDoubleProperty(Double.parseDouble(value));
-        } catch (NumberFormatException e) {
-            this.value = new SimpleStringProperty(value);
-        };
-    }
 
     public void addRef(Cell target) {
-        this.references.add(target);
+        this.dependants.add(target);
     }
+
 
 }

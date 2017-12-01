@@ -1,5 +1,7 @@
 package function;
 
+import exception.ParserException;
+
 public class Function implements Token {
     private FunctionType functionType;
     private int args;

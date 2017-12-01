@@ -1,7 +1,7 @@
 package function;
 
 public enum FunctionType {
-    SUM, AVERAGE, MIN, MAX, COUNT, COUNTBLANK, VAR, STDDEV;
+    SUM, AVERAGE, MIN, MAX, COUNT, COUNTBLANK(1), VAR, STDDEV;
     private int maxArgs;
     FunctionType(int maxArgs){
         setMaxArgs(maxArgs);

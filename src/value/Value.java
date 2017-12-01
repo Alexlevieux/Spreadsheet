@@ -2,17 +2,9 @@ package value;
 
 import function.Token;
 
-public abstract class Value implements Comparable, Token {
-    public abstract int getTypeID();
-    public abstract Comparable getValue();
-
-    @Override
-    public int compareTo(Object o) {
-        Value otherValue = (Value)o;
-        return getTypeID() != otherValue.getTypeID() ?
-                getTypeID() - otherValue.getTypeID() :
-                getValue().compareTo(otherValue.getValue());
-    }
+public abstract class Value implements Token {
+    public abstract Object getValue();
+    public abstract void setValue(Object o);
 
     @Override
     public boolean equals(Object o) {

@@ -1,6 +1,6 @@
 package value;
 
-public class StringValue extends Value {
+public class StringValue extends ComparableValue {
     private String value;
 
     public StringValue(String value) {
@@ -17,7 +17,8 @@ public class StringValue extends Value {
         return value;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    @Override
+    public void setValue(Comparable value) {
+        this.value = (String)value;
     }
 }

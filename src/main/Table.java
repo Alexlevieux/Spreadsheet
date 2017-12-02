@@ -119,7 +119,7 @@ public class Table extends GridPane {
     }
 
     public void addCell(int col, int row) {
-        if (cells.get(col).get(row) != null) {
+        if (cells.get(col).get(row) == null) {
             Cell temp = new Cell();
             cells.get(col).set(row, temp);
             add(cells.get(col).get(row), col, row);

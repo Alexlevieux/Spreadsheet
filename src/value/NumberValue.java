@@ -6,7 +6,8 @@ public class NumberValue extends ComparableValue {
     public NumberValue(Double value) {
         setValue(value);
     }
-    public NumberValue(Integer value){
+
+    public NumberValue(Integer value) {
         this(value.doubleValue());
     }
 
@@ -27,6 +28,9 @@ public class NumberValue extends ComparableValue {
 
     @Override
     public String toString() {
-        return String.valueOf(Math.floor(value) - value < 1e-9 ? value.intValue() : value);
+        if (Math.abs(Math.floor(value) - value) < 1e-9)
+            return String.valueOf(value.intValue());
+        else
+            return String.valueOf(value);
     }
 }

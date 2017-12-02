@@ -15,6 +15,7 @@ import static function.Symbol.*;
 public class Evaluator {
     private static HashMap<String, Token> tokenMap = new HashMap<>();
     private static Computer computer;
+
     static {
         tokenMap.put("+", ADD);
         tokenMap.put("-", SUB);
@@ -93,19 +94,33 @@ public class Evaluator {
                     }
                     operatorStack.push(token);
                 } else if (token == Symbol.RIGHT_P) {
-                    while (!operatorStack.empty() && operatorStack.peek() != Symbol.LEFT_P) {
-                        outputQueue.add(operatorStack.pop());
+                    boolean leftParenthesesExists = false;
+                    while (!operatorStack.empty()) {
+                        if(operatorStack.peek() == Symbol.LEFT_P){
+                            leftParenthesesExists = true;
+                            break;
+                        } else outputQueue.add(operatorStack.pop());
                     }
-                    operatorStack.pop();
-                    if (!operatorStack.empty() && operatorStack.peek() instanceof Function) {
-                        outputQueue.add(operatorStack.pop());
-                        functionStack.pop();
+                    if(!leftParenthesesExists)
+                        throw new ParserException("Mismatched parentheses");
+                    else {
+                        operatorStack.pop();
+                        if (!operatorStack.empty() && operatorStack.peek() instanceof Function) {
+                            outputQueue.add(operatorStack.pop());
+                            functionStack.pop();
+                        }
                     }
                 } else if (token == Symbol.COMMA) {
                     if (!functionStack.empty() && functionStack.peek() != null) functionStack.peek().incArgs();
-                    while (!operatorStack.empty() && operatorStack.peek() != Symbol.LEFT_P) {
-                        outputQueue.add(operatorStack.pop());
+                    boolean leftParenthesesExists = false;
+                    while (!operatorStack.empty()) {
+                        if(operatorStack.peek() == Symbol.LEFT_P){
+                            leftParenthesesExists = true;
+                            break;
+                        } else outputQueue.add(operatorStack.pop());
                     }
+                    if(!leftParenthesesExists)
+                        throw new ParserException("Misplaced comma or mismatched parentheses");
                 }
             } else {
                 if (FunctionType.contains(s.toUpperCase())) {
@@ -127,14 +142,18 @@ public class Evaluator {
                             } else if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
                                 outputQueue.add(computer.cellNameToRange(s));
                             } else {
-                                throw new InvalidTokenException("Invalid token: " + s);
+                                outputQueue.add(new ErrorValue(ErrorType.VALUE));
                             }
                         }
                     }
                 }
             }
         }
-        while (!operatorStack.empty()) outputQueue.add(operatorStack.pop());
+        while (!operatorStack.empty()) {
+            if(operatorStack.peek() == Symbol.LEFT_P)
+                throw new ParserException("Mismatched parentheses");
+            outputQueue.add(operatorStack.pop());
+        }
         return outputQueue;
     }
 
@@ -145,10 +164,25 @@ public class Evaluator {
     }
 
     public static ComparableValue evaluate(String expression) throws ParserException {
-        ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
-        ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
-        computer.setPostFix(tokens);
-        return (ComparableValue) computer.compute();
+        if(expression.isEmpty()) return null;
+        else if(expression.charAt(0) == '=') {
+            expression = expression.substring(1,expression.length());
+            ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
+            ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
+            computer.setPostFix(tokens);
+            return (ComparableValue) computer.compute();
+        } else {
+            if(expression.toUpperCase().equals("TRUE"))
+                return new BooleanValue(true);
+            if(expression.toUpperCase().equals("FALSE"))
+                return new BooleanValue(false);
+            try{
+                Double d = Double.valueOf(expression);
+                return new NumberValue(d);
+            } catch (NumberFormatException e){
+                return new StringValue(expression);
+            }
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -171,28 +205,27 @@ public class Evaluator {
         Value compute() throws ParserException {
             Value result = null;
             List<CellReference> tempPrecedent = new ArrayList<>(oldPrecedents);
-            try{
+            try {
                 result = call(postFix.get(postFix.size() - 1));
-            } catch(ParserException e){
-                for(CellReference ref : tempPrecedent)
+            } catch (ParserException e) {
+                for (CellReference ref : tempPrecedent)
                     ref.removeDependant(tempCell);
                 tempCell.removeAllPrecedents();
                 throw e;
             }
 
             tempPrecedent.removeAll(newPrecedents);
-            for(CellReference ref : tempPrecedent) {
+            for (CellReference ref : tempPrecedent) {
                 ref.removeDependant(tempCell);
                 tempCell.removePrecedent(ref);
             }
             newPrecedents.removeAll(oldPrecedents);
-            for(CellReference ref : newPrecedents){
+            for (CellReference ref : newPrecedents) {
                 ref.addDependant(tempCell);
                 tempCell.addPrecedent(ref);
             }
             return result;
         }
-
 
         Value call(Token token) throws ParserException {
             postFix.remove(postFix.size() - 1);
@@ -203,8 +236,8 @@ public class Evaluator {
                     if (op.getArgs() == 2) {
                         Value rightOperand = call(postFix.get(postFix.size() - 1));
                         Value leftOperand = call(postFix.get(postFix.size() - 1));
-                        if(leftOperand instanceof ErrorValue) return leftOperand;
-                        if(rightOperand instanceof ErrorValue) return rightOperand;
+                        if (leftOperand instanceof ErrorValue) return leftOperand;
+                        if (rightOperand instanceof ErrorValue) return rightOperand;
                         switch (op) {
                             case ADD:
                                 return new NumberValue(((NumberValue) leftOperand).getValue()
@@ -217,17 +250,17 @@ public class Evaluator {
                                         * ((NumberValue) rightOperand).getValue());
                             case DIV:
                                 if (((NumberValue) rightOperand).getValue() == 0)
-                                    throw new DivisionByZeroException("");
+                                    return new ErrorValue(ErrorType.DIVZERO);
                                 return new NumberValue(((NumberValue) leftOperand).getValue()
                                         / ((NumberValue) rightOperand).getValue());
                             case EXP:
                                 Double left = ((NumberValue) leftOperand).getValue();
                                 Double right = ((NumberValue) rightOperand).getValue();
-                                Double ans = Math.pow(left, right);
-                                if (left < 0 && Math.floor(right) - right > 1e-9)
+                                if (left < 0 && Math.abs(Math.floor(right) - right) > 1e-9)
                                     return new ErrorValue(ErrorType.NUM);
                                 if (left == 0 && right == 0)
                                     return new ErrorValue(ErrorType.NUM);
+                                Double ans = Math.pow(left, right);
                                 return new NumberValue(ans);
                             case CONCAT:
                                 return new StringValue(leftOperand.getValue().toString()
@@ -255,25 +288,25 @@ public class Evaluator {
                         }
                     } else if (op.getArgs() == 1) {
                         Value operand = call(postFix.get(postFix.size() - 1));
-                        if(operand instanceof ErrorValue) return operand;
+                        if (operand instanceof ErrorValue) return operand;
                         if (op == PERCENT)
                             return new NumberValue(((Double) (operand.getValue())) / 100);
                     }
-                } catch (NumberFormatException e) {
-                    throw new InvalidValueException("Invalid Operand");
                 } catch (ClassCastException e) {
-                    throw new InvalidValueException("Invalid operand");
+                    return new ErrorValue(ErrorType.VALUE);
                 }
             }
             if (token instanceof Function) {
                 Function function = (Function) token;
                 int args = function.getArgs();
                 ArrayList<Value> values = new ArrayList<>();
+                ErrorValue tempError = null;
                 for (int i = 0; i < args; ++i) {
                     Value arg = call(postFix.get(postFix.size() - 1));
-                    if(arg instanceof ErrorValue) return arg;
+                    if (arg instanceof ErrorValue) tempError = (ErrorValue) arg;
                     values.add(arg);
                 }
+                if (tempError != null) return tempError;
                 switch (function.getFunctionType()) {
                     case SUM:
                         return sum(values);
@@ -326,10 +359,10 @@ public class Evaluator {
             return new NumberValue(temp);
         }
 
-        NumberValue average(List<Value> values){
+        NumberValue average(List<Value> values) {
             NumberValue sum = sum(values);
             NumberValue count = count(values);
-            if(count.getValue() == 0) return new NumberValue(0);
+            if (count.getValue() == 0) return new NumberValue(0);
             return new NumberValue(sum.getValue() / count.getValue());
         }
 
@@ -355,26 +388,36 @@ public class Evaluator {
             return new NumberValue(Math.sqrt(variance(values).getValue()));
         }
 
-        Value min(List<Value> values) {
-            ArrayList<ComparableValue> val = new ArrayList<>();
+        NumberValue min(List<Value> values) {
+            ArrayList<NumberValue> val = new ArrayList<>();
             for (Value v : values) {
-                if (v instanceof ComparableValue)
-                    val.add((ComparableValue) v);
-                else if (v instanceof ListValue)
-                    val.addAll(((ListValue) v).getValue());
+                if (v instanceof NumberValue)
+                    val.add((NumberValue) v);
+                else if (v instanceof ListValue) {
+                    ArrayList<ComparableValue> arr = ((ListValue) v).getValue();
+                    for (Value vv : arr) {
+                        if (vv instanceof NumberValue)
+                            val.add((NumberValue) vv);
+                    }
+                }
             }
-            return Collections.min(val);
+            return val.isEmpty() ? new NumberValue(0) : Collections.min(val);
         }
 
-        Value max(List<Value> values) {
-            ArrayList<ComparableValue> val = new ArrayList<>();
+        NumberValue max(List<Value> values) {
+            ArrayList<NumberValue> val = new ArrayList<>();
             for (Value v : values) {
-                if (v instanceof ComparableValue)
-                    val.add((ComparableValue) v);
-                else if (v instanceof ListValue)
-                    val.addAll(((ListValue) v).getValue());
+                if (v instanceof NumberValue)
+                    val.add((NumberValue) v);
+                else if (v instanceof ListValue) {
+                    ArrayList<ComparableValue> arr = ((ListValue) v).getValue();
+                    for (Value vv : arr) {
+                        if (vv instanceof NumberValue)
+                            val.add((NumberValue) vv);
+                    }
+                }
             }
-            return Collections.max(val);
+            return val.isEmpty() ? new NumberValue(0) : Collections.max(val);
         }
 
         NumberValue count(List<Value> values) {
@@ -392,7 +435,7 @@ public class Evaluator {
         }
 
         NumberValue countblank(List<Value> values) throws ParserException {
-            if (values.size() != 1) throw new ParserException("Too many arguments for this function");
+            if (values.size() != 1) throw new InvalidArgumentException("Too many arguments for this function");
             if (!(values.get(0) instanceof ListValue))
                 throw new InvalidArgumentException("Wrong argument for this function");
             return new NumberValue(((ListValue) values.get(0)).size() - count(values).getValue());

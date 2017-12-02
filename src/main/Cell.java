@@ -11,6 +11,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.Cursor;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
@@ -34,15 +35,24 @@ public class Cell extends TextField {
         setText("");
         setEditable(false);
         setCursor(Cursor.DEFAULT);
+        dependants = new ArrayList<>();
+        precedents = new ArrayList<>();
         setStyle("-fx-background-radius: 0");
+        setOnAction(e -> {
+
+        });
         setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER && isEditable()) {
-                //   System.out.println(getText());
-                //   setValue();
-
-                //   System.out.println(getValue());
+                unprocessedValue = getText();
+                compute();
+//                   System.out.println(getText());
+//                   setValue();
+//
+//                   System.out.println(getValue());
                 setEditable(false);
             } else if (event.getCode() == KeyCode.ENTER && !isEditable()) {
+                setText(unprocessedValue);
+                selectAll();
                 setEditable(true);
             }
         });
@@ -63,51 +73,45 @@ public class Cell extends TextField {
 
     public void setValue(ComparableValue value) {
         this.value = value;
-        setText(this.value.toString());
+        if(value == null) setText("");
+        else setText(this.value.toString());
     }
 
     public void compute() {
-        ComparableValue val;
+        ComparableValue val = null;
         try {
             val = Evaluator.evaluate(this);
-        } catch (DivisionByZeroException e) {
-            val = new ErrorValue(ErrorType.DIVZERO);
-        } catch (InvalidArgumentException e) {
-            val = new ErrorValue(ErrorType.ARGS);
-        } catch (InvalidReferenceException e) {
-            val = new ErrorValue(ErrorType.REF);
-        } catch (InvalidTokenException e) {
-            val = new ErrorValue(ErrorType.NAME);
-        } catch (InvalidValueException e) {
-            val = new ErrorValue(ErrorType.VALUE);
-        } catch (NumberException e) {
-            val = new ErrorValue(ErrorType.NUM);
+            setValue(val);
         } catch (ParserException e) {
-            val = new ErrorValue(ErrorType.ERROR);
-            System.out.println(e.getMessage());
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Invalid formula");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
         }
-        setValue(val);
-        setText(val.toString());
     }
 
 
     public void addDependant(Cell target) {
         this.dependants.add(target);
     }
-    public void removeDependant(Cell target){
+
+    public void removeDependant(Cell target) {
         this.dependants.remove(target);
     }
-    public void removeAllDependants(){
+
+    public void removeAllDependants() {
         this.dependants.clear();
     }
 
-    public void addPrecedent(CellReference precedent){
+    public void addPrecedent(CellReference precedent) {
         this.precedents.add(precedent);
     }
-    public void removePrecedent(CellReference precedent){
+
+    public void removePrecedent(CellReference precedent) {
         this.precedents.remove(precedent);
     }
-    public void removeAllPrecedents(){
+
+    public void removeAllPrecedents() {
         this.dependants.clear();
     }
 

@@ -16,8 +16,6 @@ public class Main extends Application {
         stage.show();
     }
     public static void main(String[] args) throws ParserException {
-        System.out.println("abc".substring(1,2));
-        System.out.println(Evaluator.evaluate("\"abc\"&\"def\"+5").getValue());
         launch(args);
     }
 

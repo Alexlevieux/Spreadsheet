@@ -45,10 +45,6 @@ public class Cell extends TextField {
             if (event.getCode() == KeyCode.ENTER && isEditable()) {
                 unprocessedValue = getText();
                 compute();
-//                   System.out.println(getText());
-//                   setValue();
-//
-//                   System.out.println(getValue());
                 setEditable(false);
             } else if (event.getCode() == KeyCode.ENTER && !isEditable()) {
                 setText(unprocessedValue);
@@ -59,7 +55,9 @@ public class Cell extends TextField {
 
         setOnMouseClicked((MouseEvent e) -> {
             if (isFocused()) {
+                setText(unprocessedValue);
                 setEditable(true);
+                selectAll();
             } else {
                 requestFocus();
             }
@@ -72,9 +70,17 @@ public class Cell extends TextField {
     }
 
     public void setValue(ComparableValue value) {
-        this.value = value;
-        if(value == null) setText("");
-        else setText(this.value.toString());
+        if (value == null) {
+            if (this.value != null) {
+                this.value = value;
+                notifyDependants();
+            }
+            setText("");
+        } else if (!value.equals(this.value)) {
+            this.value = value;
+            notifyDependants();
+            setText(this.value.toString());
+        }
     }
 
     public void compute() {
@@ -125,5 +131,11 @@ public class Cell extends TextField {
 
     public ArrayList<Cell> getDependants() {
         return new ArrayList<>(dependants);
+    }
+
+    public void notifyDependants() {
+        for (Cell c : dependants) {
+            c.compute();
+        }
     }
 }

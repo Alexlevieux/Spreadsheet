@@ -29,8 +29,8 @@ public class CellRange extends CellReference{
 
     public ListValue getValue() {
         ListValue list = new ListValue();
-        for (int i = leftCol; i <= rightCol; ++i) {
-            for (int j = topRow; j <= bottomRow; ++j) {
+        for (int i = leftCol-1; i < rightCol; ++i) {
+            for (int j = topRow-1; j < bottomRow; ++j) {
                 Cell cell = getTable().getCells().get(i).get(j);
                 if (cell == null) {
                     getTable().addCell(i, j);
@@ -44,8 +44,8 @@ public class CellRange extends CellReference{
 
     @Override
     public void addDependant(Cell cell) {
-        for (int i = leftCol; i <= rightCol; ++i) {
-            for (int j = topRow; j <= bottomRow; ++j) {
+        for (int i = leftCol-1; i < rightCol; ++i) {
+            for (int j = topRow-1; j < bottomRow; ++j) {
                 Cell ref = getTable().getCells().get(i).get(j);
                 if(ref == null) getTable().addCell(i, j);
                 ref = getTable().getCells().get(i).get(j);
@@ -56,8 +56,8 @@ public class CellRange extends CellReference{
 
     @Override
     public void removeDependant(Cell cell) {
-        for (int i = leftCol; i <= rightCol; ++i) {
-            for (int j = topRow; j <= bottomRow; ++j) {
+        for (int i = leftCol-1; i < rightCol; ++i) {
+            for (int j = topRow-1; j < bottomRow; ++j) {
                 Cell ref = getTable().getCells().get(i).get(j);
                 if(ref == null) getTable().addCell(i, j);
                 ref = getTable().getCells().get(i).get(j);
@@ -72,6 +72,7 @@ public class CellRange extends CellReference{
         this.rightCol = Math.max(leftCol, rightCol);
         this.topRow = Math.min(topRow, bottomRow);
         this.bottomRow = Math.max(topRow, bottomRow);
+        System.out.println(this);
     }
 
     public int getSize() {

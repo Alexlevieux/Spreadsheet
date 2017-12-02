@@ -11,6 +11,8 @@ import java.util.*;
 import static function.Operator.*;
 import static function.Symbol.*;
 
+// TODO: 02-Dec-17 Fix cell range evaluation + dependants/precedents
+
 @SuppressWarnings({"Duplicates", "WeakerAccess", "UnusedReturnValue", "unused", "UnusedAssignment"})
 public class Evaluator {
     private static HashMap<String, Token> tokenMap = new HashMap<>();
@@ -350,7 +352,7 @@ public class Evaluator {
                     ArrayList<ComparableValue> comparableValues = ((ListValue) value).getValue();
                     for (ComparableValue val : comparableValues) {
                         if (val instanceof NumberValue)
-                            temp += (Double) value.getValue();
+                            temp += (Double) val.getValue();
                         else if (val instanceof BooleanValue)
                             temp += (Boolean) val.getValue() ? 1 : 0;
                     }

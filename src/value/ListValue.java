@@ -7,6 +7,10 @@ import java.util.List;
 public class ListValue extends IncomparableValue {
     private ArrayList<ComparableValue> list;
 
+    public ListValue(){
+        list = new ArrayList<>();
+    }
+
     @Override
     public ArrayList<ComparableValue> getValue() {
         return list;

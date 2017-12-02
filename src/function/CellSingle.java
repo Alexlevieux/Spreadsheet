@@ -47,25 +47,25 @@ public class CellSingle extends CellReference {
     @Override
     public void addDependant(Cell cell){
         System.out.println(getTable());
-        Cell ref = getTable().getCells().get(col).get(row);
-        if(ref == null) getTable().addCell(col, row);
-        ref = getTable().getCells().get(col).get(row);
+        Cell ref = getTable().getCells().get(col-1).get(row-1);
+        if(ref == null) getTable().addCell(col-1, row-1);
+        ref = getTable().getCells().get(col-1).get(row-1);
         System.out.println(ref);
         ref.addDependant(cell);
     }
 
     @Override
     public void removeDependant(Cell cell) {
-        Cell ref = getTable().getCells().get(col).get(row);
-        if(ref == null) getTable().addCell(col, row);
-        ref = getTable().getCells().get(col).get(row);
+        Cell ref = getTable().getCells().get(col-1).get(row-1);
+        if(ref == null) getTable().addCell(col-1, row-1);
+        ref = getTable().getCells().get(col-1).get(row-1);
         ref.removeDependant(cell);
     }
 
     public Cell getCell(){
-        Cell ref = getTable().getCells().get(col).get(row);
-        if(ref == null) getTable().addCell(col, row);
-        ref = getTable().getCells().get(col).get(row);
+        Cell ref = getTable().getCells().get(col-1).get(row-1);
+        if(ref == null) getTable().addCell(col-1, row-1);
+        ref = getTable().getCells().get(col-1).get(row-1);
         return ref;
     }
 

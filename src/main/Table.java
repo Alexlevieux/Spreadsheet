@@ -1,16 +1,21 @@
 package main;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import javafx.collections.ObservableList;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 
 import java.lang.reflect.Array;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 
 @SuppressWarnings("WeakerAccess")
-public class Table extends GridPane {
+public class Table extends GridPane implements Initializable{
     private static final int MAX_COLUMN = 32767;
     private static final int MAX_ROW = 32767;
     public static final int PREF_COLUMN = 100;
@@ -21,11 +26,23 @@ public class Table extends GridPane {
     private int focusedRow;
     private ArrayList<ArrayList<Cell>> cells;
 
+    private Cell getCellByIndex (final int column, final int row) {
+        Cell result = null;
+     //   ObservableList<Node> childrens = getChildren();
+        for (Node cell : getChildren()) {
+            if(cell == cells.get(column).get(row)) {
+               // if (cell == null) continue;
+                result = (Cell) cell;
+                break;
+            }
+        }
+        return result;
+    }
+
 
     public Table() {
         setGridLinesVisible(true);
-        setFocusedColumn(-1);
-        setFocusedRow(-1);
+
         cells = new ArrayList<>(PREF_COLUMN);
         for (int i = 0; i < PREF_COLUMN; ++i) {
             cells.add(new ArrayList<>(PREF_ROW));
@@ -42,13 +59,20 @@ public class Table extends GridPane {
             RowConstraints rowConstraints = new RowConstraints(PREF_ROW_HEIGHT);
             getRowConstraints().add(rowConstraints);
         }
-        focusedColumn = 0;
-        focusedRow = 0;
+
         setOnKeyPressed(e -> {
-//            if (e.getCode() == KeyCode.ENTER) {
-//                setFocusedRow(getFocusedRow() + 1);
-//                cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
-//            }
+            if (e.getCode() == KeyCode.ENTER) {
+                try {
+                    setFocusedRow(getFocusedRow() + 1);
+                    getCellByIndex(getFocusedColumn(),getFocusedRow()).requestFocus();
+                } catch (NullPointerException nulled) {
+                    addCell(getFocusedColumn(),getFocusedRow());
+                    cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
+                }
+
+               //setFocusedRow(getFocusedRow() + 1);
+               //  cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
+            }
             if (e.getCode() == KeyCode.UP) {
                 setFocusedRow(getFocusedRow() - 1);
                 cells.get(getFocusedColumn()).get(getFocusedRow()).requestFocus();
@@ -69,48 +93,70 @@ public class Table extends GridPane {
             }
 
         });
+
         setOnMouseClicked(e -> {
+            //TODO : getFocused dulu, terus masukin cell baru, baru cek cell sebelumnya bisa diapus/tidak.
             int col = (int) e.getX() / (int) PREF_COLUMN_WIDTH;
             int row = (int) e.getY() / (int) PREF_ROW_HEIGHT;
-            if (cells.get(col).get(row) == null) {
-                int colt = getFocusedColumn();
-                int rowt = getFocusedRow();
-                if (cells.get(colt).get(rowt) != null && cells.get(colt).get(rowt).getText().length() == 0) {
-                    getChildren().remove(cells.get(colt).get(rowt));
-                    cells.get(colt).set(rowt, null);
-                    setFocusedRow(-1);
-                    setFocusedColumn(-1);
+            int colt = getFocusedColumn();
+            int rowt = getFocusedRow();
+           // System.out.println("FOCUSED :" + colt + "," + rowt);
+            if (getFocusedRow() != -1 || getFocusedColumn() != -1) {
+                try {
+                    Cell temp = getCellByIndex(colt,rowt);
+                    if (temp.getLength() == 0 && temp.dependants.size() == 0 && temp.precedents.size() == 0 )
+                    {
+                        getChildren().remove(temp);
+                        cells.get(colt).set(rowt, null);
+                        setFocusedRow(-1);
+                        setFocusedColumn(-1);
+                    } else if ( temp.getLength() != 0 && temp.isEditable()) {
+                        temp.compute();
+                        temp.setEditable(false);
+                    }
+                } catch (NullPointerException nulled) {
+                    System.out.println("(" + colt + "," + rowt + ") is null lol");
                 }
-                cells.get(col).set(row, new Cell());
-                Cell cell = cells.get(col).get(row);
+            }
+
+
+          //  System.out.println("clicked : " + col + "," + row);
+            Cell cell = new Cell();
+            if (getRowIndex(cell) == null || getColumnIndex(cell) == null) {
+              //  System.out.print("masuk pls \n");
+                cells.get(col).set(row, cell);
+                add(cell,col,row);
                 setFocusedColumn(col);
                 setFocusedRow(row);
-                cell.requestFocus();
-                cell.setEditable(true);
                 cell.setPrefHeight(PREF_ROW_HEIGHT);
                 cell.setPrefWidth(PREF_COLUMN_WIDTH);
                 cells.get(col).get(row).prefWidthProperty().bind(getColumnConstraints().get(col).prefWidthProperty());
                 cells.get(col).get(row).prefHeightProperty().bind(getRowConstraints().get(row).prefHeightProperty());
-                add(cells.get(col).get(row), col, row);
             }
+
         });
+        setFocusedColumn(-1);
+        setFocusedRow(-1);
     }
 
     public void setFocusedColumn(int focusedColumn) {
-        if (focusedColumn >= 0) this.focusedColumn = focusedColumn;
-        //    System.out.println(focusedColumn);
+        this.focusedColumn = focusedColumn;
+
     }
 
     public void setFocusedRow(int focusedRow) {
-        if (focusedRow >= 0) this.focusedRow = focusedRow;
-        //  System.out.println(focusedRow);
+        this.focusedRow = focusedRow;
+
     }
 
     public int getFocusedColumn() {
+       // System.out.println(focusedColumn);
         return focusedColumn;
+
     }
 
     public int getFocusedRow() {
+       // System.out.println(focusedRow);
         return focusedRow;
     }
 
@@ -124,5 +170,10 @@ public class Table extends GridPane {
             cells.get(col).set(row, temp);
             add(cells.get(col).get(row), col, row);
         }
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
 }

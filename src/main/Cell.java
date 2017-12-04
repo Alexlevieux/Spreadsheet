@@ -3,25 +3,13 @@ package main;
 import exception.*;
 import function.CellReference;
 import function.Evaluator;
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-import javafx.beans.property.Property;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.scene.Cursor;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import value.ComparableValue;
-import value.ErrorValue;
-import value.Value;
-
-import javax.swing.text.html.parser.Parser;
 import java.util.ArrayList;
-import java.util.Set;
 
 
 public class Cell extends TextField {
@@ -43,7 +31,7 @@ public class Cell extends TextField {
         });
         setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER && isEditable()) {
-                unprocessedValue = getText();
+                setUnprocessedValue(getText());
                 compute();
                 setEditable(false);
             } else if (event.getCode() == KeyCode.ENTER && !isEditable()) {
@@ -61,6 +49,11 @@ public class Cell extends TextField {
             } else {
                 requestFocus();
             }
+        });
+
+       setOnMouseExited(e -> {
+           if (value == null) setUnprocessedValue(getText());
+           else setText(value.toString());
         });
     }
 
@@ -93,9 +86,14 @@ public class Cell extends TextField {
             alert.setTitle("Invalid formula");
             alert.setContentText(e.getMessage());
             alert.showAndWait();
+        } catch (NullPointerException e) {
+            System.out.println("Please enter a value.");
         }
     }
 
+    public void setUnprocessedValue(String unprocessedValue) {
+        this.unprocessedValue = unprocessedValue;
+    }
 
     public void addDependant(Cell target) {
         this.dependants.add(target);
@@ -139,3 +137,4 @@ public class Cell extends TextField {
         }
     }
 }
+

@@ -1,5 +1,8 @@
 package chart;
 
+import exception.ParserException;
+import function.CellRange;
+import function.Evaluator;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -7,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import main.Cell;
+import main.Main;
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,13 +25,18 @@ public class EditCategories extends Pane implements Initializable {
     @FXML
     private Button cancel;
 
-    private ArrayList<Cell> cat;
-    private String rangeText;
+    private String catText;
+    private CellRange catRange;
 
-    public void setRangeText (String rt) {
-        this.rangeText = rt;
+    public void setCatText (String rt) {
+        this.catText = rt;
     }
 
+    public String getCatText() {
+        return catText;
+    }
+
+    public CellRange getCatRange() {return catRange;}
 
     public EditCategories() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditCategories.fxml"));
@@ -46,11 +55,12 @@ public class EditCategories extends Pane implements Initializable {
         range = new TextField();
         cancel = new Button();
         ok.setOnAction(e -> {
-            setRangeText(range.getText());
+            setCatText(range.getText());
+            try {
+                catRange = Evaluator.cellNameToRange(Main.getMainWindow().getSheet().getTable(), catText);
+            } catch (ParserException e1) {
+                e1.printStackTrace();
+            }
         });
-    }
-
-    public String getRangeText() {
-        return rangeText;
     }
 }

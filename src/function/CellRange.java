@@ -30,6 +30,22 @@ public class CellRange extends CellReference {
         return bottomRow;
     }
 
+    public void setLeftCol(int leftCol) {
+        this.leftCol = leftCol;
+    }
+
+    public void setRightCol(int rightCol) {
+        this.rightCol = rightCol;
+    }
+
+    public void setTopRow(int topRow) {
+        this.topRow = topRow;
+    }
+
+    public void setBottomRow(int bottomRow) {
+        this.bottomRow = bottomRow;
+    }
+
     public ListValue getValue() {
         ListValue list = new ListValue();
         for (int i = leftCol - 1; i < rightCol; ++i) {

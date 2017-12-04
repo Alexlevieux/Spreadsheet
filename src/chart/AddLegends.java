@@ -1,5 +1,9 @@
 package chart;
 
+import exception.ParserException;
+import function.CellRange;
+import function.CellSingle;
+import function.Evaluator;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -7,6 +11,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Cell;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import main.Main;
+import main.MainWindow;
 
 import java.io.IOException;
 import java.net.URL;
@@ -24,24 +30,29 @@ public class AddLegends extends Pane implements Initializable {
     @FXML
     private Button cancel;
 
-    private String nameCell;
-    private String valueRange;
+    private String nameText;
+    private String valueText;
+    private CellSingle nameCell;
+    private CellRange valueRange;
+    private Series newLegend;
 
-    public String getNameCell() {
-        return nameCell;
+    public String getNameText() {
+        return nameText;
     }
 
-    public void setNameCell(String nameRange) {
-        this.nameCell = nameRange;
+    public void setNameText(String nameRange) {
+        this.nameText = nameRange;
     }
 
-    public String getValueRange() {
-        return valueRange;
+    public String getValueText() {
+        return valueText;
     }
 
-    public void setValueRange(String valueRange) {
-        this.valueRange = valueRange;
+    public void setValueText(String valueRange) {
+        this.valueText = valueRange;
     }
+
+    public Series getNewLegend() { return newLegend; }
 
     public AddLegends() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddLegends.fxml"));
@@ -62,8 +73,24 @@ public class AddLegends extends Pane implements Initializable {
         cancel = new Button();
 
         ok.setOnAction(e -> {
-            setNameCell(name.getText());
-            setValueRange(value.getText());
+            setNameText(name.getText());
+            setValueText(value.getText());
+
+            try {
+                nameCell = Evaluator.cellNameToReference(Main.getMainWindow().getSheet().getTable(), nameText);
+            } catch (ParserException e1) {
+                // TODO: 04-Dec-17 Add alert on exception
+                e1.printStackTrace();
+            }
+
+            try {
+                valueRange = Evaluator.cellNameToRange(Main.getMainWindow().getSheet().getTable(), valueText);
+            } catch (ParserException e1) {
+                // TODO: 04-Dec-17 Add alert on exception
+                e1.printStackTrace();
+            }
+
+            newLegend = new Series(nameCell.getValue().toString(), valueRange);
         });
     }
 }

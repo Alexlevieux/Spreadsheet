@@ -7,6 +7,12 @@ import value.Value;
 
 public abstract class CellReference implements Token{
     private Table table;
+    private String representation;
+
+    public void setRepresentation(String representation) {
+        this.representation = representation;
+    }
+
     public void setTable(Table table) {
         this.table = table;
     }

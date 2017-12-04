@@ -32,25 +32,25 @@
                               <Insets left="10.0" />
                            </VBox.margin>
                         </Label>
-                        <VBox prefHeight="222.0" prefWidth="224.0" style="-fx-background-color: white; -fx-border-color: black;">
+                        <VBox style="-fx-background-color: white; -fx-border-color: black;">
                            <children>
-                              <HBox prefHeight="26.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-color: black;">
+                              <HBox prefWidth="200.0" style="-fx-border-color: black;">
                                  <children>
-                                    <Button fx:id="add" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;" text="Add">
+                                    <Button fx:id="add" mnemonicParsing="false" prefWidth="75.0" style="-fx-border-color: black;" text="Add">
                                        <HBox.margin>
-                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                          <Insets left="2.0" />
                                        </HBox.margin>
                                     </Button>
-                                    <Button fx:id="remove" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-border-color: black;" text="Remove">
+                                    <Button fx:id="remove" mnemonicParsing="false" prefWidth="75.0" style="-fx-border-color: black;" text="Remove">
                                        <HBox.margin>
-                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                          <Insets left="2.0" />
                                        </HBox.margin>
                                     </Button>
                                  </children>
                               </HBox>
-                              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="170.0" prefWidth="222.0">
                                 <content>
-                                  <AnchorPane fx:id="series" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                  <AnchorPane fx:id="series" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="220.0" />
                                 </content>
                               </ScrollPane>
                            </children>
@@ -70,20 +70,20 @@
                               <Insets left="10.0" />
                            </VBox.margin>
                         </Label>
-                        <VBox prefHeight="221.0" prefWidth="224.0" style="-fx-background-color: white; -fx-border-color: black;">
+                        <VBox style="-fx-background-color: white; -fx-border-color: black;">
                            <children>
-                              <HBox prefHeight="26.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-color: black;">
+                              <HBox prefWidth="200.0" style="-fx-border-color: black;">
                                  <children>
-                                    <Button fx:id="edit" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;" text="Edit">
+                                    <Button fx:id="edit" mnemonicParsing="false" prefWidth="75.0" style="-fx-border-color: black;" text="Edit">
                                        <HBox.margin>
-                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                          <Insets left="2.0" />
                                        </HBox.margin>
                                     </Button>
                                  </children>
                               </HBox>
-                              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="170.0" prefWidth="222.0">
                                 <content>
-                                  <AnchorPane fx:id="cat" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                  <AnchorPane fx:id="cat" minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="220.0" />
                                 </content>
                               </ScrollPane>
                            </children>
@@ -98,16 +98,30 @@
                   <Insets top="20.0" />
                </VBox.margin>
             </HBox>
-            <HBox prefHeight="48.0" prefWidth="449.0">
+            <HBox prefHeight="6.0" prefWidth="480.0">
+               <children>
+                  <Label text="Chart type:">
+                     <HBox.margin>
+                        <Insets left="15.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="choice" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="44.0" prefWidth="480.0">
                <children>
                   <Button fx:id="ok" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;" text="OK">
                      <HBox.margin>
-                        <Insets bottom="1.0" left="300.0" right="10.0" top="20.0" />
+                        <Insets bottom="1.0" left="300.0" right="10.0" />
                      </HBox.margin>
                   </Button>
                   <Button fx:id="cancel" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-border-color: black;" text="Cancel">
                      <HBox.margin>
-                        <Insets bottom="1.0" left="1.0" right="1.0" top="20.0" />
+                        <Insets bottom="1.0" left="1.0" right="1.0" />
                      </HBox.margin>
                   </Button>
                </children>

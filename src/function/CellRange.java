@@ -2,10 +2,13 @@ package function;
 
 import main.Cell;
 import main.Table;
+import value.ComparableValue;
 import value.ListValue;
 
+import java.util.ArrayList;
+
 @SuppressWarnings({"WeakerAccess", "unused"})
-public class CellRange extends CellReference{
+public class CellRange extends CellReference {
     private int leftCol;
     private int rightCol;
     private int topRow;
@@ -29,8 +32,8 @@ public class CellRange extends CellReference{
 
     public ListValue getValue() {
         ListValue list = new ListValue();
-        for (int i = leftCol-1; i < rightCol; ++i) {
-            for (int j = topRow-1; j < bottomRow; ++j) {
+        for (int i = leftCol - 1; i < rightCol; ++i) {
+            for (int j = topRow - 1; j < bottomRow; ++j) {
                 Cell cell = getTable().getCells().get(i).get(j);
                 if (cell == null) {
                     getTable().addCell(i, j);
@@ -42,12 +45,32 @@ public class CellRange extends CellReference{
         return list;
     }
 
+    public ListValue getColumn(int index) {
+        ArrayList<ComparableValue> values = getValue().getValue();
+        ListValue column = new ListValue();
+        column.addAll(values.subList(getRowSize() * index, getRowSize() * (index + 1)));
+        return column;
+    }
+
+    public ListValue getRow(int index) {
+        ArrayList<ComparableValue> values = getValue().getValue();
+        ListValue row = new ListValue();
+        for(int i = 0; i<getColSize(); ++i){
+            row.add(values.get(i*getRowSize() + index));
+        }
+        return row;
+    }
+
+    public ComparableValue getValueAt(int col, int row) {
+        return getValue().getValue().get(col*getRowSize() + row);
+    }
+
     @Override
     public void addDependant(Cell cell) {
-        for (int i = leftCol-1; i < rightCol; ++i) {
-            for (int j = topRow-1; j < bottomRow; ++j) {
+        for (int i = leftCol - 1; i < rightCol; ++i) {
+            for (int j = topRow - 1; j < bottomRow; ++j) {
                 Cell ref = getTable().getCells().get(i).get(j);
-                if(ref == null) getTable().addCell(i, j);
+                if (ref == null) getTable().addCell(i, j);
                 ref = getTable().getCells().get(i).get(j);
                 ref.addDependant(cell);
             }
@@ -56,10 +79,10 @@ public class CellRange extends CellReference{
 
     @Override
     public void removeDependant(Cell cell) {
-        for (int i = leftCol-1; i < rightCol; ++i) {
-            for (int j = topRow-1; j < bottomRow; ++j) {
+        for (int i = leftCol - 1; i < rightCol; ++i) {
+            for (int j = topRow - 1; j < bottomRow; ++j) {
                 Cell ref = getTable().getCells().get(i).get(j);
-                if(ref == null) getTable().addCell(i, j);
+                if (ref == null) getTable().addCell(i, j);
                 ref = getTable().getCells().get(i).get(j);
                 ref.removeDependant(cell);
             }
@@ -75,8 +98,16 @@ public class CellRange extends CellReference{
         System.out.println(this);
     }
 
+    public int getRowSize() {
+        return bottomRow - topRow + 1;
+    }
+
+    public int getColSize() {
+        return rightCol - leftCol + 1;
+    }
+
     public int getSize() {
-        return (rightCol - leftCol + 1) * (bottomRow - topRow + 1);
+        return getColSize() * getRowSize();
     }
 
     @Override

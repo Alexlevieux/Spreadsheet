@@ -6,7 +6,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.ScrollBar;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
 import java.net.URL;
@@ -48,5 +47,9 @@ public class MainWindow extends BorderPane implements Initializable{
         sheet.tableScroll.hvalueProperty().bind(hScroll.valueProperty());
         sheet.tableScroll.vvalueProperty().bind(vScroll.valueProperty());
 
+    }
+
+    public Sheet getSheet() {
+        return sheet;
     }
 }

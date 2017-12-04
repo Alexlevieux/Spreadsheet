@@ -9,9 +9,15 @@ import value.NumberValue;
 
 
 public class Main extends Application {
+    private static MainWindow mainWindow;
+
+    public static MainWindow getMainWindow() {
+        return mainWindow;
+    }
+
     @Override
     public void start(Stage stage) throws Exception {
-        MainWindow mainWindow = new MainWindow();
+        mainWindow = new MainWindow();
         stage.setTitle("Spreadsheet");
         stage.setScene(new Scene(mainWindow, 1024, 768));
         stage.show();

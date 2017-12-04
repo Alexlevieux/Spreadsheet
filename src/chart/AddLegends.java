@@ -24,33 +24,15 @@ public class AddLegends extends Pane implements Initializable {
     @FXML
     private Button cancel;
 
-    private ArrayList <Cell> nameArray;
-    private ArrayList <Cell> valueArray;
-    private String nameRange;
+    private String nameCell;
     private String valueRange;
 
-    public ArrayList<Cell> getNameArray() {
-        return nameArray;
+    public String getNameCell() {
+        return nameCell;
     }
 
-    public void setNameArray(ArrayList<Cell> name) {
-        this.nameArray = name;
-    }
-
-    public ArrayList<Cell> getValueArray() {
-        return valueArray;
-    }
-
-    public void setValueArray(ArrayList<Cell> value) {
-        this.valueArray = value;
-    }
-
-    public String getNameRange() {
-        return nameRange;
-    }
-
-    public void setNameRange(String nameRange) {
-        this.nameRange = nameRange;
+    public void setNameCell(String nameRange) {
+        this.nameCell = nameRange;
     }
 
     public String getValueRange() {
@@ -80,7 +62,7 @@ public class AddLegends extends Pane implements Initializable {
         cancel = new Button();
 
         ok.setOnAction(e -> {
-            setNameRange(name.getText());
+            setNameCell(name.getText());
             setValueRange(value.getText());
         });
     }

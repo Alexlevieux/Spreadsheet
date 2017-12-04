@@ -32,12 +32,15 @@ public class ChartArea extends Pane implements Initializable {
     @FXML
     private Button cancel;
 
-    private ArrayList <Cell> rangeArray;
     private String rangeArea;
 
 
     public void setRangeArea(String rangeArea) {
         this.rangeArea = rangeArea;
+    }
+
+    public String getRangeArea() {
+        return rangeArea;
     }
 
     public ChartArea() {
@@ -60,17 +63,12 @@ public class ChartArea extends Pane implements Initializable {
         ok = new Button();
         series = new AnchorPane();
         cat = new AnchorPane();
-    }
 
-    public String getRangeArea() {
-        return rangeArea;
-    }
-
-    public ArrayList<Cell> getRangeArray() {
-        return rangeArray;
-    }
-
-    public void setRangeArray(ArrayList<Cell> range) {
-        this.rangeArray = range;
+        range.setOnAction(e -> {
+            //update series dan cat
+        });
+        ok.setOnAction(e -> {
+            setRangeArea(range.getText());
+        });
     }
 }

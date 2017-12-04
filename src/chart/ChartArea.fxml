@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="480.0" type="FlowPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chart.ChartArea">
    <children>
       <VBox>
          <children>
             <HBox prefHeight="33.0" prefWidth="449.0">
                <children>
-                  <Label prefHeight="39.0" prefWidth="104.0" text="chart data range:">
+                  <Label prefHeight="39.0" prefWidth="104.0" text="Chart data range:">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>

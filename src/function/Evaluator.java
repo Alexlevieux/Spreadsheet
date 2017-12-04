@@ -98,12 +98,12 @@ public class Evaluator {
                 } else if (token == Symbol.RIGHT_P) {
                     boolean leftParenthesesExists = false;
                     while (!operatorStack.empty()) {
-                        if(operatorStack.peek() == Symbol.LEFT_P){
+                        if (operatorStack.peek() == Symbol.LEFT_P) {
                             leftParenthesesExists = true;
                             break;
                         } else outputQueue.add(operatorStack.pop());
                     }
-                    if(!leftParenthesesExists)
+                    if (!leftParenthesesExists)
                         throw new ParserException("Mismatched parentheses");
                     else {
                         operatorStack.pop();
@@ -116,12 +116,12 @@ public class Evaluator {
                     if (!functionStack.empty() && functionStack.peek() != null) functionStack.peek().incArgs();
                     boolean leftParenthesesExists = false;
                     while (!operatorStack.empty()) {
-                        if(operatorStack.peek() == Symbol.LEFT_P){
+                        if (operatorStack.peek() == Symbol.LEFT_P) {
                             leftParenthesesExists = true;
                             break;
                         } else outputQueue.add(operatorStack.pop());
                     }
-                    if(!leftParenthesesExists)
+                    if (!leftParenthesesExists)
                         throw new ParserException("Misplaced comma or mismatched parentheses");
                 }
             } else {
@@ -140,9 +140,9 @@ public class Evaluator {
                             outputQueue.add(new StringValue(s.substring(1, s.length() - 1)));
                         else {
                             if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]")) {
-                                outputQueue.add(computer.cellNameToReference(s));
+                                outputQueue.add(cellNameToReference((Table) computer.tempCell.getParent(), s));
                             } else if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
-                                outputQueue.add(computer.cellNameToRange(s));
+                                outputQueue.add(cellNameToRange((Table) computer.tempCell.getParent(), s));
                             } else {
                                 outputQueue.add(new ErrorValue(ErrorType.VALUE));
                             }
@@ -152,7 +152,7 @@ public class Evaluator {
             }
         }
         while (!operatorStack.empty()) {
-            if(operatorStack.peek() == Symbol.LEFT_P)
+            if (operatorStack.peek() == Symbol.LEFT_P)
                 throw new ParserException("Mismatched parentheses");
             outputQueue.add(operatorStack.pop());
         }
@@ -166,25 +166,69 @@ public class Evaluator {
     }
 
     public static ComparableValue evaluate(String expression) throws ParserException {
-        if(expression.isEmpty()) return null;
-        else if(expression.charAt(0) == '=') {
-            expression = expression.substring(1,expression.length());
+        if (expression.isEmpty()) return null;
+        else if (expression.charAt(0) == '=') {
+            expression = expression.substring(1, expression.length());
             ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
             ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
             computer.setPostFix(tokens);
             return (ComparableValue) computer.compute();
         } else {
-            if(expression.toUpperCase().equals("TRUE"))
+            if (expression.toUpperCase().equals("TRUE"))
                 return new BooleanValue(true);
-            if(expression.toUpperCase().equals("FALSE"))
+            if (expression.toUpperCase().equals("FALSE"))
                 return new BooleanValue(false);
-            try{
+            try {
                 Double d = Double.valueOf(expression);
                 return new NumberValue(d);
-            } catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 return new StringValue(expression);
             }
         }
+    }
+
+    public static CellSingle cellNameToReference(Table table, String text) throws ParserException {
+        int rowNumber, colNumber;
+        String cellName, sheetName;
+        cellName = text;
+        String[] cellTokens = cellName.split("(?<=[A-Za-z])(?=[0-9])");
+        if (cellTokens.length != 2) throw new ParserException("Invalid cell name");
+        String colLetter = cellTokens[0].toUpperCase();
+        rowNumber = Integer.valueOf(cellTokens[1]);
+        colNumber = 0;
+        for (int i = 0; i < colLetter.length(); ++i) {
+            colNumber = colNumber * 26 + (colLetter.charAt(i) - 'A' + 1);
+        }
+        return new CellSingle(table, colNumber, rowNumber);
+    }
+
+    public static CellRange cellNameToRange(Table table, String text) throws ParserException {
+        int rowNumber1, colNumber1;
+        int rowNumber2, colNumber2;
+        String cellRangeName, sheetName;
+        cellRangeName = text;
+        String[] cellTokens = cellRangeName.split("(?<=[A-Za-z])(?=[0-9])|:");
+        System.out.println(Arrays.toString(cellTokens));
+        if (cellTokens.length != 4) throw new ParserException("Invalid cell name");
+        String colLetter1 = cellTokens[0].toUpperCase();
+        String colLetter2 = cellTokens[2].toUpperCase();
+        rowNumber1 = Integer.valueOf(cellTokens[1]);
+        rowNumber2 = Integer.valueOf(cellTokens[3]);
+        colNumber1 = 0;
+        for (int i = 0; i < colLetter1.length(); ++i) {
+            colNumber1 = colNumber1 * 26 + (colLetter1.charAt(i) - 'A' + 1);
+        }
+        colNumber2 = 0;
+        for (int i = 0; i < colLetter2.length(); ++i) {
+            colNumber2 = colNumber2 * 26 + (colLetter2.charAt(i) - 'A' + 1);
+        }
+        return new CellRange(
+                table,
+                Math.min(colNumber1, colNumber2),
+                Math.min(rowNumber1, rowNumber2),
+                Math.max(colNumber1, colNumber2),
+                Math.max(rowNumber1, rowNumber2)
+        );
     }
 
     @SuppressWarnings("unchecked")
@@ -441,64 +485,6 @@ public class Evaluator {
             if (!(values.get(0) instanceof ListValue))
                 throw new InvalidArgumentException("Wrong argument for this function");
             return new NumberValue(((ListValue) values.get(0)).size() - count(values).getValue());
-        }
-
-        public CellSingle cellNameToReference(String text) throws ParserException {
-            String[] sheet_cell = text.split("!");
-            int rowNumber, colNumber;
-            String cellName, sheetName;
-            Table tableRef = null;
-            if (sheet_cell.length == 1) {
-                cellName = sheet_cell[0];
-                tableRef = (Table) tempCell.getParent();
-            } else if (sheet_cell.length == 2) {
-                throw new UnsupportedOperationException("Referencing from another sheet is not yet supported");
-            } else throw new ParserException("Invalid cell name");
-            String[] cellTokens = cellName.split("(?<=[A-Za-z])(?=[0-9])");
-            if (cellTokens.length != 2) throw new ParserException("Invalid cell name");
-            String colLetter = cellTokens[0].toUpperCase();
-            rowNumber = Integer.valueOf(cellTokens[1]);
-            colNumber = 0;
-            for (int i = 0; i < colLetter.length(); ++i) {
-                colNumber = colNumber * 26 + (colLetter.charAt(i) - 'A' + 1);
-            }
-            return new CellSingle(tableRef, colNumber, rowNumber);
-        }
-
-        public CellRange cellNameToRange(String text) throws ParserException {
-            String[] sheet_cell = text.split("!");
-            int rowNumber1, colNumber1;
-            int rowNumber2, colNumber2;
-            String cellRangeName, sheetName;
-            Table tableRef = null;
-            if (sheet_cell.length == 1) {
-                cellRangeName = sheet_cell[0];
-                tableRef = (Table) tempCell.getParent();
-            } else if (sheet_cell.length == 2) {
-                throw new UnsupportedOperationException("Referencing from another sheet is not yet supported");
-            } else throw new ParserException("Invalid cell name");
-            String[] cellTokens = cellRangeName.split("(?<=[A-Za-z])(?=[0-9])|:");
-            System.out.println(Arrays.toString(cellTokens));
-            if (cellTokens.length != 4) throw new ParserException("Invalid cell name");
-            String colLetter1 = cellTokens[0].toUpperCase();
-            String colLetter2 = cellTokens[2].toUpperCase();
-            rowNumber1 = Integer.valueOf(cellTokens[1]);
-            rowNumber2 = Integer.valueOf(cellTokens[3]);
-            colNumber1 = 0;
-            for (int i = 0; i < colLetter1.length(); ++i) {
-                colNumber1 = colNumber1 * 26 + (colLetter1.charAt(i) - 'A' + 1);
-            }
-            colNumber2 = 0;
-            for (int i = 0; i < colLetter2.length(); ++i) {
-                colNumber2 = colNumber2 * 26 + (colLetter2.charAt(i) - 'A' + 1);
-            }
-            return new CellRange(
-                    tableRef,
-                    Math.min(colNumber1, colNumber2),
-                    Math.min(rowNumber1, rowNumber2),
-                    Math.max(colNumber1, colNumber2),
-                    Math.max(rowNumber1, rowNumber2)
-            );
         }
     }
 }

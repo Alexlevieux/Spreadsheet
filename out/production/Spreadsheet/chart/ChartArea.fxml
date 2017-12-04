@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="480.0" type="FlowPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chart.ChartArea">
+   <children>
+      <VBox>
+         <children>
+            <HBox prefHeight="33.0" prefWidth="449.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="104.0" text="Chart data range:">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="range" prefHeight="25.0" prefWidth="313.0" promptText="Insert data range here">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="237.0" prefWidth="480.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="224.0">
+                     <children>
+                        <Label text="Legend Entries (Series)">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="222.0" prefWidth="224.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <HBox prefHeight="26.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-color: black;">
+                                 <children>
+                                    <Button fx:id="add" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;" text="Add">
+                                       <HBox.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="remove" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-border-color: black;" text="Remove">
+                                       <HBox.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                                <content>
+                                  <AnchorPane fx:id="series" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                </content>
+                              </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="224.0">
+                     <children>
+                        <Label text="Horizontal (Category) Axis Labels">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <VBox prefHeight="221.0" prefWidth="224.0" style="-fx-background-color: white; -fx-border-color: black;">
+                           <children>
+                              <HBox prefHeight="26.0" prefWidth="222.0" style="-fx-background-color: transparent; -fx-border-color: black;">
+                                 <children>
+                                    <Button fx:id="edit" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;" text="Edit">
+                                       <HBox.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+                                <content>
+                                  <AnchorPane fx:id="cat" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="449.0">
+               <children>
+                  <Button fx:id="ok" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" style="-fx-border-color: black;" text="OK">
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="300.0" right="10.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancel" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-border-color: black;" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

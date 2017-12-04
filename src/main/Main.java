@@ -23,7 +23,7 @@ public class Main extends Application {
         stage.show();
     }
     public static void main(String[] args) throws ParserException {
-        System.out.println(new NumberValue(5));
+        //System.out.println(new NumberValue(5));
         launch(args);
     }
 

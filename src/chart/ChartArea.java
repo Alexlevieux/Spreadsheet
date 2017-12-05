@@ -166,7 +166,7 @@ public class ChartArea extends FlowPane implements Initializable {
        if (selected == null){
            try {
                if (getRangeArea()!=null)
-                   selected = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), getRangeArea());
+                   selected = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), getRangeArea());
                else System.out.println("rangeArea is null");
            } catch (ParserException e1) {
                // TODO: 04-Dec-17 Add alert to exception
@@ -176,7 +176,7 @@ public class ChartArea extends FlowPane implements Initializable {
        else {
            if (seriesChanged) {
                selected = new CellRange(
-                       Main.getSheetWindow().getSheet().getTable(),
+                       Main.getMainWindow().getSheetWindow().getSheet().getTable(),
                        selected.getLeftCol(),
                        selected.getTopRow(),
                        selected.getRightCol()+1,
@@ -185,7 +185,7 @@ public class ChartArea extends FlowPane implements Initializable {
            }
            else {
                selected = new CellRange(
-                       Main.getSheetWindow().getSheet().getTable(),
+                       Main.getMainWindow().getSheetWindow().getSheet().getTable(),
                        selected.getLeftCol(),
                        selected.getTopRow(),
                        selected.getRightCol(),

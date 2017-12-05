@@ -22,7 +22,7 @@ public class ListValue extends IncomparableValue {
         this.list = (ArrayList<ComparableValue>) o;
     }
 
-    public Value get(int index) {
+    public ComparableValue get(int index) {
         return list.get(index);
     }
 

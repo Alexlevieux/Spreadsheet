@@ -6,6 +6,8 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
 import main.Cell;
+import value.ComparableValue;
+import value.NumberValue;
 
 import java.util.ArrayList;
 
@@ -21,43 +23,57 @@ public class Bar {
             setBar();
         }
 
-        public Bar (ArrayList<chart.Series> seriesList, ArrayList<Category> catList) {
+        public Bar (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList) {
+            setTitle(title);
             setBar();
             generateBar (seriesList, catList);
         }
 
         public Bar (String xLabel, String yLabel) {
             setBar();
-            xAxis.setLabel(xLabel);
-            yAxis.setLabel(yLabel);
+            setXYLabel(xLabel, yLabel);
         }
 
-        public Bar (ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+        public Bar (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+            setTitle(title);
             setBar();
-            xAxis.setLabel(xLabel);
-            yAxis.setLabel(yLabel);
+            setXYLabel(xLabel, yLabel);
             generateBar (seriesList, catList);
         }
 
-        public void generateBar (ArrayList<chart.Series> seriesList, ArrayList<Category> catList) {
+        private void generateBar (ArrayList<chart.Series> seriesList, ArrayList<Category> catList) {
+            for (chart.Series aSeriesList : seriesList) {
+                series = new Series<String, Double>();
+                setSeriesName(aSeriesList.getName());
+                for (int j = 0; j < catList.size(); j++) {
+                    ComparableValue temp = aSeriesList.getValues().getValue().get(j);
+                    if (temp instanceof NumberValue) {
+                        addData(catList.get(j).getName(), ((NumberValue) temp).getValue());
+                    }
 
+
+                }
+            }
         }
 
         private void setBar() {
             xAxis = new CategoryAxis();
             yAxis = new NumberAxis();
-            bar = new BarChart(xAxis, yAxis);
+            bar = new BarChart<>(xAxis, yAxis);
+        }
+
+        public void setXYLabel (String xLabel, String yLabel) {
+            xAxis.setLabel(xLabel);
+            yAxis.setLabel(yLabel);
         }
 
         public void setTitle (String title) {
             bar.setTitle (title);
         }
 
-        public void setSeriesName (String name) {
-            series.setName(name);
-        }
+        private void setSeriesName (String name) { series.setName(name); }
 
-        public void addData (String category, Cell value) {
-            series.getData().add(new XYChart.Data(category, value));
+        private void addData (String category, Double value) {
+            series.getData().add(new XYChart.Data<>(category, value));
         }
 }

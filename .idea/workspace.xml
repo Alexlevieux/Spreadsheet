@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/exception/CellReferenceFormatException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/exception/DivisionByZeroException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/exception/InvalidReferenceException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/exception/InvalidTokenException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/exception/InvalidValueException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/exception/NumberException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellRange.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellReference.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellSingle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/Evaluator$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/Evaluator$Computer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/Evaluator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exception/DivisionByZeroException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exception/InvalidReferenceException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exception/InvalidTokenException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exception/InvalidValueException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/exception/NumberException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/function/Valuee.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Table.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Table.class" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="gitignore">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/SheetWindow.fxml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/Valuee.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/MainWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/MainWindow.fxml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/SheetWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Bar.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Bar.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Cell.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Cell.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Main.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/value/ListValue.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/value/ListValue.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellRange.java" afterPath="$PROJECT_DIR$/src/function/CellRange.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellReference.java" afterPath="$PROJECT_DIR$/src/function/CellReference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellSingle.java" afterPath="$PROJECT_DIR$/src/function/CellSingle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/MainWindow.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/MainWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/AddLegends.java" afterPath="$PROJECT_DIR$/src/chart/AddLegends.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/ChartArea.java" afterPath="$PROJECT_DIR$/src/chart/ChartArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/EditCategories.java" afterPath="$PROJECT_DIR$/src/chart/EditCategories.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/Evaluator.java" afterPath="$PROJECT_DIR$/src/function/Evaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Table.java" afterPath="$PROJECT_DIR$/src/main/Table.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Cell.java" afterPath="$PROJECT_DIR$/src/main/Cell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sheet.java" afterPath="$PROJECT_DIR$/src/main/Sheet.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,13 +49,12 @@
       <file leaf-file-name="Evaluator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="146" column="33" lean-forward="true" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+            <state relative-caret-position="112">
+              <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding>
                 <element signature="initializer##0;class#Evaluator#0" expanded="false" />
                 <element signature="method#split#0;class#Evaluator#0" expanded="false" />
                 <element signature="method#evaluate#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#evaluate#1;class#Evaluator#0" expanded="false" />
                 <element signature="method#cellNameToReference#0;class#Evaluator#0" expanded="false" />
                 <element signature="method#cellNameToRange#0;class#Evaluator#0" expanded="false" />
                 <element signature="method#Computer#0;class#Computer#0;class#Evaluator#0" expanded="false" />
@@ -65,10 +67,42 @@
                 <element signature="method#max#0;class#Computer#0;class#Evaluator#0" expanded="false" />
                 <element signature="method#count#0;class#Computer#0;class#Evaluator#0" expanded="false" />
                 <element signature="method#countblank#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <marker date="1512451198124" expanded="false" signature="2743:3405" ph="{...}" />
-                <marker date="1512451198124" expanded="false" signature="3869:4711" ph="{...}" />
-                <marker date="1512451198124" expanded="false" signature="16487:17789" ph="{...}" />
+                <marker date="1512457148454" expanded="false" signature="2743:3405" ph="{...}" />
+                <marker date="1512457148454" expanded="false" signature="3895:4737" ph="{...}" />
+                <marker date="1512457148454" expanded="false" signature="16513:17815" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddLegends.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SheetWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/SheetWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,26 +110,9 @@
       <file leaf-file-name="Sheet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Sheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="224">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CellSingle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/function/CellSingle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding>
-                <element signature="method#CellSingle#0;class#CellSingle#0" expanded="false" />
-                <element signature="method#getValue#0;class#CellSingle#0" expanded="false" />
-                <element signature="method#getCell#0;class#CellSingle#0" expanded="false" />
-                <element signature="method#addDependant#0;class#CellSingle#0" expanded="false" />
-                <element signature="method#removeDependant#0;class#CellSingle#0" expanded="false" />
-                <element signature="method#equals#0;class#CellSingle#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,31 +120,26 @@
       <file leaf-file-name="CellReference.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="420">
+              <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               <folding>
                 <element signature="e#296#297#0" expanded="true" />
                 <element signature="e#327#328#0" expanded="true" />
+                <marker date="1512451930956" expanded="false" signature="366:377" ph=" { " />
+                <marker date="1512451930956" expanded="false" signature="396:402" ph=" }" />
+                <marker date="1512451930956" expanded="false" signature="430:441" ph=" { " />
+                <marker date="1512451930956" expanded="false" signature="454:460" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellRange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
+      <file leaf-file-name="ChartArea.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="69" />
-              <folding>
-                <element signature="method#addDependant#0;class#CellRange#0" expanded="false" />
-                <element signature="method#removeDependant#0;class#CellRange#0" expanded="false" />
-                <element signature="method#CellRange#0;class#CellRange#0" expanded="false" />
-                <element signature="method#getRepresentation#0;class#CellRange#0" expanded="false" />
-                <element signature="method#equals#0;class#CellRange#0" expanded="false" />
-                <element signature="method#getValue#0;class#CellRange#0" expanded="false" />
-                <element signature="method#getColumn#0;class#CellRange#0" expanded="false" />
-                <element signature="method#getRow#0;class#CellRange#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="977">
+              <caret line="94" column="45" lean-forward="true" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,43 +147,11 @@
       <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+            <state relative-caret-position="221">
+              <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListValue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/value/ListValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CellReferenceFormatException.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/exception/CellReferenceFormatException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -187,11 +167,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>alert</find>
       <find>System.out</find>
       <find>strTmp</find>
       <find>throw</find>
       <find>throw new</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>res</replace>
@@ -208,11 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/temp.txt" />
-        <option value="$PROJECT_DIR$/src/main/Window.java" />
-        <option value="/CSS Fragment (Table.java:353).css" />
-        <option value="$PROJECT_DIR$/src/main/TableView.java" />
-        <option value="$PROJECT_DIR$/src/function/Tokens.java" />
         <option value="$PROJECT_DIR$/src/function/Token.java" />
         <option value="$PROJECT_DIR$/src/function/Label.java" />
         <option value="$PROJECT_DIR$/src/function/DataType.java" />
@@ -249,16 +224,21 @@
         <option value="$PROJECT_DIR$/src/value/BooleanValue.java" />
         <option value="$PROJECT_DIR$/src/exception/ErrorType.java" />
         <option value="$PROJECT_DIR$/src/value/ErrorValue.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/value/NumberValue.java" />
         <option value="$PROJECT_DIR$/src/main/Table.java" />
-        <option value="$PROJECT_DIR$/src/main/Cell.java" />
         <option value="$PROJECT_DIR$/src/function/CellReference.java" />
         <option value="$PROJECT_DIR$/src/function/CellSingle.java" />
         <option value="$PROJECT_DIR$/src/function/CellRange.java" />
-        <option value="$PROJECT_DIR$/src/function/Evaluator.java" />
         <option value="$PROJECT_DIR$/src/value/ListValue.java" />
         <option value="$PROJECT_DIR$/src/exception/CellReferenceFormatException.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/chart/ChartArea.java" />
+        <option value="$PROJECT_DIR$/src/main/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Sheet.java" />
+        <option value="$PROJECT_DIR$/src/function/Evaluator.java" />
+        <option value="$PROJECT_DIR$/src/main/Cell.java" />
+        <option value="$PROJECT_DIR$/src/main/SheetWindow.java" />
       </list>
     </option>
   </component>
@@ -309,6 +289,12 @@
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,6 +334,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -521,13 +508,31 @@
       <workItem from="1512381100578" duration="1317000" />
       <workItem from="1512446845219" duration="4646000" />
     </task>
+    <task id="LOCAL-00001" summary="gitignore">
+      <created>1512452175853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512452175853</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217364000" />
+    <option name="totallyTimeSpent" value="223363000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -542,7 +547,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -552,16 +557,38 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39904422" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39904422" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -634,6 +661,8 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -642,28 +671,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5054">
-          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/TableView.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TableCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/cell/TextFieldTableCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -835,34 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/InvalidValueException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/InvalidTokenException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/InvalidReferenceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/DivisionByZeroException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/InvalidValueException.java" />
+    <entry file="file://$PROJECT_DIR$/src/exception/InvalidTokenException.java" />
+    <entry file="file://$PROJECT_DIR$/src/exception/InvalidReferenceException.java" />
+    <entry file="file://$PROJECT_DIR$/src/exception/DivisionByZeroException.java" />
     <entry file="file://$PROJECT_DIR$/src/exception/UnsupportedOperationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -884,13 +867,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/NumberException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/NumberException.java" />
     <entry file="file://$PROJECT_DIR$/src/exception/InvalidArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -979,95 +956,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#1543#1544#0" expanded="false" />
-            <element signature="e#1571#1572#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="69" />
-          <folding>
-            <element signature="method#addDependant#0;class#CellRange#0" expanded="false" />
-            <element signature="method#removeDependant#0;class#CellRange#0" expanded="false" />
-            <element signature="method#CellRange#0;class#CellRange#0" expanded="false" />
-            <element signature="method#getRepresentation#0;class#CellRange#0" expanded="false" />
-            <element signature="method#equals#0;class#CellRange#0" expanded="false" />
-            <element signature="method#getValue#0;class#CellRange#0" expanded="false" />
-            <element signature="method#getColumn#0;class#CellRange#0" expanded="false" />
-            <element signature="method#getRow#0;class#CellRange#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,15 +978,151 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Valuee.java" />
+    <entry file="file://$PROJECT_DIR$/src/value/ListValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <marker date="1512451551664" expanded="false" signature="619:630" ph=" { " />
+            <marker date="1512451551664" expanded="false" signature="646:652" ph=" }" />
+            <marker date="1512451551664" expanded="false" signature="706:716" ph=" { " />
+            <marker date="1512451551664" expanded="false" signature="736:742" ph=" }" />
+            <marker date="1512451551664" expanded="false" signature="797:808" ph=" { " />
+            <marker date="1512451551664" expanded="false" signature="831:837" ph=" }" />
+            <marker date="1512451551664" expanded="false" signature="860:870" ph=" { " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/CellReferenceFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="69" />
+          <folding>
+            <marker date="1512451926494" expanded="false" signature="471:838" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="897:1267" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="1357:1596" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="2679:2854" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="2906:3320" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="3349:3360" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3390:3396" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3425:3436" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3466:3472" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3498:3509" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3544:3550" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3579:3590" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3605:3611" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3641:3652" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3668:3674" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3702:3713" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3727:3733" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3764:3775" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="3792:3798" ph=" }" />
+            <marker date="1512451926494" expanded="false" signature="3832:4308" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="4352:4582" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="4623:4876" ph="{...}" />
+            <marker date="1512451926494" expanded="false" signature="4933:4944" ph=" { " />
+            <marker date="1512451926494" expanded="false" signature="5003:5009" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="977">
+          <caret line="94" column="45" lean-forward="true" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2596" column="0" lean-forward="false" selection-start-line="2596" selection-start-column="0" selection-end-line="2596" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/SheetWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <marker date="1512451930956" expanded="false" signature="366:377" ph=" { " />
+            <marker date="1512451930956" expanded="false" signature="396:402" ph=" }" />
+            <marker date="1512451930956" expanded="false" signature="430:441" ph=" { " />
+            <marker date="1512451930956" expanded="false" signature="454:460" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Sheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="132" column="3" lean-forward="false" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="146" column="33" lean-forward="true" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+        <state relative-caret-position="112">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding>
             <element signature="initializer##0;class#Evaluator#0" expanded="false" />
             <element signature="method#split#0;class#Evaluator#0" expanded="false" />
             <element signature="method#evaluate#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#evaluate#1;class#Evaluator#0" expanded="false" />
             <element signature="method#cellNameToReference#0;class#Evaluator#0" expanded="false" />
             <element signature="method#cellNameToRange#0;class#Evaluator#0" expanded="false" />
             <element signature="method#Computer#0;class#Computer#0;class#Evaluator#0" expanded="false" />
@@ -1107,35 +1135,35 @@
             <element signature="method#max#0;class#Computer#0;class#Evaluator#0" expanded="false" />
             <element signature="method#count#0;class#Computer#0;class#Evaluator#0" expanded="false" />
             <element signature="method#countblank#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <marker date="1512451198124" expanded="false" signature="2743:3405" ph="{...}" />
-            <marker date="1512451198124" expanded="false" signature="3869:4711" ph="{...}" />
-            <marker date="1512451198124" expanded="false" signature="16487:17789" ph="{...}" />
+            <marker date="1512457148454" expanded="false" signature="2743:3405" ph="{...}" />
+            <marker date="1512457148454" expanded="false" signature="3895:4737" ph="{...}" />
+            <marker date="1512457148454" expanded="false" signature="16513:17815" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/ListValue.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="417">
+          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/CellReferenceFormatException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/SheetWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/Valuee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-825">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="300">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding />
         </state>
       </provider>

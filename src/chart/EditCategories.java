@@ -9,12 +9,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
-import main.Cell;
 import main.Main;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class EditCategories extends Pane implements Initializable {
@@ -57,7 +55,7 @@ public class EditCategories extends Pane implements Initializable {
         ok.setOnAction(e -> {
             setCatText(range.getText());
             try {
-                catRange = Evaluator.cellNameToRange(Main.getMainWindow().getSheet().getTable(), catText);
+                catRange = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), catText);
             } catch (ParserException e1) {
                 e1.printStackTrace();
             }

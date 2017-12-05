@@ -8,15 +8,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Cell;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import main.Main;
-import main.MainWindow;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 
@@ -77,14 +74,14 @@ public class AddLegends extends Pane implements Initializable {
             setValueText(value.getText());
 
             try {
-                nameCell = Evaluator.cellNameToReference(Main.getMainWindow().getSheet().getTable(), nameText);
+                nameCell = Evaluator.cellNameToReference(Main.getSheetWindow().getSheet().getTable(), nameText);
             } catch (ParserException e1) {
                 // TODO: 04-Dec-17 Add alert on exception
                 e1.printStackTrace();
             }
 
             try {
-                valueRange = Evaluator.cellNameToRange(Main.getMainWindow().getSheet().getTable(), valueText);
+                valueRange = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), valueText);
             } catch (ParserException e1) {
                 // TODO: 04-Dec-17 Add alert on exception
                 e1.printStackTrace();

@@ -90,7 +90,7 @@ public class Evaluator {
                     operatorStack.push(token);
                 } else if (token == Symbol.LEFT_P) {
                     String after = (i + 1 < infix.size()) ? infix.get(i + 1) : null;
-                    if (operatorStack.peek() instanceof Function) {
+                    if (!operatorStack.empty() && operatorStack.peek() instanceof Function) {
                         if (!(tokenMap.containsKey(after) && tokenMap.get(after) == RIGHT_P))
                             functionStack.peek().incArgs();
                     }

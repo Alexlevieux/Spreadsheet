@@ -8,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Cell;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -66,15 +65,15 @@ public class ChartArea extends Pane implements Initializable {
     }
 
     public void setSeriesArray() {
-        for (int i = 0; i<seriesRange.getColSize(); i++) {
+        for (int i = 0; i < seriesRange.getColSize(); i++) {
             seriesArray.add(
                     new Series(
                             seriesRange.getValue().get(i).toString(),
                             new CellRange(
                                     dataRange.getTable(),
-                                    dataRange.getLeftCol()+i,
+                                    dataRange.getLeftCol() + i,
                                     dataRange.getTopRow(),
-                                    dataRange.getLeftCol()+i,
+                                    dataRange.getLeftCol() + i,
                                     dataRange.getBottomRow()
                             )
                     )
@@ -88,34 +87,44 @@ public class ChartArea extends Pane implements Initializable {
 
     public void setCatArray(ArrayList<Category> catArray) {
         this.catArray = catArray;
-        selected.setBottomRow(selected.getBottomRow()+1);
+        selected = new CellRange(
+                selected.getTable(),
+                selected.getLeftCol(),
+                selected.getTopRow(),
+                selected.getRightCol(),
+                selected.getBottomRow() + 1);
     }
 
     public void setCatArray() {
-        for (int i = 0; i<catRange.getRowSize(); i++) {
+        for (int i = 0; i < catRange.getRowSize(); i++) {
             catArray.add(
                     new Category(
                             catRange.getValue().get(i).toString(),
                             new CellRange(
                                     dataRange.getTable(),
                                     dataRange.getLeftCol(),
-                                    dataRange.getTopRow()+i,
+                                    dataRange.getTopRow() + i,
                                     dataRange.getRightCol(),
-                                    dataRange.getTopRow()+i
+                                    dataRange.getTopRow() + i
                             )
                     )
             );
         }
     }
 
-    public void addSeries (Series series) {
+    public void addSeries(Series series) {
         seriesArray.add(series);
-        selected.setRightCol(selected.getRightCol()+1);
+        selected = new CellRange(
+                selected.getTable(),
+                selected.getLeftCol(),
+                selected.getTopRow(),
+                selected.getRightCol() + 1,
+                selected.getBottomRow());
     }
 
     public void setSelected() {
         try {
-            selected = Evaluator.cellNameToRange(Main.getMainWindow().getSheet().getTable(), getRangeArea());
+            selected = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), getRangeArea());
         } catch (ParserException e1) {
             // TODO: 04-Dec-17 Add alert to exception
             e1.printStackTrace();
@@ -156,7 +165,7 @@ public class ChartArea extends Pane implements Initializable {
         );
     }
 
-    public void generateChart () {
+    public void generateChart() {
         setSeriesRange();
         setCatRange();
         setDataRange();
@@ -198,7 +207,7 @@ public class ChartArea extends Pane implements Initializable {
             stage.setTitle("Edit Series");
             stage.setScene(new Scene(al));
             stage.showAndWait();
-            if(al.getNewLegend() != null) addSeries(al.getNewLegend());
+            if (al.getNewLegend() != null) addSeries(al.getNewLegend());
             setSelected();
             generateChart();
         });
@@ -207,7 +216,7 @@ public class ChartArea extends Pane implements Initializable {
             EditCategories ec = new EditCategories();
             Stage stage = new Stage();
             stage.setTitle("Axis Labels");
-            stage.setScene(new Scene (ec));
+            stage.setScene(new Scene(ec));
             stage.showAndWait();
             if (ec.getCatRange() != null) setCatRange(ec.getCatRange());
             generateChart();

@@ -5,16 +5,15 @@ import exception.ParserException;
 import function.CellRange;
 import function.Evaluator;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import main.Main;
 
@@ -23,7 +22,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class ChartArea extends Pane implements Initializable {
+public class ChartArea extends FlowPane implements Initializable {
     @FXML
     private TextField range;
     @FXML
@@ -37,15 +36,21 @@ public class ChartArea extends Pane implements Initializable {
     @FXML
     private AnchorPane cat;
     @FXML
-    private ChoiceBox choice;
+    private ComboBox<String> choice;
     @FXML
     private Button ok;
     @FXML
     private Button cancel;
     @FXML
-    private Label seriesLabel;
+    private VBox seriesLabels;
     @FXML
-    private Label catLabel;
+    private VBox categoryLabels;
+    @FXML
+    private TextField xLabel;
+    @FXML
+    private TextField yLabel;
+    @FXML
+    private TextField title;
 
     private String rangeArea;
     private CellRange selected;
@@ -54,19 +59,37 @@ public class ChartArea extends Pane implements Initializable {
     private CellRange dataRange;
     private ArrayList<Series> seriesArray = new ArrayList<>();
     private ArrayList<Category> catArray = new ArrayList<>();
-    private String selectedChoice;
+    private String selectedChoice = "Bar Chart";
+    private String xAxis = "";
+    private String yAxis = "";
+    private String titleText = "";
+    private ObservableList<String> choiceData = FXCollections.observableArrayList();
 
+    private void setChoiceData () {
+        choiceData.add("Bar Chart");
+        choiceData.add("Line Chart");
+        choiceData.add("Scatter Chart");
+        choiceData.add("Bubble Chart");
+        choiceData.add("Area Chart");
+        choiceData.add("Histogram");
+    }
     private void setSelectedChoice () {
-        selectedChoice = choice.getSelectionModel().getSelectedItem().toString();
+        selectedChoice = choice.getSelectionModel().getSelectedItem();
+    }
+
+    public String getSelectedChoice () {
+        return selectedChoice;
     }
 
     private boolean isHistogram () {
-        if (selectedChoice.equalsIgnoreCase("histogram")) return true;
-        else return false;
+        boolean temp = false;
+        if (selectedChoice.equals("Histogram")) temp = true;
+        else temp = false;
+        return temp;
     }
 
     public void setRangeArea(String rangeArea) {
-        this.rangeArea = rangeArea;
+        if(rangeArea!=null) this.rangeArea = rangeArea;
     }
 
     public String getRangeArea() {
@@ -78,7 +101,7 @@ public class ChartArea extends Pane implements Initializable {
     }
 
     public void setSeriesArray(ArrayList<Series> seriesArray) {
-        this.seriesArray = seriesArray;
+        if(seriesArray!=null) this.seriesArray = seriesArray;
     }
 
     public void setSeriesArray() {
@@ -141,7 +164,9 @@ public class ChartArea extends Pane implements Initializable {
 
     public void setSelected() {
         try {
-            selected = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), getRangeArea());
+            if (getRangeArea()!=null)
+                selected = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), getRangeArea());
+            else System.out.println("rangeArea is null");
         } catch (ParserException e1) {
             // TODO: 04-Dec-17 Add alert to exception
             e1.printStackTrace();
@@ -191,7 +216,7 @@ public class ChartArea extends Pane implements Initializable {
             );
         }
     }
-    
+
     public CellRange getDataRange() {
         return dataRange;
     }
@@ -199,31 +224,34 @@ public class ChartArea extends Pane implements Initializable {
     private void generateChart() {
         if (!isHistogram()) {
             setSeriesRange();
-            setCatRange();
-            showSeries();
-            showCat();
+            if(catRange != null) setCatRange();
         }
         setDataRange();
-        if (seriesArray == null) setSeriesArray();
-        if (catArray == null) setCatArray();
+        if (seriesArray.size()==0) setSeriesArray();
+        else setSeriesArray(seriesArray);
+        if (catArray.size()==0) setCatArray();
+        else setCatArray(catArray);
+        if (!isHistogram()) {
+            showCat();
+            showSeries();
+        }
     }
 
     private void showSeries () {
-        String temp = "";
+        StringBuilder temp = new StringBuilder();
+        seriesLabels.getChildren().clear();
         for (Series aSeriesArray : seriesArray) {
-            temp = temp + "&#x2022; " + aSeriesArray.getName() + "\n";
+            seriesLabels.getChildren().add(new Label(aSeriesArray.getName()));
         }
-
-        seriesLabel.setText(temp);
     }
 
     private void showCat () {
-        String temp = "";
+        StringBuilder temp = new StringBuilder();
+        categoryLabels.getChildren().clear();
         for (Category aCatArray : catArray) {
-            temp = temp + "&#x2022; " + aCatArray.getName() + "\n";
+            temp.append(aCatArray.getName()).append("\n");
+            categoryLabels.getChildren().add(new Label(aCatArray.getName()));
         }
-
-        catLabel.setText(temp);
     }
 
     public ChartArea() {
@@ -237,47 +265,104 @@ public class ChartArea extends Pane implements Initializable {
         }
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        range = new TextField();
-        add = new Button();
-        remove = new Button();
-        edit = new Button();
-        ok = new Button();
-        series = new AnchorPane();
-        cat = new AnchorPane();
-        choice = new ChoiceBox<>(FXCollections.observableArrayList("Bar Chart", "Scatter Plot", "Histogram"));
+    private void setHistogram() {
+        add.setDisable(true);
+        series.setDisable(true);
+        remove.setDisable(true);
+        edit.setDisable(true);
+        cat.setDisable(true);
+        xLabel.setDisable(true);
+    }
 
-        range.setOnAction(e -> {
-            setSelected();
-            setSelectedChoice();
-            generateChart();
-            // TODO: 04-Dec-17 Update series and cat
+    private void setNotHistogram() {
+        add.setDisable(false);
+        series.setDisable(false);
+        remove.setDisable(false);
+        edit.setDisable(false);
+        cat.setDisable(false);
+        xLabel.setDisable(false);
+    }
+
+    private void setxAxis(String xAxis) {
+        this.xAxis = xAxis;
+    }
+
+    public String getxAxis() {
+        return xAxis;
+    }
+
+    public String getyAxis() {
+        return yAxis;
+    }
+
+    private void setyAxis(String yAxis) {
+        this.yAxis = yAxis;
+    }
+
+    private void setTitleText (String titleText) {
+        this.titleText = titleText;
+    }
+
+    public String getTitleText() {
+        return titleText;
+    }
+
+    @FXML
+    public void initialize(URL location, ResourceBundle resources) {
+        setChoiceData();
+
+        choice.setItems(choiceData);
+
+        choice.getSelectionModel().selectFirst();
+        choice.setCellFactory((comboBox) -> new ListCell<String>() {
+            @Override
+            protected void updateItem(String item, boolean empty) {
+                super.updateItem(item, empty);
+
+                if (item == null || empty) {
+                    setText(null);
+                } else {
+                    setText(item);
+                }
+            }
         });
 
-        choice.setOnAction(e -> {
-            if(isHistogram()) {
-                add.setDisable(true);
-                series.setDisable(true);
-                remove.setDisable(true);
-                edit.setDisable(true);
-                cat.setDisable(true);
-            }
-            else {
-                add.setDisable(false);
-                series.setDisable(false);
-                remove.setDisable(false);
-                edit.setDisable(false);
-                cat.setDisable(false);
-            }
+        choice.setOnAction((event) -> {
+            setSelectedChoice();
+            if(isHistogram()) setHistogram();
+            else setNotHistogram();
+            System.out.println("Choice pressed");
+        });
+
+        range.setOnAction(e -> {
+            System.out.println("Range entered");
+            setSelectedChoice();
+            setRangeArea(range.getText());
+            setSelected();
+            generateChart();
+        });
+
+        title.setOnAction(e -> {
+            setTitleText(title.getText());
+        });
+
+        xLabel.setOnAction(e -> {
+            setxAxis(xLabel.getText());
+        });
+
+        yLabel.setOnAction(e -> {
+            setyAxis(yLabel.getText());
         });
 
         add.setOnAction(e -> {
+            System.out.println("Add pressed");
             AddLegends al = new AddLegends();
             Stage stage = new Stage();
             stage.setTitle("Edit Series");
             stage.setScene(new Scene(al));
             stage.showAndWait();
+            stage.close();
+            System.out.println("Add pressed");
             if (al.getNewLegend() != null) addSeries(al.getNewLegend());
             setSelected();
             generateChart();
@@ -291,11 +376,28 @@ public class ChartArea extends Pane implements Initializable {
             stage.showAndWait();
             if (ec.getCatRange() != null) setCatRange(ec.getCatRange());
             generateChart();
+            System.out.println("Edit pressed");
         });
 
         ok.setOnAction(e -> {
-            setRangeArea(range.getText());
+            if (range.getText()!= null) setRangeArea(range.getText());
             setSelectedChoice();
+            if (!isHistogram() && xLabel!=null)setxAxis(xLabel.getText());
+            else setxAxis("");
+            if (yLabel.getText()!=null) setyAxis(yLabel.getText());
+            if (title.getText()!=null) setTitleText(title.getText());
+            else setTitleText("");
+            generateChart();
+
+            ShowChart sc = new ShowChart(getSelectedChoice(), getTitleText(), getDataRange(), getxAxis(), getyAxis(), getCatArray(), getSeriesArray());
+            Stage stage = new Stage();
+            stage.setTitle("Chart");
+            Scene scene = sc.showChart();
+            stage.setScene(scene);
+            stage.showAndWait();
+            System.out.println("Ok pressed");
         });
+
+        cancel.setCancelButton(true);
     }
 }

@@ -49,9 +49,6 @@ public class EditCategories extends Pane implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ok = new Button();
-        range = new TextField();
-        cancel = new Button();
         ok.setOnAction(e -> {
             setCatText(range.getText());
             try {

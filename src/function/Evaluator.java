@@ -139,11 +139,13 @@ public class Evaluator {
                         } else if (s.charAt(0) == '"' && s.charAt(s.length() - 1) == '"')
                             outputQueue.add(new StringValue(s.substring(1, s.length() - 1)));
                         else {
-                            if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]")) {
-                                outputQueue.add(cellNameToReference((Table) computer.tempCell.getParent(), s));
-                            } else if (s.matches("([A-Za-z0-9]+!)?[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
-                                outputQueue.add(cellNameToRange((Table) computer.tempCell.getParent(), s));
-                            } else {
+                            try {
+                                if (s.matches("[A-Za-z]+[0-9]+")) {
+                                    outputQueue.add(new CellSingle((Table) computer.tempCell.getParent(), s));
+                                } else if (s.matches("[A-Za-z]+[0-9]+:[A-Za-z]+[0-9]+")) {
+                                    outputQueue.add(new CellRange((Table) computer.tempCell.getParent(), s));
+                                }
+                            } catch (ParserException ex) {
                                 outputQueue.add(new ErrorValue(ErrorType.VALUE));
                             }
                         }
@@ -208,7 +210,7 @@ public class Evaluator {
         String cellRangeName, sheetName;
         cellRangeName = text;
         String[] cellTokens = cellRangeName.split("(?<=[A-Za-z])(?=[0-9])|:");
-        System.out.println(Arrays.toString(cellTokens));
+//        System.out.println(Arrays.toString(cellTokens));
         if (cellTokens.length != 4) throw new ParserException("Invalid cell name");
         String colLetter1 = cellTokens[0].toUpperCase();
         String colLetter2 = cellTokens[2].toUpperCase();

@@ -17,7 +17,6 @@ public class Bar {
         private NumberAxis yAxis;
         private BarChart bar;
         private Series series;
-        private ChartArea ca;
 
         public Bar () {
             setBar();

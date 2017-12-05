@@ -1,14 +1,17 @@
 package chart;
 
+import java.lang.String;
 import exception.ParserException;
 import function.CellRange;
 import function.Evaluator;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -39,6 +42,10 @@ public class ChartArea extends Pane implements Initializable {
     private Button ok;
     @FXML
     private Button cancel;
+    @FXML
+    private Label seriesLabel;
+    @FXML
+    private Label catLabel;
 
     private String rangeArea;
     private CellRange selected;
@@ -47,6 +54,16 @@ public class ChartArea extends Pane implements Initializable {
     private CellRange dataRange;
     private ArrayList<Series> seriesArray = new ArrayList<>();
     private ArrayList<Category> catArray = new ArrayList<>();
+    private String selectedChoice;
+
+    private void setSelectedChoice () {
+        selectedChoice = choice.getSelectionModel().getSelectedItem().toString();
+    }
+
+    private boolean isHistogram () {
+        if (selectedChoice.equalsIgnoreCase("histogram")) return true;
+        else return false;
+    }
 
     public void setRangeArea(String rangeArea) {
         this.rangeArea = rangeArea;
@@ -156,21 +173,57 @@ public class ChartArea extends Pane implements Initializable {
     }
 
     public void setDataRange() {
-        dataRange = new CellRange(
-                selected.getTable(),
-                selected.getLeftCol() + 1,
-                selected.getTopRow() + 1,
-                selected.getRightCol(),
-                selected.getBottomRow()
-        );
+        if (!isHistogram()) {
+            dataRange = new CellRange(
+                    selected.getTable(),
+                    selected.getLeftCol() + 1,
+                    selected.getTopRow() + 1,
+                    selected.getRightCol(),
+                    selected.getBottomRow()
+            );
+        } else {
+            dataRange = new CellRange(
+                    selected.getTable(),
+                    selected.getLeftCol(),
+                    selected.getTopRow(),
+                    selected.getRightCol(),
+                    selected.getBottomRow()
+            );
+        }
+    }
+    
+    public CellRange getDataRange() {
+        return dataRange;
     }
 
-    public void generateChart() {
-        setSeriesRange();
-        setCatRange();
+    private void generateChart() {
+        if (!isHistogram()) {
+            setSeriesRange();
+            setCatRange();
+            showSeries();
+            showCat();
+        }
         setDataRange();
         if (seriesArray == null) setSeriesArray();
         if (catArray == null) setCatArray();
+    }
+
+    private void showSeries () {
+        String temp = "";
+        for (Series aSeriesArray : seriesArray) {
+            temp = temp + "&#x2022; " + aSeriesArray.getName() + "\n";
+        }
+
+        seriesLabel.setText(temp);
+    }
+
+    private void showCat () {
+        String temp = "";
+        for (Category aCatArray : catArray) {
+            temp = temp + "&#x2022; " + aCatArray.getName() + "\n";
+        }
+
+        catLabel.setText(temp);
     }
 
     public ChartArea() {
@@ -193,12 +246,30 @@ public class ChartArea extends Pane implements Initializable {
         ok = new Button();
         series = new AnchorPane();
         cat = new AnchorPane();
+        choice = new ChoiceBox<>(FXCollections.observableArrayList("Bar Chart", "Scatter Plot", "Histogram"));
 
         range.setOnAction(e -> {
             setSelected();
+            setSelectedChoice();
             generateChart();
-
             // TODO: 04-Dec-17 Update series and cat
+        });
+
+        choice.setOnAction(e -> {
+            if(isHistogram()) {
+                add.setDisable(true);
+                series.setDisable(true);
+                remove.setDisable(true);
+                edit.setDisable(true);
+                cat.setDisable(true);
+            }
+            else {
+                add.setDisable(false);
+                series.setDisable(false);
+                remove.setDisable(false);
+                edit.setDisable(false);
+                cat.setDisable(false);
+            }
         });
 
         add.setOnAction(e -> {
@@ -224,6 +295,7 @@ public class ChartArea extends Pane implements Initializable {
 
         ok.setOnAction(e -> {
             setRangeArea(range.getText());
+            setSelectedChoice();
         });
     }
 }

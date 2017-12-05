@@ -2,8 +2,8 @@ package function;
 
 import exception.CellReferenceFormatException;
 import exception.ParserException;
-import main.Cell;
-import main.Table;
+import table.Cell;
+import table.Table;
 import value.ComparableValue;
 import value.ListValue;
 

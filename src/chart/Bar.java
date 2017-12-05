@@ -6,98 +6,74 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
 import main.Cell;
+import value.ComparableValue;
+import value.NumberValue;
 
 import java.util.ArrayList;
 
+// TODO: 04-Dec-17 Fix bar, create histogram, scatter plot and line chart
 public class Bar {
-        private CategoryAxis xAxisC;
-        private CategoryAxis yAxisC;
-        private NumberAxis yAxisN;
-        private NumberAxis xAxisN;
+        private CategoryAxis xAxis;
+        private NumberAxis yAxis;
         private BarChart bar;
         private Series series;
-        private boolean xc;
-        private boolean yc;
+        private ChartArea ca;
 
         public Bar () {
             setBar();
         }
 
-        public Bar (ArrayList<Cell> seriesName, ArrayList<Cell> cellCategory, ArrayList<Cell> cellData) {
+        public Bar (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList) {
+            setTitle(title);
             setBar();
-            generateChart (seriesName, cellCategory, cellData);
+            generateBar (seriesList, catList);
         }
 
         public Bar (String xLabel, String yLabel) {
             setBar();
-            setXLabel(xLabel);
-            setYLabel(yLabel);
+            setXYLabel(xLabel, yLabel);
         }
 
-        public void generateChart (ArrayList<Cell> seriesName, ArrayList<Cell> cellCategory, ArrayList<Cell> cellData) {
-            for (int i = 0; i<seriesName.size(); i++) {
-                series = new Series();
-                setSeriesName(seriesName.get(i).toString());
-                for (Cell aCellCategory : cellCategory) {
-                    addData(aCellCategory.toString(), cellData.get(i));
+        public Bar (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+            setTitle(title);
+            setBar();
+            setXYLabel(xLabel, yLabel);
+            generateBar (seriesList, catList);
+        }
+
+        private void generateBar (ArrayList<chart.Series> seriesList, ArrayList<Category> catList) {
+            for (chart.Series aSeriesList : seriesList) {
+                series = new Series<String, Double>();
+                setSeriesName(aSeriesList.getName());
+                for (int j = 0; j < catList.size(); j++) {
+                    ComparableValue temp = aSeriesList.getValues().getValue().get(j);
+                    if (temp instanceof NumberValue) {
+                        addData(catList.get(j).getName(), ((NumberValue) temp).getValue());
+                    }
+
+
                 }
             }
         }
 
         private void setBar() {
-            if (xc) xAxisC = new CategoryAxis();
-            else xAxisN = new NumberAxis();
-
-            if (yc) yAxisC = new CategoryAxis();
-            else yAxisN = new NumberAxis();
-
-            if (xc) {
-                if (yc) bar = new BarChart<>(xAxisC, yAxisC);
-                else bar = new BarChart<>(xAxisC, yAxisN);
-            }
-            else {
-                if (yc) bar = new BarChart<>(xAxisN, yAxisC);
-                else bar = new BarChart<>(xAxisN, yAxisN);
-            }
+            xAxis = new CategoryAxis();
+            yAxis = new NumberAxis();
+            bar = new BarChart<>(xAxis, yAxis);
         }
 
-        public void setXC (boolean xc) {
-            this.xc = xc;
-        }
-
-        public boolean getXC () {
-            return xc;
-        }
-
-        public void setYC (boolean yc) {
-            this.yc = yc;
-        }
-
-        public boolean getYC () {
-            return yc;
-        }
-
-        public void setXLabel (String xLabel) {
-            if (xc) xAxisC.setLabel(xLabel);
-            else xAxisN.setLabel(xLabel);
-        }
-
-        public void setYLabel (String yLabel) {
-            if (yc) yAxisC.setLabel(yLabel);
-            else yAxisN.setLabel(yLabel);
+        public void setXYLabel (String xLabel, String yLabel) {
+            xAxis.setLabel(xLabel);
+            yAxis.setLabel(yLabel);
         }
 
         public void setTitle (String title) {
             bar.setTitle (title);
         }
 
-        public void setSeriesName (String name) {
-            series.setName(name);
-        }
+        private void setSeriesName (String name) { series.setName(name); }
 
-        public void addData (String category, Cell value) {
-            series.getData().add(new XYChart.Data(category, value));
+        private void addData (String category, Double value) {
+            series.getData().add(new XYChart.Data<>(category, value));
         }
-
-//        public void seriesHeader ()
 }

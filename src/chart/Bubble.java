@@ -1,31 +1,34 @@
 package chart;
 
-import javafx.scene.chart.*;
+import javafx.scene.chart.BubbleChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.ScatterChart;
+import javafx.scene.chart.XYChart;
 
 import java.util.ArrayList;
 
-public class Scatter {
+public class Bubble {
     private NumberAxis xAxis;
     private NumberAxis yAxis;
-    private ScatterChart scatter;
+    private BubbleChart bubble;
     private GenerateChart gc;
 
-    public Scatter() {
+    public Bubble() {
         setScatter();
     }
 
-    public Scatter (String title, ArrayList<Series> seriesList, ArrayList<Category> catList) {
+    public Bubble (String title, ArrayList<Series> seriesList, ArrayList<Category> catList) {
         setTitle(title);
         setScatter();
         gc.generateChart (seriesList, catList, false);
     }
 
-    public Scatter (String xLabel, String yLabel) {
+    public Bubble (String xLabel, String yLabel) {
         setScatter();
         gc.setXYLabel(xLabel, yLabel, false);
     }
 
-    public Scatter (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+    public Bubble (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
         setTitle(title);
         setScatter();
         gc.setXYLabel(xLabel, yLabel, false);
@@ -35,10 +38,10 @@ public class Scatter {
     private void setScatter() {
         xAxis = new NumberAxis();
         yAxis = new NumberAxis();
-        scatter = new ScatterChart<>(xAxis, yAxis);
+        bubble = new BubbleChart<>(xAxis, yAxis);
     }
 
     public void setTitle (String title) {
-        scatter.setTitle (title);
+        bubble.setTitle (title);
     }
 }

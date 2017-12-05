@@ -2,13 +2,8 @@ package chart;
 
 import function.CellRange;
 import javafx.scene.chart.BarChart;
-import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
-import value.ComparableValue;
-import value.NumberValue;
-
-import java.util.ArrayList;
 
 public class Histogram {
     private NumberAxis xAxis;

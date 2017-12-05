@@ -162,15 +162,37 @@ public class ChartArea extends FlowPane implements Initializable {
                 selected.getBottomRow());
     }
 
-    public void setSelected() {
-        try {
-            if (getRangeArea()!=null)
-                selected = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), getRangeArea());
-            else System.out.println("rangeArea is null");
-        } catch (ParserException e1) {
-            // TODO: 04-Dec-17 Add alert to exception
-            e1.printStackTrace();
-        }
+    public void setSelected(boolean seriesChanged) {
+       if (selected == null){
+           try {
+               if (getRangeArea()!=null)
+                   selected = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), getRangeArea());
+               else System.out.println("rangeArea is null");
+           } catch (ParserException e1) {
+               // TODO: 04-Dec-17 Add alert to exception
+               e1.printStackTrace();
+           }
+       }
+       else {
+           if (seriesChanged) {
+               selected = new CellRange(
+                       Main.getSheetWindow().getSheet().getTable(),
+                       selected.getLeftCol(),
+                       selected.getTopRow(),
+                       selected.getRightCol()+1,
+                       selected.getBottomRow()
+               );
+           }
+           else {
+               selected = new CellRange(
+                       Main.getSheetWindow().getSheet().getTable(),
+                       selected.getLeftCol(),
+                       selected.getTopRow(),
+                       selected.getRightCol(),
+                       selected.getBottomRow()+1
+               );
+           }
+       }
     }
 
     public void setSeriesRange() {
@@ -224,7 +246,7 @@ public class ChartArea extends FlowPane implements Initializable {
     private void generateChart() {
         if (!isHistogram()) {
             setSeriesRange();
-            if(catRange != null) setCatRange();
+            if(catRange == null) setCatRange();
         }
         setDataRange();
         if (seriesArray.size()==0) setSeriesArray();
@@ -338,7 +360,7 @@ public class ChartArea extends FlowPane implements Initializable {
             System.out.println("Range entered");
             setSelectedChoice();
             setRangeArea(range.getText());
-            setSelected();
+            setSelected(false);
             generateChart();
         });
 
@@ -363,8 +385,10 @@ public class ChartArea extends FlowPane implements Initializable {
             stage.showAndWait();
             stage.close();
             System.out.println("Add pressed");
-            if (al.getNewLegend() != null) addSeries(al.getNewLegend());
-            setSelected();
+            if (al.getNewLegend() != null) {
+                addSeries(al.getNewLegend());
+                setSelected(true);
+            }
             generateChart();
         });
 
@@ -374,7 +398,10 @@ public class ChartArea extends FlowPane implements Initializable {
             stage.setTitle("Axis Labels");
             stage.setScene(new Scene(ec));
             stage.showAndWait();
-            if (ec.getCatRange() != null) setCatRange(ec.getCatRange());
+            if (ec.getCatRange() != null) {
+                setCatRange(ec.getCatRange());
+                setSelected(false);
+            }
             generateChart();
             System.out.println("Edit pressed");
         });

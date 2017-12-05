@@ -11,22 +11,31 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.*;
 
-public class Sheet extends GridPane implements InvalidationListener {
+public class Sheet extends GridPane{
     private Table table;
     protected ScrollPane tableScroll, rowScroll, colScroll;
     private VBox rowNumbers;
     private HBox colNumbers;
 
     public Sheet() {
+        getStylesheets().add("/layouts/styles.css");
+        getStyleClass().add("mygridStyle");
+
         setPrefWidth(800);
         setPrefHeight(600);
         table = new Table();
         rowNumbers = new VBox();
+        rowNumbers.setPrefHeight(USE_COMPUTED_SIZE);
         colNumbers = new HBox();
+        colNumbers.setPrefWidth(USE_COMPUTED_SIZE);
 
         tableScroll = new ScrollPane(table);
         rowScroll = new ScrollPane(rowNumbers);
+        rowScroll.setPrefViewportHeight(USE_COMPUTED_SIZE);
+        rowScroll.setPrefHeight(USE_COMPUTED_SIZE);
         colScroll = new ScrollPane(colNumbers);
+        colScroll.setPrefViewportWidth(USE_COMPUTED_SIZE);
+        colScroll.setPrefWidth(USE_COMPUTED_SIZE);
 
         rowScroll.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         rowScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
@@ -61,22 +70,22 @@ public class Sheet extends GridPane implements InvalidationListener {
             Label x = new Label(String.valueOf(i + 1));
             x.setPrefHeight(Table.PREF_ROW_HEIGHT);
             x.setPrefWidth(Table.PREF_ROW_HEIGHT);
-            x.setStyle(
+            x.setStyle("" +
                     "-fx-border-style: none none solid none;" +
-                            "-fx-border-color: black;" +
-                            "-fx-font: normal 12 'segoe ui';" +
-                            "-fx-border-width: inherit");
+                    "-fx-border-color: darkgrey;" +
+                    "-fx-font: normal 12 'segoe ui';" +
+                    "-fx-border-width: 0 0 1px 0");
             x.setAlignment(Pos.CENTER);
             rowNumbers.getChildren().add(x);
         }
 
         for (int i = 0; i < Table.PREF_COLUMN; i++) {
             Label x = new Label(CellReference.convertColumnNumberToLetter(i + 1));
-            x.setStyle(
+            x.setStyle("" +
                     "-fx-border-style: none solid none none;" +
-                            "-fx-border-color: black;" +
-                            "-fx-font: normal 12 'segoe ui';" +
-                            "-fx-border-width: inherit");
+                    "-fx-border-color: darkgrey;" +
+                    "-fx-font: normal 12 'segoe ui';" +
+                    "-fx-border-width: 0 1px 0 0");
             x.setPrefWidth(Table.PREF_COLUMN_WIDTH);
             x.setPrefHeight(Table.PREF_ROW_HEIGHT);
             x.setAlignment(Pos.CENTER);
@@ -96,10 +105,5 @@ public class Sheet extends GridPane implements InvalidationListener {
 
     public Table getTable() {
         return table;
-    }
-
-    @Override
-    public void invalidated(Observable observable) {
-
     }
 }

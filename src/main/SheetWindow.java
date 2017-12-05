@@ -1,24 +1,31 @@
 package main;
 
+import function.CellReference;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollBar;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SheetWindow extends GridPane implements Initializable{
+public class SheetWindow extends VBox implements Initializable {
     @FXML
     private ScrollBar hScroll;
     @FXML
     private ScrollBar vScroll;
+    @FXML
+    private GridPane gridPane;
 
     private Sheet sheet;
+
     public SheetWindow() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("SheetWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../layouts/SheetWindow.fxml"));
         loader.setRoot(this);
         loader.setController(this);
         try {
@@ -26,8 +33,6 @@ public class SheetWindow extends GridPane implements Initializable{
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
 
@@ -36,8 +41,8 @@ public class SheetWindow extends GridPane implements Initializable{
         //System.out.println(hScroll);
         //System.out.println(vScroll);
         sheet = new Sheet();
-       // System.out.println(sheet);
-        add(sheet,0,0);
+        // System.out.println(sheet);
+        gridPane.add(sheet, 0, 0);
         sheet.tableScroll.hminProperty().bind(hScroll.minProperty());
         sheet.tableScroll.vminProperty().bind(vScroll.minProperty());
         sheet.tableScroll.hmaxProperty().bind(hScroll.maxProperty());
@@ -62,8 +67,6 @@ public class SheetWindow extends GridPane implements Initializable{
 //        vScroll.valueProperty().bind(sheet.tableScroll.vvalueProperty());
 //        sheet.tableScroll.hvalueProperty().bind(hScroll.valueProperty());
 //        sheet.tableScroll.vvalueProperty().bind(vScroll.valueProperty());
-
-
     }
 
     public Sheet getSheet() {

@@ -13,10 +13,10 @@ import java.util.ArrayList;
 
 
 public class Cell extends TextField {
-    ComparableValue value;
-    String unprocessedValue;
-    ArrayList<Cell> dependants;
-    ArrayList<CellReference> precedents;
+    private ComparableValue value;
+    private String unprocessedValue;
+    private ArrayList<Cell> dependants;
+    private ArrayList<CellReference> precedents;
 
 
     public Cell() {

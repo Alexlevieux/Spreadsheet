@@ -1,5 +1,7 @@
 package function;
 
+import exception.CellReferenceFormatException;
+import exception.ParserException;
 import main.Cell;
 import main.Table;
 import value.Value;
@@ -10,9 +12,25 @@ public class CellSingle extends CellReference {
     private int row;
 
     public CellSingle(Table table, int col, int row) {
-        setTable(table);
+        super(table);
         setCol(col);
         setRow(row);
+    }
+    public CellSingle(Table table, String reference) throws ParserException{
+        super(table);
+        if(reference.matches("[A-Za-z]+[0-9]+")){
+            int rowNumber, colNumber;
+            String cellName, sheetName;
+            cellName = reference;
+            String[] cellTokens = cellName.split("(?<=[A-Za-z])(?=[0-9])");
+            if (cellTokens.length != 2) throw new CellReferenceFormatException("Invalid cell name");
+            rowNumber = Integer.valueOf(cellTokens[1]);
+            colNumber = convertColumnLetterToNumber(cellTokens[0].toUpperCase());
+            setCol(colNumber);
+            setRow(rowNumber);
+        } else {
+            throw new CellReferenceFormatException("Invalid cell name");
+        }
     }
 
     private void setCol(int col) {
@@ -40,17 +58,24 @@ public class CellSingle extends CellReference {
     }
 
     @Override
-    public String toString() {
-        return getTable() + ": " + col + ", " + row;
+    public String getRepresentation() {
+        return convertColumnNumberToLetter(col) + String.valueOf(row);
+    }
+
+    public Cell getCell(){
+        Cell ref = getTable().getCells().get(col-1).get(row-1);
+        if(ref == null) getTable().addCell(col-1, row-1);
+        ref = getTable().getCells().get(col-1).get(row-1);
+        return ref;
     }
 
     @Override
     public void addDependant(Cell cell){
-        System.out.println(getTable());
+//        System.out.println(getTable());
         Cell ref = getTable().getCells().get(col-1).get(row-1);
         if(ref == null) getTable().addCell(col-1, row-1);
         ref = getTable().getCells().get(col-1).get(row-1);
-        System.out.println(ref);
+//        System.out.println(ref);
         ref.addDependant(cell);
     }
 
@@ -61,14 +86,6 @@ public class CellSingle extends CellReference {
         ref = getTable().getCells().get(col-1).get(row-1);
         ref.removeDependant(cell);
     }
-
-    public Cell getCell(){
-        Cell ref = getTable().getCells().get(col-1).get(row-1);
-        if(ref == null) getTable().addCell(col-1, row-1);
-        ref = getTable().getCells().get(col-1).get(row-1);
-        return ref;
-    }
-
 
     @Override
     public boolean equals(Object o) {

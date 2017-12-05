@@ -167,6 +167,8 @@ public class Table extends GridPane implements Initializable{
     public void addCell(int col, int row) {
         if (cells.get(col).get(row) == null) {
             Cell temp = new Cell();
+            temp.setPrefHeight(PREF_ROW_HEIGHT);
+            temp.setPrefWidth(PREF_COLUMN_WIDTH);
             cells.get(col).set(row, temp);
             add(cells.get(col).get(row), col, row);
         }

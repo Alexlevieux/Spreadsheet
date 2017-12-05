@@ -1,25 +1,25 @@
 package main;
 
 import exception.ParserException;
-import function.Evaluator;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import value.NumberValue;
 
 
 public class Main extends Application {
-    private static MainWindow mainWindow;
+    private static SheetWindow sheetWindow;
 
-    public static MainWindow getMainWindow() {
-        return mainWindow;
+    public static SheetWindow getSheetWindow() {
+        return sheetWindow;
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        mainWindow = new MainWindow();
+        sheetWindow = new SheetWindow();
         stage.setTitle("Spreadsheet");
-        stage.setScene(new Scene(mainWindow, 1024, 768));
+        stage.setScene(new Scene(sheetWindow));
+        stage.setResizable(false);
+        stage.setMaximized(true);
         stage.show();
     }
     public static void main(String[] args) throws ParserException {

@@ -1,5 +1,6 @@
 package main;
 
+import function.CellReference;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.event.EventHandler;
@@ -15,26 +16,13 @@ public class Sheet extends GridPane implements InvalidationListener {
     protected ScrollPane tableScroll, rowScroll, colScroll;
     private VBox rowNumbers;
     private HBox colNumbers;
-    private Button selectAllButton;
-
-
-    private String intToColNumber(int number) {
-        String ans = "";
-        int num = number - 1;
-        while (num >=  0) {
-            int numChar = (num % 26)  + 65;
-            Character c = new Character((char)numChar);
-            ans = c + ans;
-            num = (num  / 26) - 1;
-        }
-        return ans;
-    }
 
     public Sheet() {
+        setPrefWidth(800);
+        setPrefHeight(600);
         table = new Table();
         rowNumbers = new VBox();
         colNumbers = new HBox();
-        selectAllButton = new Button("A");
 
         tableScroll = new ScrollPane(table);
         rowScroll = new ScrollPane(rowNumbers);
@@ -47,54 +35,48 @@ public class Sheet extends GridPane implements InvalidationListener {
         tableScroll.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         tableScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
-        add(selectAllButton,0,0);
-        add(rowScroll,0,1);
-        add(colScroll,1,0);
-        add(tableScroll,1,1);
+        add(rowScroll, 0, 1);
+        add(colScroll, 1, 0);
+        add(tableScroll, 1, 1);
 
-        rowScroll.addEventFilter(ScrollEvent.SCROLL,new EventHandler<ScrollEvent>() {
-            @Override
-            public void handle(ScrollEvent event) {
-                if (event.getDeltaX() != 0 || event.getDeltaY() != 0) {
-                    event.consume();
-                }
+        rowScroll.addEventFilter(ScrollEvent.SCROLL, event -> {
+            if (event.getDeltaX() != 0 || event.getDeltaY() != 0) {
+                event.consume();
             }
         });
-        colScroll.addEventFilter(ScrollEvent.SCROLL,new EventHandler<ScrollEvent>() {
-            @Override
-            public void handle(ScrollEvent event) {
-                if (event.getDeltaX() != 0) {
-                    event.consume();
-                }
+        colScroll.addEventFilter(ScrollEvent.SCROLL, event -> {
+            if (event.getDeltaX() != 0) {
+                event.consume();
             }
         });
-        tableScroll.addEventFilter(ScrollEvent.SCROLL, new EventHandler<ScrollEvent>() {
-            @Override
-            public void handle(ScrollEvent e) {
-                if (e.getDeltaX() != 0 || e.getDeltaY() != 0) {
-                    e.consume();;
-                }
-            }
-        });
+//        tableScroll.addEventFilter(ScrollEvent.SCROLL, e -> {
+//            if (e.getDeltaX() != 0 || e.getDeltaY() != 0) {
+////                e.consume();
+//            }
+//        });
 
-       // setGridLinesVisible(true);
+        // setGridLinesVisible(true);
 
-        for (int i=0; i<Table.PREF_ROW; i++) {
-            Label x = new Label(Integer.toString(i+1));
+        for (int i = 0; i < Table.PREF_ROW; i++) {
+            Label x = new Label(String.valueOf(i + 1));
             x.setPrefHeight(Table.PREF_ROW_HEIGHT);
             x.setPrefWidth(Table.PREF_ROW_HEIGHT);
-            x.setStyle("-fx-border-color: black;" +
-                   " -fx-font: normal 12 monospace;"+
-                    "-fx-border-width: inherit");
+            x.setStyle(
+                    "-fx-border-style: none none solid none;" +
+                            "-fx-border-color: black;" +
+                            "-fx-font: normal 12 'segoe ui';" +
+                            "-fx-border-width: inherit");
             x.setAlignment(Pos.CENTER);
             rowNumbers.getChildren().add(x);
         }
 
-        for (int i=0; i<Table.PREF_COLUMN; i++) {
-            Label x = new Label(intToColNumber(i+1));
-            x.setStyle("-fx-border-color: black;" +
-                    " -fx-font: normal 12 monospace;"+
-                    "-fx-border-width: inherit");
+        for (int i = 0; i < Table.PREF_COLUMN; i++) {
+            Label x = new Label(CellReference.convertColumnNumberToLetter(i + 1));
+            x.setStyle(
+                    "-fx-border-style: none solid none none;" +
+                            "-fx-border-color: black;" +
+                            "-fx-font: normal 12 'segoe ui';" +
+                            "-fx-border-width: inherit");
             x.setPrefWidth(Table.PREF_COLUMN_WIDTH);
             x.setPrefHeight(Table.PREF_ROW_HEIGHT);
             x.setAlignment(Pos.CENTER);
@@ -108,13 +90,14 @@ public class Sheet extends GridPane implements InvalidationListener {
         colScroll.hmaxProperty().bind(tableScroll.vmaxProperty());
         rowScroll.vvalueProperty().bind(tableScroll.vvalueProperty());
         colScroll.hvalueProperty().bind(tableScroll.hvalueProperty());
-      //  tableScroll.vvalueProperty().bind(rowScroll.vvalueProperty());
-      //  tableScroll.hvalueProperty().bind(colScroll.hvalueProperty());
+        //  tableScroll.vvalueProperty().bind(rowScroll.vvalueProperty());
+        //  tableScroll.hvalueProperty().bind(colScroll.hvalueProperty());
     }
 
     public Table getTable() {
         return table;
     }
+
     @Override
     public void invalidated(Observable observable) {
 

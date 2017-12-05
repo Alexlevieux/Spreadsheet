@@ -84,6 +84,7 @@ public class Cell extends TextField {
         } catch (ParserException e) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Invalid formula");
+            alert.setHeaderText(null);
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         } catch (NullPointerException e) {

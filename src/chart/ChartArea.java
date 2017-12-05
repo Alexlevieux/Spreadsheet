@@ -141,7 +141,7 @@ public class ChartArea extends Pane implements Initializable {
 
     public void setSelected() {
         try {
-            selected = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), getRangeArea());
+            selected = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), getRangeArea());
         } catch (ParserException e1) {
             // TODO: 04-Dec-17 Add alert to exception
             e1.printStackTrace();

@@ -1,12 +1,9 @@
-package main;
+package table;
 
-import function.CellReference;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.ScrollBar;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
@@ -25,7 +22,7 @@ public class SheetWindow extends VBox implements Initializable {
     private Sheet sheet;
 
     public SheetWindow() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../layouts/SheetWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("SheetWindow.fxml"));
         loader.setRoot(this);
         loader.setController(this);
         try {

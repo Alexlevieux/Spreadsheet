@@ -28,9 +28,11 @@ public class NumberValue extends ComparableValue {
 
     @Override
     public String toString() {
-        if (Math.abs(Math.floor(value) - value) < 1e-9)
+//        System.out.println(value);
+        if (Math.abs(Math.floor(value) - value) < 1e-9) {
+//            System.out.println("int");
             return String.valueOf(value.intValue());
-        else
+        }else
             return String.valueOf(value);
     }
 }

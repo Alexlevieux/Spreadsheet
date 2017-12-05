@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/layouts/MainWindow.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/layouts/styles.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/MainWindow.fxml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/SheetWindow.fxml" afterPath="$PROJECT_DIR$/src/layouts/SheetWindow.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Cell.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Cell.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Table.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Table.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Cell.java" afterPath="$PROJECT_DIR$/src/main/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Sheet.java" afterPath="$PROJECT_DIR$/src/main/Sheet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/SheetWindow.java" afterPath="$PROJECT_DIR$/src/main/SheetWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Table.java" afterPath="$PROJECT_DIR$/src/main/Table.java" />
-=======
-    <list default="true" id="a565f774-92b6-48d4-b1b6-738bdf7a2ae4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chart/Histogram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/chart/Scatter.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartData.class" afterPath="" />
+    <list default="true" id="f2961d27-6e66-45b7-84ee-758b560e39f5" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/chart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/program.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/saveas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/MainLayout.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/MainLayoutController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Cell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/CellValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Table.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/sample.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/layouts/MainWindow.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/layouts/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/CellValue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/sample.fxml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/layouts/SheetWindow.fxml" afterPath="$PROJECT_DIR$/src/table/SheetWindow.fxml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Cell.java" afterPath="$PROJECT_DIR$/src/table/Cell.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Sheet.java" afterPath="$PROJECT_DIR$/src/table/Sheet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/SheetWindow.java" afterPath="$PROJECT_DIR$/src/table/SheetWindow.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Table.java" afterPath="$PROJECT_DIR$/src/table/Table.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Bar.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Bar.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellRange.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellRange.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellReference.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellReference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/value/ListValue.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/value/ListValue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Main.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Window.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Window.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/value/ComparableValue.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/value/ComparableValue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/value/NumberValue.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/value/NumberValue.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/AddLegends.java" afterPath="$PROJECT_DIR$/src/chart/AddLegends.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/Bar.java" afterPath="$PROJECT_DIR$/src/chart/Bar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/ChartArea.fxml" afterPath="$PROJECT_DIR$/src/chart/ChartArea.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/ChartArea.java" afterPath="$PROJECT_DIR$/src/chart/ChartArea.java" />
->>>>>>> origin/master
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/EditCategories.java" afterPath="$PROJECT_DIR$/src/chart/EditCategories.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellRange.java" afterPath="$PROJECT_DIR$/src/function/CellRange.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellReference.java" afterPath="$PROJECT_DIR$/src/function/CellReference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellSingle.java" afterPath="$PROJECT_DIR$/src/function/CellSingle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/Evaluator.java" afterPath="$PROJECT_DIR$/src/function/Evaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Window.java" afterPath="$PROJECT_DIR$/src/main/Window.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/value/ComparableValue.java" afterPath="$PROJECT_DIR$/src/value/ComparableValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/value/NumberValue.java" afterPath="$PROJECT_DIR$/src/value/NumberValue.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,140 +62,78 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="JavaFxApplication" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AddLegends.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Sheet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/table/Sheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="-280">
+              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-=======
-      <file leaf-file-name="Bar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chart/Bar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="76" column="9" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="76" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scatter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chart/Scatter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
->>>>>>> origin/master
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="MainWindow.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/layouts/MainWindow.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SheetWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/SheetWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="68" column="75" lean-forward="false" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
+            <state relative-caret-position="1564">
+              <caret line="65" column="75" lean-forward="false" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/layouts/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-              <folding />
-=======
-      <file leaf-file-name="Histogram.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chart/Histogram.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1147#1148#0" expanded="true" />
-                <element signature="e#1598#1599#0" expanded="true" />
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
-                <element signature="e#1773#1774#0" expanded="true" />
-              </folding>
->>>>>>> origin/master
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="-1548">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="224">
+              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="85">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
->>>>>>> origin/master
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChartArea.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-                <element signature="e#5398#5399#0" expanded="true" />
-                <element signature="e#5430#5431#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="method#main#0;class#Main#0" expanded="false" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListValue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/value/ListValue.java">
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="48">
+              <caret line="148" column="41" lean-forward="true" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+              <folding>
+                <element signature="method#save#0;class#Window#0" expanded="false" />
+                <element signature="method#saveAs#0;class#Window#0" expanded="false" />
+                <element signature="method#newFile#0;class#Window#0" expanded="false" />
+                <element signature="method#createChart#0;class#Window#0" expanded="false" />
+                <element signature="e#6230#6728#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/MainLayoutController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="178" column="97" lean-forward="false" selection-start-line="178" selection-start-column="97" selection-end-line="178" selection-end-column="97" />
+              <folding>
+                <element signature="method#MainLayoutController#0;class#MainLayoutController#0" expanded="false" />
+                <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+                <element signature="docComment;method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
+                <element signature="method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
+                <element signature="method#newDocument#0;class#MainLayoutController#0" expanded="false" />
+                <marker date="1512511409415" expanded="false" signature="2553:5720" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,15 +141,8 @@
       <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/value/Value.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="389">
-              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="68">
-              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="448">
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -202,42 +151,56 @@
       <file leaf-file-name="ComparableValue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/value/ComparableValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="280">
+              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Series.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chart/Series.java">
+      <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/table/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-              <folding />
->>>>>>> origin/master
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2092">
-              <caret line="172" column="9" lean-forward="false" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
+            <state relative-caret-position="-237">
+              <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
               <folding>
-                <element signature="method#getCellByIndex#0;class#Table#0" expanded="false" />
-                <element signature="e#2297#3782#0" expanded="false" />
-                <element signature="e#2762#2799#0" expanded="false" />
-                <element signature="e#5885#5914#0" expanded="false" />
-                <element signature="method#setFocusedColumn#0;class#Table#0" expanded="false" />
-                <element signature="method#getFocusedColumn#0;class#Table#0" expanded="false" />
-                <element signature="method#getFocusedRow#0;class#Table#0" expanded="false" />
-                <element signature="method#addCell#0;class#Table#0" expanded="false" />
-                <element signature="method#initialize#0;class#Table#0" expanded="false" />
-                <marker date="1512463535026" expanded="true" signature="1710:1874" ph="{...}" />
-                <marker date="1512463535026" expanded="true" signature="1921:2083" ph="{...}" />
-                <marker date="1512463535026" expanded="false" signature="2127:2272" ph="{...}" />
+                <element signature="method#Cell#0;class#Cell#0" expanded="false" />
+                <element signature="e#798#815#0" expanded="false" />
+                <element signature="e#842#1243#0" expanded="false" />
+                <element signature="e#1273#1512#0" expanded="false" />
+                <element signature="e#1553#2237#0" expanded="false" />
+                <element signature="e#2000#2064#0" expanded="false" />
+                <element signature="e#2265#2423#0" expanded="false" />
+                <element signature="e#2280#2304#0" expanded="false" />
+                <element signature="method#setValue#0;class#Cell#0" expanded="false" />
+                <element signature="method#notifyDependants#0;class#Cell#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evaluator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="171" column="12" lean-forward="false" selection-start-line="171" selection-start-column="12" selection-end-line="177" selection-end-column="13" />
+              <folding>
+                <element signature="initializer##0;class#Evaluator#0" expanded="false" />
+                <element signature="method#split#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#toPostfix#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#cellNameToReference#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#cellNameToRange#0;class#Evaluator#0" expanded="false" />
+                <element signature="class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#Computer#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#compute#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#call#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#sum#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#average#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#variance#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#min#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#max#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#count#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+                <element signature="method#countblank#0;class#Computer#0;class#Evaluator#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -249,25 +212,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-<<<<<<< HEAD
-      <find>System.out</find>
-      <find>strTmp</find>
-      <find>throw</find>
-      <find>throw new</find>
-      <find>alert</find>
-      <find>invalidat</find>
-      <find>intellij</find>
-      <find>setFoc</find>
-=======
-      <find>String</find>
-      <find>bar</find>
->>>>>>> origin/master
+      <find>mouse</find>
+      <find>styles.css</find>
+      <find>System.ou</find>
+      <find>System</find>
+      <find>showSav</find>
+      <find>fileChooser.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -281,64 +236,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/function/DataType.java" />
-        <option value="$PROJECT_DIR$/src/function/ValueType.java" />
-        <option value="$PROJECT_DIR$/src/function/NumberValue.java" />
-        <option value="$PROJECT_DIR$/src/function/Symbol.java" />
-        <option value="$PROJECT_DIR$/src/function/TokenizerException.java" />
-        <option value="$PROJECT_DIR$/src/function/ParserException.java" />
-        <option value="$PROJECT_DIR$/src/function/Function.java" />
-        <option value="$PROJECT_DIR$/src/function/Computer.java" />
-        <option value="$PROJECT_DIR$/src/function/Operator.java" />
-        <option value="$PROJECT_DIR$/src/function/DoubleValue.java" />
-        <option value="$PROJECT_DIR$/src/function/StringValue.java" />
-        <option value="$PROJECT_DIR$/src/function/BooleanValue.java" />
-        <option value="$PROJECT_DIR$/src/function/Value.java" />
-        <option value="$PROJECT_DIR$/src/function/FunctionType.java" />
-        <option value="$PROJECT_DIR$/src/function/Valuee.java" />
-        <option value="$PROJECT_DIR$/src/value/Value.java" />
-        <option value="$PROJECT_DIR$/src/value/IncomparableValue.java" />
-        <option value="$PROJECT_DIR$/src/exception/ValueException.java" />
-        <option value="$PROJECT_DIR$/src/exception/ReferenceException.java" />
-        <option value="$PROJECT_DIR$/src/exception/DivisionByZeroException.java" />
-        <option value="$PROJECT_DIR$/src/exception/InvalidTokenException.java" />
-        <option value="$PROJECT_DIR$/src/exception/InvalidReferenceException.java" />
-        <option value="$PROJECT_DIR$/src/exception/UnsupportedOperationException.java" />
-        <option value="$PROJECT_DIR$/src/value/CellReference.java" />
-        <option value="$PROJECT_DIR$/src/exception/NumberException.java" />
-        <option value="$PROJECT_DIR$/src/exception/InvalidArgumentException.java" />
-        <option value="$PROJECT_DIR$/src/value/CellRange.java" />
-        <option value="$PROJECT_DIR$/src/value/CellSingle.java" />
-        <option value="$PROJECT_DIR$/src/value/DoubleValue.java" />
-        <option value="$PROJECT_DIR$/src/value/StringValue.java" />
-        <option value="$PROJECT_DIR$/src/value/ComparableValue.java" />
-        <option value="$PROJECT_DIR$/src/value/BooleanValue.java" />
-        <option value="$PROJECT_DIR$/src/exception/ErrorType.java" />
-        <option value="$PROJECT_DIR$/src/value/ErrorValue.java" />
-        <option value="$PROJECT_DIR$/src/value/NumberValue.java" />
-        <option value="$PROJECT_DIR$/src/function/CellReference.java" />
         <option value="$PROJECT_DIR$/src/function/CellSingle.java" />
         <option value="$PROJECT_DIR$/src/function/CellRange.java" />
-=======
->>>>>>> origin/master
-        <option value="$PROJECT_DIR$/src/value/ListValue.java" />
-        <option value="$PROJECT_DIR$/src/chart/Bar.java" />
-        <option value="$PROJECT_DIR$/src/chart/Scatter.java" />
-        <option value="$PROJECT_DIR$/src/chart/ChartArea.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/main/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/function/Evaluator.java" />
-        <option value="$PROJECT_DIR$/src/layouts/styles.css" />
-        <option value="$PROJECT_DIR$/src/main/Sheet.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/Cell.java" />
-        <option value="$PROJECT_DIR$/src/main/Table.java" />
         <option value="$PROJECT_DIR$/src/main/SheetWindow.java" />
+        <option value="$PROJECT_DIR$/src/chart/EditCategories.java" />
+        <option value="$PROJECT_DIR$/src/chart/AddLegends.java" />
+        <option value="$PROJECT_DIR$/src/chart/ChartArea.java" />
         <option value="$PROJECT_DIR$/src/layouts/MainWindow.fxml" />
-=======
-        <option value="$PROJECT_DIR$/src/chart/Histogram.java" />
->>>>>>> origin/master
+        <option value="$PROJECT_DIR$/src/layouts/styles.css" />
+        <option value="$PROJECT_DIR$/src/value/NumberValue.java" />
+        <option value="$PROJECT_DIR$/src/main/Table.java" />
+        <option value="$PROJECT_DIR$/src/main/Cell.java" />
+        <option value="$PROJECT_DIR$/src/layouts/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/table/Table.java" />
+        <option value="$PROJECT_DIR$/src/table/Sheet.java" />
+        <option value="$PROJECT_DIR$/src/function/Evaluator.java" />
+        <option value="$PROJECT_DIR$/src/main/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/table/Cell.java" />
+        <option value="$PROJECT_DIR$/src/value/Value.java" />
+        <option value="$PROJECT_DIR$/src/value/ComparableValue.java" />
+        <option value="$PROJECT_DIR$/src/main/MainLayoutController.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/Window.java" />
       </list>
     </option>
   </component>
@@ -348,8 +267,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -364,67 +291,64 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
           <expand>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="chart" type="cbb8eebc:String" user="chart" />
-            </path>
-            <path>
-<<<<<<< HEAD
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="function" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="function" type="cbb8eebc:String" user="function" />
->>>>>>> origin/master
             </path>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Spreadsheets" type="cbb8eebc:String" user="Spreadsheets" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="value" type="cbb8eebc:String" user="value" />
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="value" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,7 +357,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nicky\IdeaProjects\Spreadsheet\src\layouts" />
+      <recent name="C:\Users\Nicky\IdeaProjects\Spreadsheet\src\main" />
+      <recent name="C:\Users\Nicky\IdeaProjects\Spreadsheet" />
+      <recent name="C:\Users\Nicky\IdeaProjects\Spreadsheet\src\table" />
+      <recent name="C:\Users\Nicky\IdeaProjects\Spreadsheet\src\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicky\IdeaProjects\Spreadsheet\src\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,7 +382,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="table.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -469,11 +399,11 @@
       <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -558,28 +488,22 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a565f774-92b6-48d4-b1b6-738bdf7a2ae4" name="Default" comment="" />
-      <created>1512447266617</created>
+      <changelist id="f2961d27-6e66-45b7-84ee-758b560e39f5" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+      <created>1512469491049</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1512447266617</updated>
-      <workItem from="1512447273987" duration="10094000" />
+      <updated>1512469491049</updated>
+      <workItem from="1512469509940" duration="28097000" />
     </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00002" summary="gitignore">
-      <created>1512458163550</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1512458163550</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229140000" />
+    <option name="totallyTimeSpent" value="31056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,23 +513,16 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-=======
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10094000" />
->>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -614,7 +531,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567567" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -624,16 +541,29 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39904422" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -648,39 +578,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567567" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
->>>>>>> origin/master
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -689,288 +595,539 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/function/Computer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/CellValue.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
->>>>>>> origin/master
+    <entry file="file://$PROJECT_DIR$/src/exception/NumberException.java" />
+    <entry file="file://$PROJECT_DIR$/src/exception/InvalidArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/javafx-src.zip!/javafx/scene/chart/Axis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="172" column="22" lean-forward="false" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/ComparableValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/ListValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chart/Series.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chart/Scatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="84">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="false" />
+            <element signature="e#166#167#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/chart/Bar.java">
->>>>>>> origin/master
+    <entry file="file://$PROJECT_DIR$/src/value/BooleanValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="76" column="9" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="76" selection-end-column="9" />
+        <state relative-caret-position="420">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#459#460#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/StringValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#480#481#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/ErrorValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/IncomparableValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/ErrorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4172">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/layouts/SheetWindow.fxml">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="448">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Valuee.java" />
+    <entry file="file://$PROJECT_DIR$/src/value/ListValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#536#537#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <marker date="1512451551664" expanded="false" signature="619:630" ph=" { " />
+            <marker date="1512451551664" expanded="false" signature="646:652" ph=" }" />
+            <marker date="1512451551664" expanded="false" signature="706:716" ph=" { " />
+            <marker date="1512451551664" expanded="false" signature="736:742" ph=" }" />
+            <marker date="1512451551664" expanded="false" signature="797:808" ph=" { " />
+            <marker date="1512451551664" expanded="false" signature="831:837" ph=" }" />
+            <marker date="1512451551664" expanded="false" signature="860:870" ph=" { " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2596" column="0" lean-forward="false" selection-start-line="2596" selection-start-column="0" selection-end-line="2596" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="132" column="3" lean-forward="false" selection-start-line="132" selection-start-column="3" selection-end-line="132" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
+    <entry file="file://$PROJECT_DIR$/src/layouts/styles/css.java" />
+    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        <state relative-caret-position="364">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/styles/css.java">
+    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#221#222#0" expanded="false" />
+            <element signature="e#252#253#0" expanded="false" />
+            <marker date="1512496692709" expanded="false" signature="291:302" ph=" { " />
+            <marker date="1512496692709" expanded="false" signature="321:327" ph=" }" />
+            <marker date="1512496692709" expanded="false" signature="355:366" ph=" { " />
+            <marker date="1512496692709" expanded="false" signature="379:385" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/CellSingle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#CellSingle#0;class#CellSingle#0" expanded="false" />
+            <element signature="method#getValue#0;class#CellSingle#0" expanded="false" />
+            <element signature="method#getCell#0;class#CellSingle#0" expanded="false" />
+            <element signature="method#addDependant#0;class#CellSingle#0" expanded="false" />
+            <element signature="method#removeDependant#0;class#CellSingle#0" expanded="false" />
+            <element signature="method#equals#0;class#CellSingle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exception/CellReferenceFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
+    <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#5398#5399#0" expanded="true" />
-            <element signature="e#5430#5431#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#addDependant#0;class#CellRange#0" expanded="false" />
+            <element signature="method#removeDependant#0;class#CellRange#0" expanded="false" />
+            <element signature="method#CellRange#0;class#CellRange#0" expanded="false" />
+            <element signature="method#getRepresentation#0;class#CellRange#0" expanded="false" />
+            <element signature="method#equals#0;class#CellRange#0" expanded="false" />
+            <element signature="method#getValue#0;class#CellRange#0" expanded="false" />
+            <element signature="method#getColumn#0;class#CellRange#0" expanded="false" />
+            <element signature="method#getRow#0;class#CellRange#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chart/Histogram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
->>>>>>> origin/master
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <marker date="1512451930956" expanded="false" signature="366:377" ph=" { " />
-            <marker date="1512451930956" expanded="false" signature="396:402" ph=" }" />
-            <marker date="1512451930956" expanded="false" signature="430:441" ph=" { " />
-            <marker date="1512451930956" expanded="false" signature="454:460" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Sheet.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/image/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1548">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="13776">
+          <caret line="619" column="0" lean-forward="false" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/Control.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="412" column="0" lean-forward="false" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="false" />
+            <element signature="e#3264#3265#0" expanded="false" />
+            <element signature="e#4274#4275#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
+          <folding>
+            <element signature="e#66617#66618#0" expanded="false" />
+            <element signature="e#66663#66664#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="977">
-          <caret line="94" column="45" lean-forward="true" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
-=======
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <state relative-caret-position="175">
+          <caret line="143" column="86" lean-forward="false" selection-start-line="143" selection-start-column="86" selection-end-line="143" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/EditCategories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="57" column="90" lean-forward="false" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> origin/master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2092">
-          <caret line="172" column="9" lean-forward="false" selection-start-line="172" selection-start-column="9" selection-end-line="172" selection-end-column="9" />
-          <folding>
-            <element signature="method#getCellByIndex#0;class#Table#0" expanded="false" />
-            <element signature="e#2297#3782#0" expanded="false" />
-            <element signature="e#2762#2799#0" expanded="false" />
-            <element signature="e#5885#5914#0" expanded="false" />
-            <element signature="method#setFocusedColumn#0;class#Table#0" expanded="false" />
-            <element signature="method#getFocusedColumn#0;class#Table#0" expanded="false" />
-            <element signature="method#getFocusedRow#0;class#Table#0" expanded="false" />
-            <element signature="method#addCell#0;class#Table#0" expanded="false" />
-            <element signature="method#initialize#0;class#Table#0" expanded="false" />
-            <marker date="1512463535026" expanded="true" signature="1710:1874" ph="{...}" />
-            <marker date="1512463535026" expanded="true" signature="1921:2083" ph="{...}" />
-            <marker date="1512463535026" expanded="false" signature="2127:2272" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/SheetWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="68" column="75" lean-forward="false" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
->>>>>>> origin/master
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/MainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MainLayout.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1512496571160" expanded="true" signature="6976:6987" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CellValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/Pane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/GridPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+          <folding>
+            <element signature="e#14674#14675#0" expanded="false" />
+            <element signature="e#14751#14752#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="93" column="32" lean-forward="false" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+          <folding>
+            <element signature="method#getCellByIndex#0;class#Table#0" expanded="false" />
+            <element signature="e#2297#3782#0" expanded="false" />
+            <element signature="e#2762#2799#0" expanded="false" />
+            <element signature="method#setFocusedColumn#0;class#Table#0" expanded="false" />
+            <element signature="method#getFocusedColumn#0;class#Table#0" expanded="false" />
+            <element signature="method#getFocusedRow#0;class#Table#0" expanded="false" />
+            <element signature="method#getFocusedCellText#0;class#Table#0" expanded="false" />
+            <element signature="method#addCell#0;class#Table#0" expanded="false" />
+            <element signature="method#initialize#0;class#Table#0" expanded="false" />
+            <element signature="e#7299#7300#0" expanded="true" />
+            <element signature="e#7336#7337#0" expanded="true" />
+            <element signature="e#7393#7394#0" expanded="true" />
+            <element signature="e#7448#7449#0" expanded="true" />
+            <element signature="e#7500#7501#0" expanded="true" />
+            <element signature="e#7534#7535#0" expanded="true" />
+            <element signature="e#7585#7586#0" expanded="true" />
+            <element signature="e#7634#7635#0" expanded="true" />
+            <element signature="e#7672#7673#0" expanded="true" />
+            <element signature="e#7715#7716#0" expanded="true" />
+            <element signature="e#7750#7751#0" expanded="true" />
+            <element signature="e#7790#7791#0" expanded="true" />
+            <marker date="1512499453222" expanded="true" signature="1710:1874" ph="{...}" />
+            <marker date="1512499453222" expanded="true" signature="1921:2083" ph="{...}" />
+            <marker date="1512499453222" expanded="false" signature="2127:2272" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="657" column="0" lean-forward="false" selection-start-line="657" selection-start-column="0" selection-end-line="657" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/temp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/NumberValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="171" column="12" lean-forward="false" selection-start-line="171" selection-start-column="12" selection-end-line="177" selection-end-column="13" />
+          <folding>
+            <element signature="initializer##0;class#Evaluator#0" expanded="false" />
+            <element signature="method#split#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#toPostfix#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#cellNameToReference#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#cellNameToRange#0;class#Evaluator#0" expanded="false" />
+            <element signature="class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#Computer#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#compute#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#call#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#sum#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#average#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#variance#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#min#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#max#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#count#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+            <element signature="method#countblank#0;class#Computer#0;class#Evaluator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+          <folding>
+            <element signature="method#Cell#0;class#Cell#0" expanded="false" />
+            <element signature="e#798#815#0" expanded="false" />
+            <element signature="e#842#1243#0" expanded="false" />
+            <element signature="e#1273#1512#0" expanded="false" />
+            <element signature="e#1553#2237#0" expanded="false" />
+            <element signature="e#2000#2064#0" expanded="false" />
+            <element signature="e#2265#2423#0" expanded="false" />
+            <element signature="e#2280#2304#0" expanded="false" />
+            <element signature="method#setValue#0;class#Cell#0" expanded="false" />
+            <element signature="method#notifyDependants#0;class#Cell#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/ComparableValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/Sheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MainLayoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="178" column="97" lean-forward="false" selection-start-line="178" selection-start-column="97" selection-end-line="178" selection-end-column="97" />
+          <folding>
+            <element signature="method#MainLayoutController#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="docComment;method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
+            <element signature="method#newDocument#0;class#MainLayoutController#0" expanded="false" />
+            <marker date="1512511409415" expanded="false" signature="2553:5720" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="65" column="75" lean-forward="false" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="148" column="41" lean-forward="true" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+          <folding>
+            <element signature="method#save#0;class#Window#0" expanded="false" />
+            <element signature="method#saveAs#0;class#Window#0" expanded="false" />
+            <element signature="method#newFile#0;class#Window#0" expanded="false" />
+            <element signature="method#createChart#0;class#Window#0" expanded="false" />
+            <element signature="e#6230#6728#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

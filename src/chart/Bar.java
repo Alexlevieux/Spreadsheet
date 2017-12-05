@@ -5,7 +5,6 @@ import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
-import main.Cell;
 import value.ComparableValue;
 import value.NumberValue;
 

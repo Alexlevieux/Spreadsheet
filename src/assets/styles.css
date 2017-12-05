@@ -1,0 +1,36 @@
+.mygridStyle Line {
+    -fx-stroke: lightgrey;
+}
+
+.menuButton {
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.menuButton:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menuButton:pressed {
+    -fx-background-color: rgba(0, 0, 0, 0.25);
+}
+
+.menu-bar {
+    -fx-background-color:  #217346;
+}
+.menu .label{
+    -fx-text-fill: white;
+}
+.menu:selected, .menu:hover, .menu:pressed, .menu:expanded, .menu:focused, .menu:showing{
+    -fx-background-color: #184f2b;
+    -fx-text-fill: white;
+}
+.menu-item .label{
+    -fx-text-fill: black;
+}
+.menu-item:hover, .menu-item:selected, .menu-item:focused{
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+}

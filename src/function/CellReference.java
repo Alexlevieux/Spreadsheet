@@ -1,11 +1,8 @@
 package function;
 
 import exception.InvalidArgumentException;
-import exception.ParserException;
-import function.Token;
-import main.Cell;
-import main.Table;
-import value.Value;
+import table.Cell;
+import table.Table;
 
 public abstract class CellReference implements Token{
     private Table table;

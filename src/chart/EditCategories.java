@@ -55,7 +55,7 @@ public class EditCategories extends Pane implements Initializable {
         ok.setOnAction(e -> {
             setCatText(range.getText());
             try {
-                catRange = Evaluator.cellNameToRange(Main.getSheetWindow().getSheet().getTable(), catText);
+                catRange = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), catText);
             } catch (ParserException e1) {
                 e1.printStackTrace();
             }

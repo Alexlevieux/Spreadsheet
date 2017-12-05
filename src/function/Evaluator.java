@@ -1,17 +1,14 @@
 package function;
 
 import exception.*;
-import exception.UnsupportedOperationException;
-import main.Cell;
-import main.Table;
+import table.Cell;
+import table.Table;
 import value.*;
 
 import java.util.*;
 
 import static function.Operator.*;
 import static function.Symbol.*;
-
-// TODO: 02-Dec-17 Fix cell range evaluation + dependants/precedents
 
 @SuppressWarnings({"Duplicates", "WeakerAccess", "UnusedReturnValue", "unused", "UnusedAssignment"})
 public class Evaluator {
@@ -169,24 +166,22 @@ public class Evaluator {
 
     public static ComparableValue evaluate(String expression) throws ParserException {
         if (expression.isEmpty()) return null;
-        else if (expression.charAt(0) == '=') {
+        if (expression.charAt(0) == '=') {
             expression = expression.substring(1, expression.length());
-            ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
-            ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
-            computer.setPostFix(tokens);
-            return (ComparableValue) computer.compute();
         } else {
-            if (expression.toUpperCase().equals("TRUE"))
-                return new BooleanValue(true);
-            if (expression.toUpperCase().equals("FALSE"))
-                return new BooleanValue(false);
-            try {
+            if (expression.toUpperCase().equals("TRUE"));
+            else if (expression.toUpperCase().equals("FALSE"));
+            else try {
                 Double d = Double.valueOf(expression);
-                return new NumberValue(d);
             } catch (NumberFormatException e) {
-                return new StringValue(expression);
+                expression = "\"" + expression + "\"";
             }
         }
+//        System.out.println(expression);
+        ArrayList<String> stringTokens = (ArrayList<String>) split(expression);
+        ArrayList<Token> tokens = (ArrayList<Token>) toPostfix(stringTokens);
+        computer.setPostFix(tokens);
+        return (ComparableValue) computer.compute();
     }
 
     public static CellSingle cellNameToReference(Table table, String text) throws ParserException {

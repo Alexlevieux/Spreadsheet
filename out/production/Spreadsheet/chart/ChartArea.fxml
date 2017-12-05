@@ -5,18 +5,60 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="480.0" type="FlowPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chart.ChartArea">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="480.0" type="FlowPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox>
          <children>
             <HBox prefHeight="33.0" prefWidth="449.0">
                <children>
-                  <Label prefHeight="39.0" prefWidth="104.0" text="Chart data range:">
+                  <Label prefHeight="39.0" prefWidth="150.0" text="Chart title:">
                      <HBox.margin>
                         <Insets left="15.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField fx:id="range" prefHeight="25.0" prefWidth="313.0" promptText="Insert data range here">
+                  <TextField fx:id="title" prefHeight="25.0" prefWidth="250.0" promptText="Insert chart title here">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="449.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="150.0" text="Chart data range:">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="range" prefHeight="25.0" prefWidth="250.0" promptText="Insert data range here">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="449.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="150.0" text="Horizontal (X) axis label:">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="250.0" promptText="Insert the label here" fx:id="xLabel">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="449.0">
+               <children>
+                  <Label prefHeight="39.0" prefWidth="150.0" text="Vertical (Y) axis label:">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="yLabel" prefHeight="25.0" prefWidth="250.0" promptText="Insert the label here">
                      <HBox.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </HBox.margin>
@@ -50,7 +92,14 @@
                               </HBox>
                               <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="170.0" prefWidth="222.0">
                                 <content>
-                                  <AnchorPane fx:id="series" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="220.0" />
+                                  <AnchorPane fx:id="series" minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox fx:id="seriesLabels" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children></AnchorPane>
                                 </content>
                               </ScrollPane>
                            </children>
@@ -83,7 +132,14 @@
                               </HBox>
                               <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="170.0" prefWidth="222.0">
                                 <content>
-                                  <AnchorPane fx:id="cat" minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="220.0" />
+                                  <AnchorPane fx:id="cat" minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="220.0">
+                                       <children>
+                                          <VBox fx:id="categoryLabels" prefHeight="200.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children></AnchorPane>
                                 </content>
                               </ScrollPane>
                            </children>
@@ -105,11 +161,11 @@
                         <Insets left="15.0" right="5.0" />
                      </HBox.margin>
                   </Label>
-                  <ChoiceBox fx:id="choice" prefWidth="150.0">
+                  <ComboBox fx:id="choice" minHeight="25.0" prefHeight="25.0" prefWidth="182.0">
                      <HBox.margin>
                         <Insets left="5.0" />
                      </HBox.margin>
-                  </ChoiceBox>
+                  </ComboBox>
                </children>
             </HBox>
             <HBox prefHeight="44.0" prefWidth="480.0">

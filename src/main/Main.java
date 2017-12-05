@@ -1,5 +1,6 @@
 package main;
 
+import chart.ChartArea;
 import exception.ParserException;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -21,6 +22,12 @@ public class Main extends Application {
         stage.setResizable(false);
         stage.setMaximized(true);
         stage.show();
+
+        ChartArea ca = new ChartArea();
+        Stage sStage = new Stage();
+        sStage.setTitle("Edit Chart");
+        sStage.setScene(new Scene(ca));
+        sStage.show();
     }
     public static void main(String[] args) throws ParserException {
         //System.out.println(new NumberValue(5));

@@ -64,11 +64,6 @@ public class AddLegends extends Pane implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        name = new TextField();
-        value = new TextField();
-        ok = new Button();
-        cancel = new Button();
-
         ok.setOnAction(e -> {
             setNameText(name.getText());
             setValueText(value.getText());

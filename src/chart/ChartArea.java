@@ -191,8 +191,7 @@ public class ChartArea extends Pane implements Initializable {
             );
         }
     }
-
-<<<<<<< HEAD
+    
     public CellRange getDataRange() {
         return dataRange;
     }
@@ -204,11 +203,6 @@ public class ChartArea extends Pane implements Initializable {
             showSeries();
             showCat();
         }
-=======
-    public void generateChart() {
-        setSeriesRange();
-        setCatRange();
->>>>>>> 1eb621d4d38c3cd8cf0e54624090d69226909c3d
         setDataRange();
         if (seriesArray == null) setSeriesArray();
         if (catArray == null) setCatArray();

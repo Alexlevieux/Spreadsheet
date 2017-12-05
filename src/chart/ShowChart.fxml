@@ -9,6 +9,7 @@
 
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="StackPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
+      <Pane fx:id="blank" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: WHITE;" />
       <LineChart fx:id="line">
         <xAxis>
           <CategoryAxis side="BOTTOM" />

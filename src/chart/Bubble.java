@@ -7,32 +7,35 @@ import javafx.scene.chart.XYChart;
 
 import java.util.ArrayList;
 
-public class Bubble {
+public class Bubble extends GenerateChart{
     private NumberAxis xAxis;
     private NumberAxis yAxis;
     private BubbleChart bubble;
-    private GenerateChart gc;
+
+    public BubbleChart getBubble() {
+        return bubble;
+    }
 
     public Bubble() {
         setScatter();
     }
 
     public Bubble (String title, ArrayList<Series> seriesList, ArrayList<Category> catList) {
-        setTitle(title);
         setScatter();
-        gc.generateChart (seriesList, catList, false);
+        setChartTitle(title);
+        generateChart (seriesList, catList, false);
     }
 
     public Bubble (String xLabel, String yLabel) {
         setScatter();
-        gc.setXYLabel(xLabel, yLabel, false);
+        setXYLabel(xLabel, yLabel);
     }
 
     public Bubble (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
-        setTitle(title);
         setScatter();
-        gc.setXYLabel(xLabel, yLabel, false);
-        gc.generateChart (seriesList, catList, false);
+        setChartTitle(title);
+        setXYLabel(xLabel, yLabel);
+        generateChart (seriesList, catList, false);
     }
 
     private void setScatter() {
@@ -41,7 +44,12 @@ public class Bubble {
         bubble = new BubbleChart<>(xAxis, yAxis);
     }
 
-    public void setTitle (String title) {
+    public void setChartTitle (String title) {
         bubble.setTitle (title);
+    }
+
+    public void setXYLabel (String xLabel, String yLabel) {
+        xAxis.setLabel(xLabel);
+        yAxis.setLabel(yLabel);
     }
 }

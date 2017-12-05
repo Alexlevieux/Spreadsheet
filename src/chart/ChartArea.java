@@ -224,7 +224,7 @@ public class ChartArea extends FlowPane implements Initializable {
     private void generateChart() {
         if (!isHistogram()) {
             setSeriesRange();
-            setCatRange();
+            if(catRange != null) setCatRange();
         }
         setDataRange();
         if (seriesArray.size()==0) setSeriesArray();
@@ -361,6 +361,7 @@ public class ChartArea extends FlowPane implements Initializable {
             stage.setTitle("Edit Series");
             stage.setScene(new Scene(al));
             stage.showAndWait();
+            stage.close();
             System.out.println("Add pressed");
             if (al.getNewLegend() != null) addSeries(al.getNewLegend());
             setSelected();
@@ -391,7 +392,8 @@ public class ChartArea extends FlowPane implements Initializable {
             ShowChart sc = new ShowChart(getSelectedChoice(), getTitleText(), getDataRange(), getxAxis(), getyAxis(), getCatArray(), getSeriesArray());
             Stage stage = new Stage();
             stage.setTitle("Chart");
-            stage.setScene(new Scene(sc));
+            Scene scene = sc.showChart();
+            stage.setScene(scene);
             stage.showAndWait();
             System.out.println("Ok pressed");
         });

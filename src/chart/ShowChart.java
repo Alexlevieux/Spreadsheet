@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.chart.*;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -25,6 +26,8 @@ public class ShowChart extends StackPane implements Initializable {
     private LineChart line;
     @FXML
     private ScatterChart scatter;
+    @FXML
+    private Pane blank;
 
     private String selectedChoice;
     private String titleText;
@@ -98,33 +101,47 @@ public class ShowChart extends StackPane implements Initializable {
         scatter.setVisible(false);
     }
 
-    private void showChart() {
+    public Scene showChart() {
+        AddLegends al = new AddLegends();
+        Scene scene = new Scene(al);
         switch (getSelectedChoice()) {
+            case "Area":
+                area.setVisible(true);
+                Area a = new Area(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
+                scene = new Scene(a.getArea());
+                break;
+
             case "Histogram":
                 bar.setVisible(true);
                 Histogram h = new Histogram(getTitleText(), getDataRange(), getxAxis(), getyAxis());
+                scene = new Scene(h.getHistogram());
                 break;
 
             case "Bar Chart":
                 bar.setVisible(true);
                 Bar b = new Bar(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
+                scene = new Scene(b.getBar());
                 break;
 
             case "Line Chart":
                 line.setVisible(true);
                 Line l = new Line(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
+                scene = new Scene(l.getLine());
                 break;
 
             case "Scatter Chart":
                 scatter.setVisible(true);
                 Scatter s = new Scatter(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
+                scene = new Scene(s.getScatter());
                 break;
 
             case "Bubble Chart":
                 bubble.setVisible(true);
                 Bubble bu = new Bubble(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
+                scene = new Scene(bu.getBubble());
                 break;
         }
+        return scene;
     }
 
     public ShowChart(String selectedChoice, String titleText, CellRange dataRange, String xAxis, String yAxis, ArrayList<Category> catArray, ArrayList<Series> seriesArray) {

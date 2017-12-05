@@ -52,7 +52,7 @@ public class AddLegends extends Pane implements Initializable {
     public Series getNewLegend() { return newLegend; }
 
     public AddLegends() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddLegends.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AddLegend.fxml"));
         loader.setRoot(this);
         loader.setController(this);
         try {

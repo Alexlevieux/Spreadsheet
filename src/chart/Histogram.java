@@ -13,13 +13,17 @@ public class Histogram {
     private ChartArea ca;
     private CellRange data;
 
+    public BarChart getHistogram() {
+        return histogram;
+    }
+
     public Histogram () {
         setHistogram();
     }
 
     public Histogram (String title, CellRange dataRange) {
-        setTitle(title);
         setHistogram();
+        setChartTitle(title);
         setData(dataRange);
         generateHistogram ();
     }
@@ -30,8 +34,8 @@ public class Histogram {
     }
 
     public Histogram (String title, CellRange dataRange, String xLabel, String yLabel) {
-        setTitle(title);
         setHistogram();
+        setChartTitle(title);
         setData(dataRange);
         setXYLabel(xLabel, yLabel);
         generateHistogram ();
@@ -59,7 +63,7 @@ public class Histogram {
         yAxis.setLabel(yLabel);
     }
 
-    public void setTitle (String title) {
+    public void setChartTitle (String title) {
         histogram.setTitle (title);
     }
 

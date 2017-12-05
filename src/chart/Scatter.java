@@ -4,32 +4,35 @@ import javafx.scene.chart.*;
 
 import java.util.ArrayList;
 
-public class Scatter {
+public class Scatter extends GenerateChart{
     private NumberAxis xAxis;
     private NumberAxis yAxis;
     private ScatterChart scatter;
-    private GenerateChart gc;
+
+    public ScatterChart getScatter() {
+        return scatter;
+    }
 
     public Scatter() {
         setScatter();
     }
 
     public Scatter (String title, ArrayList<Series> seriesList, ArrayList<Category> catList) {
-        setTitle(title);
         setScatter();
-        gc.generateChart (seriesList, catList, false);
+        setChartTitle(title);
+        generateChart (seriesList, catList, false);
     }
 
     public Scatter (String xLabel, String yLabel) {
         setScatter();
-        gc.setXYLabel(xLabel, yLabel, false);
+        setXYLabel(xLabel, yLabel);
     }
 
     public Scatter (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
-        setTitle(title);
         setScatter();
-        gc.setXYLabel(xLabel, yLabel, false);
-        gc.generateChart (seriesList, catList, false);
+        setChartTitle(title);
+        setXYLabel(xLabel, yLabel);
+        generateChart (seriesList, catList, false);
     }
 
     private void setScatter() {
@@ -38,7 +41,12 @@ public class Scatter {
         scatter = new ScatterChart<>(xAxis, yAxis);
     }
 
-    public void setTitle (String title) {
+    public void setChartTitle (String title) {
         scatter.setTitle (title);
+    }
+
+    public void setXYLabel (String xLabel, String yLabel) {
+        xAxis.setLabel(xLabel);
+        yAxis.setLabel(yLabel);
     }
 }

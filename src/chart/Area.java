@@ -1,35 +1,40 @@
 package chart;
 
 import javafx.scene.chart.*;
+import value.ComparableValue;
+import value.NumberValue;
 
 import java.util.ArrayList;
 
-public class Area {
+public class Area extends GenerateChart {
     private CategoryAxis xAxis;
     private NumberAxis yAxis;
     private AreaChart area;
-    private GenerateChart gc;
+
+    public AreaChart getArea() {
+        return area;
+    }
 
     public Area () {
         setArea();
     }
 
     public Area (String title, ArrayList<Series> seriesList, ArrayList<Category> catList) {
-        setTitle(title);
         setArea();
-        gc.generateChart (seriesList, catList, true);
+        setChartTitle(title);
+        generateChart (seriesList, catList, true);
     }
 
     public Area (String xLabel, String yLabel) {
         setArea();
-        gc.setXYLabel(xLabel, yLabel, true);
+        setXYLabel(xLabel, yLabel);
     }
 
     public Area (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
-        setTitle(title);
         setArea();
-        gc.setXYLabel(xLabel, yLabel, true);
-        gc.generateChart (seriesList, catList, true);
+        setChartTitle(title);
+        setXYLabel(xLabel, yLabel);
+        generateChart (seriesList, catList, true);
     }
 
     private void setArea() {
@@ -38,7 +43,12 @@ public class Area {
         area = new AreaChart<>(xAxis, yAxis);
     }
 
-    private void setTitle(String title) {
+    private void setChartTitle(String title) {
         area.setTitle(title);
+    }
+
+    public void setXYLabel (String xLabel, String yLabel) {
+        xAxis.setLabel(xLabel);
+        yAxis.setLabel(yLabel);
     }
 }

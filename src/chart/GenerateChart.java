@@ -11,15 +11,12 @@ import java.util.ArrayList;
 public class GenerateChart {
     private XYChart.Series<String, Double> seriesSD;
     private XYChart.Series<Integer, Double> seriesID;
-    private CategoryAxis xAxisC;
-    private NumberAxis xAxisN;
-    private NumberAxis yAxis;
 
     public void generateChart (ArrayList<Series> seriesList, ArrayList<Category> catList, boolean SD) {
         //SD is a boolean to check if the input is (String, Double) or (Integer, Double)
         if (SD) {
             for (chart.Series aSeriesList : seriesList) {
-                seriesSD = new XYChart.Series<String, Double>();
+                seriesSD = new XYChart.Series<>();
                 setSeriesName(aSeriesList.getName(), SD);
                 for (int j = 0; j < catList.size(); j++) {
                     ComparableValue temp = aSeriesList.getValues().getValue().get(j);
@@ -40,17 +37,6 @@ public class GenerateChart {
                     }
                 }
             }
-        }
-    }
-
-    public void setXYLabel (String xLabel, String yLabel, boolean SD) {
-        if (SD) {
-            xAxisC.setLabel(xLabel);
-            yAxis.setLabel(yLabel);
-        }
-        else {
-            xAxisC.setLabel(xLabel);
-            yAxis.setLabel(yLabel);
         }
     }
 

@@ -1,5 +1,6 @@
 package main;
 
+import chart.ChartArea;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -55,7 +56,7 @@ public class Window extends Stage {
         if (file != null) fileChooser.setInitialDirectory(file.getParentFile());
         fileChooser.setTitle("Save As");
         File file = fileChooser.showSaveDialog(this);
-        System.out.println(file == null ? "null" : file.getName());
+//        System.out.println(file == null ? "null" : file.getName());
         if (file != null) {
             setSaved(true);
             mainLayout.writeToFile(file);
@@ -93,7 +94,7 @@ public class Window extends Stage {
             fileChooser.setInitialDirectory(file.getParentFile());
         fileChooser.setTitle("Open");
         File file = fileChooser.showOpenDialog(this);
-        System.out.println("file chosen");
+//        System.out.println("file chosen");
         if (file != null) {
             this.file = file;
             mainLayout = new MainLayoutController();
@@ -134,7 +135,13 @@ public class Window extends Stage {
     }
 
     public void createChart() {
-
+        ChartArea ca = new ChartArea();
+        Stage sStage = new Stage();
+        ca.getCancel().setOnAction(e -> sStage.close());
+        sStage.setTitle("Edit Chart");
+        sStage.setScene(new Scene(ca));
+        sStage.setAlwaysOnTop(true);
+        sStage.showAndWait();
     }
 
     public boolean quit() {
@@ -174,10 +181,20 @@ public class Window extends Stage {
         setMaximized(true);
         setResizable(false);
         mainLayout.getChartButton().setOnAction(e -> createChart());
+        mainLayout.getCreateChartMenu().setOnAction(e -> createChart());
+
         mainLayout.getOpenButton().setOnAction(e -> open());
+        mainLayout.getOpenMenu().setOnAction(e -> open());
+
         mainLayout.getSaveButton().setOnAction(e -> save());
+        mainLayout.getSaveMenu().setOnAction(e -> save());
+
         mainLayout.getSaveAsButton().setOnAction(e -> saveAs());
+        mainLayout.getSaveAsMenu().setOnAction(e -> saveAs());
+
         mainLayout.getNewButton().setOnAction(e -> newFile());
+        mainLayout.getNewMenu().setOnAction(e -> newFile());
+
         scene.focusOwnerProperty().addListener((src, ov, nv) -> {
             if (nv instanceof Cell) {
                 mainLayout.getSheetWindow().getSheet().getTable().setSelectedRow(GridPane.getRowIndex(nv));

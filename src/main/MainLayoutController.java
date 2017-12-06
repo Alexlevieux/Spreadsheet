@@ -3,29 +3,22 @@ package main;
 import function.CellRange;
 import function.CellReference;
 import function.CellSingle;
-import javafx.beans.property.IntegerProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import table.Cell;
-import table.Sheet;
 import table.SheetWindow;
 import value.ComparableValue;
 
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class MainLayoutController extends VBox implements Initializable {
@@ -41,6 +34,16 @@ public class MainLayoutController extends VBox implements Initializable {
     private Button saveAsButton;
     @FXML
     private Button chartButton;
+    @FXML
+    private MenuItem newMenu;
+    @FXML
+    private MenuItem openMenu;
+    @FXML
+    private MenuItem saveMenu;
+    @FXML
+    private MenuItem saveAsMenu;
+    @FXML
+    private MenuItem createChartMenu;
 
     private SheetWindow sheetWindow;
 
@@ -163,8 +166,8 @@ public class MainLayoutController extends VBox implements Initializable {
             String line;
             ArrayList<String[]> commands = new ArrayList<>();
             while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
-                System.out.println(Arrays.toString(line.split("[|]")));
+//                System.out.println(line);
+//                System.out.println(Arrays.toString(line.split("[|]")));
                 String[] elements = line.split("[|]");
                 commands.add(elements);
             }
@@ -262,5 +265,25 @@ public class MainLayoutController extends VBox implements Initializable {
 
     public Button getChartButton() {
         return chartButton;
+    }
+
+    public MenuItem getNewMenu() {
+        return newMenu;
+    }
+
+    public MenuItem getOpenMenu() {
+        return openMenu;
+    }
+
+    public MenuItem getSaveMenu() {
+        return saveMenu;
+    }
+
+    public MenuItem getSaveAsMenu() {
+        return saveAsMenu;
+    }
+
+    public MenuItem getCreateChartMenu() {
+        return createChartMenu;
     }
 }

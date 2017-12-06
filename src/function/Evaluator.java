@@ -382,7 +382,7 @@ public class Evaluator {
             return null;
         }
 
-        NumberValue sum(List<Value> values) {
+        static NumberValue sum(List<Value> values) {
             Double temp = 0.0;
             for (Value value : values) {
                 if (value instanceof NumberValue)
@@ -402,14 +402,14 @@ public class Evaluator {
             return new NumberValue(temp);
         }
 
-        NumberValue average(List<Value> values) {
+        static NumberValue average(List<Value> values) {
             NumberValue sum = sum(values);
             NumberValue count = count(values);
             if (count.getValue() == 0) return new NumberValue(0);
             return new NumberValue(sum.getValue() / count.getValue());
         }
 
-        NumberValue variance(List<Value> values) {
+        static NumberValue variance(List<Value> values) {
             Double avg = average(values).getValue();
             Double temp = 0.0;
             int amt = count(values).getValue().intValue();
@@ -427,11 +427,11 @@ public class Evaluator {
             return new NumberValue(temp / amt);
         }
 
-        NumberValue stddev(List<Value> values) {
+        static NumberValue stddev(List<Value> values) {
             return new NumberValue(Math.sqrt(variance(values).getValue()));
         }
 
-        NumberValue min(List<Value> values) {
+        static NumberValue min(List<Value> values) {
             ArrayList<NumberValue> val = new ArrayList<>();
             for (Value v : values) {
                 if (v instanceof NumberValue)
@@ -447,7 +447,7 @@ public class Evaluator {
             return val.isEmpty() ? new NumberValue(0) : Collections.min(val);
         }
 
-        NumberValue max(List<Value> values) {
+        static NumberValue max(List<Value> values) {
             ArrayList<NumberValue> val = new ArrayList<>();
             for (Value v : values) {
                 if (v instanceof NumberValue)
@@ -463,7 +463,7 @@ public class Evaluator {
             return val.isEmpty() ? new NumberValue(0) : Collections.max(val);
         }
 
-        NumberValue count(List<Value> values) {
+        static NumberValue count(List<Value> values) {
             Integer count = 0;
             for (Value value : values) {
                 if (value instanceof NumberValue) ++count;
@@ -477,11 +477,15 @@ public class Evaluator {
             return new NumberValue(count);
         }
 
-        NumberValue countblank(List<Value> values) throws ParserException {
+        static NumberValue countblank(List<Value> values) throws ParserException {
             if (values.size() != 1) throw new InvalidArgumentException("Too many arguments for this function");
             if (!(values.get(0) instanceof ListValue))
                 throw new InvalidArgumentException("Wrong argument for this function");
-            return new NumberValue(((ListValue) values.get(0)).size() - count(values).getValue());
+            int blank = 0;
+            for(ComparableValue c : ((ListValue)values.get(0)).getValue()){
+                if(c == null || c.toString().equals("")) ++blank;
+            }
+            return new NumberValue(blank);
         }
     }
 }

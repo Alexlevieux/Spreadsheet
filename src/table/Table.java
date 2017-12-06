@@ -160,7 +160,7 @@ public class Table extends GridPane implements Initializable {
         if (cells.get(col).get(row) == null)
             return null;
         else {
-            System.out.println(cells.get(col).get(row).getValue());
+//            System.out.println(cells.get(col).get(row).getValue());
             return cells.get(col).get(row).getUnprocessedValue();
         }
     }

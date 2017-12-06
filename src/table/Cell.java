@@ -13,6 +13,7 @@ import value.ComparableValue;
 import java.util.ArrayList;
 
 
+@SuppressWarnings("WeakerAccess")
 public class Cell extends TextField {
     private ComparableValue value;
     private String unprocessedValue;

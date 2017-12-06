@@ -39,7 +39,7 @@ public class Histogram {
         setXYLabel(xLabel, yLabel);
     }
 
-    public Histogram (String title, CellRange dataRange, String xLabel) {
+    Histogram(String title, CellRange dataRange, String xLabel) {
         setHistogram();
         setChartTitle(title);
         setData(dataRange);
@@ -47,11 +47,11 @@ public class Histogram {
         generateHistogram ();
     }
 
-    public BarChart getHistogram() {
+    BarChart getHistogram() {
         return histogram;
     }
 
-    public void setData(CellRange data) {
+    private void setData(CellRange data) {
         this.data = data;
     }
 
@@ -70,12 +70,12 @@ public class Histogram {
         histogram.setLegendVisible(false);
     }
 
-    public void setXYLabel (String xLabel, String yLabel) {
+    private void setXYLabel(String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
     }
 
-    public void setChartTitle (String title) {
+    private void setChartTitle(String title) {
         histogram.setTitle (title);
     }
 

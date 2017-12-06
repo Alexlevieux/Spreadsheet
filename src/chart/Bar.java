@@ -9,7 +9,6 @@ import javafx.scene.chart.XYChart;
 
 import java.util.ArrayList;
 
-// TODO: 04-Dec-17 Fix bar, create histogram, scatter plot and line chart
 public class Bar extends GenerateChart{
     private CategoryAxis xAxis;
     private NumberAxis yAxis;
@@ -17,7 +16,7 @@ public class Bar extends GenerateChart{
 
     private ObservableList<XYChart.Series<String, Double>> listSD  = FXCollections.observableArrayList();
 
-    public BarChart getBar() {
+    BarChart getBar() {
         return bar;
     }
 
@@ -38,7 +37,7 @@ public class Bar extends GenerateChart{
             setXYLabel(xLabel, yLabel);
         }
 
-        public Bar (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+        Bar(String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
             setBar();
             setChartTitle(title);
             setXYLabel(xLabel, yLabel);
@@ -53,16 +52,16 @@ public class Bar extends GenerateChart{
             bar = new BarChart<>(xAxis, yAxis);
         }
 
-        public void setChartTitle (String title) {
+    private void setChartTitle(String title) {
             bar.setTitle(title);
         }
 
-    public void setXYLabel (String xLabel, String yLabel) {
+    private void setXYLabel(String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
     }
 
-    public void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
+    private void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
         this.listSD = listSD;
     }
 

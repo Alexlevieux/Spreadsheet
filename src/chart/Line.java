@@ -12,7 +12,7 @@ public class Line extends GenerateChart{
 
     private ObservableList<XYChart.Series<String, Double>> listSD  = FXCollections.observableArrayList();
 
-    public LineChart getLine() {
+    LineChart getLine() {
         return line;
     }
 
@@ -33,7 +33,7 @@ public class Line extends GenerateChart{
         setXYLabel(xLabel, yLabel);
     }
 
-    public Line (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+    Line(String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
         setLine();
         setChartTitle(title);
         setXYLabel(xLabel, yLabel);
@@ -48,16 +48,16 @@ public class Line extends GenerateChart{
         line = new LineChart<>(xAxis, yAxis);
     }
 
-    public void setChartTitle (String title) {
+    private void setChartTitle(String title) {
         line.setTitle (title);
     }
 
-    public void setXYLabel (String xLabel, String yLabel) {
+    private void setXYLabel(String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
     }
 
-    public void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
+    private void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
         this.listSD = listSD;
     }
 

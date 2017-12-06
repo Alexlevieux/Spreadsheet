@@ -14,7 +14,7 @@ public class Area extends GenerateChart {
 
     ObservableList<XYChart.Series<String, Double>> listSD;
 
-    public AreaChart getArea() {
+    AreaChart getArea() {
         return area;
     }
 
@@ -35,7 +35,7 @@ public class Area extends GenerateChart {
         setXYLabel(xLabel, yLabel);
     }
 
-    public Area (String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
+    Area(String title, ArrayList<chart.Series> seriesList, ArrayList<Category> catList, String xLabel, String yLabel) {
         setArea();
         setChartTitle(title);
         setXYLabel(xLabel, yLabel);
@@ -54,12 +54,12 @@ public class Area extends GenerateChart {
         area.setTitle(title);
     }
 
-    public void setXYLabel (String xLabel, String yLabel) {
+    private void setXYLabel(String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
     }
 
-    public void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
+    private void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
         this.listSD = listSD;
     }
 

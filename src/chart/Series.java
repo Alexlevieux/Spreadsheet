@@ -19,7 +19,7 @@ public class Series {
         this.name = name;
     }
 
-    public CellRange getValues() {
+    CellRange getValues() {
         return values;
     }
 

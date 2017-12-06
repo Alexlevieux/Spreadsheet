@@ -73,7 +73,7 @@ public class ShowChart extends StackPane implements Initializable {
         return yAxis;
     }
 
-    public void setyAxis(String yAxis) {
+    private void setyAxis(String yAxis) {
         this.yAxis = yAxis;
     }
 
@@ -101,7 +101,7 @@ public class ShowChart extends StackPane implements Initializable {
         scatter.setVisible(false);
     }
 
-    public Scene showChart() {
+    Scene showChart() {
         Scene scene = null;
         switch (getSelectedChoice()) {
             case "Area Bar":
@@ -143,7 +143,7 @@ public class ShowChart extends StackPane implements Initializable {
         return scene;
     }
 
-    public ShowChart(String selectedChoice, String titleText, CellRange dataRange, String xAxis, String yAxis, ArrayList<Category> catArray, ArrayList<Series> seriesArray) {
+    ShowChart(String selectedChoice, String titleText, CellRange dataRange, String xAxis, String yAxis, ArrayList<Category> catArray, ArrayList<Series> seriesArray) {
         setSelectedChoice(selectedChoice);
         setTitleText(titleText);
         setDataRange(dataRange);

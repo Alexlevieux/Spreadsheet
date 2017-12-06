@@ -26,7 +26,7 @@ public class EditCategories extends Pane implements Initializable {
     private String catText;
     private CellRange catRange;
 
-    public void setCatText (String rt) {
+    private void setCatText(String rt) {
         this.catText = rt;
     }
 
@@ -34,9 +34,9 @@ public class EditCategories extends Pane implements Initializable {
         return catText;
     }
 
-    public CellRange getCatRange() {return catRange;}
+    CellRange getCatRange() {return catRange;}
 
-    public EditCategories() {
+    EditCategories() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("EditCategories.fxml"));
         loader.setRoot(this);
         loader.setController(this);

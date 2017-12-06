@@ -10,22 +10,22 @@ import value.NumberValue;
 
 import java.util.ArrayList;
 
-public class GenerateChart {
+class GenerateChart {
     private XYChart.Series<String, Double> seriesSD;
     private XYChart.Series<Integer, Double> seriesID;
 
     private ObservableList<XYChart.Series<String, Double>> listSD  = FXCollections.observableArrayList();
     private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
 
-    public ObservableList<XYChart.Series<Integer, Double>> getListID() {
+    ObservableList<XYChart.Series<Integer, Double>> getListID() {
         return listID;
     }
 
-    public ObservableList<XYChart.Series<String, Double>> getListSD() {
+    ObservableList<XYChart.Series<String, Double>> getListSD() {
         return listSD;
     }
 
-    public void generateChart (ArrayList<Series> seriesList, ArrayList<Category> catList, boolean SD) {
+    void generateChart(ArrayList<Series> seriesList, ArrayList<Category> catList, boolean SD) {
         //SD is a boolean to check if the input is (String, Double) or (Integer, Double)
         listID.clear();
         listSD.clear();

@@ -1,5 +1,7 @@
 package chart;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.chart.BubbleChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.ScatterChart;
@@ -11,6 +13,8 @@ public class Bubble extends GenerateChart{
     private NumberAxis xAxis;
     private NumberAxis yAxis;
     private BubbleChart bubble;
+
+    private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
 
     public BubbleChart getBubble() {
         return bubble;
@@ -24,6 +28,8 @@ public class Bubble extends GenerateChart{
         setScatter();
         setChartTitle(title);
         generateChart (seriesList, catList, false);
+        setListID(getListID());
+        addSeries();
     }
 
     public Bubble (String xLabel, String yLabel) {
@@ -36,6 +42,8 @@ public class Bubble extends GenerateChart{
         setChartTitle(title);
         setXYLabel(xLabel, yLabel);
         generateChart (seriesList, catList, false);
+        setListID(getListID());
+        addSeries();
     }
 
     private void setScatter() {
@@ -51,5 +59,15 @@ public class Bubble extends GenerateChart{
     public void setXYLabel (String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
+    }
+
+    public void setListID(ObservableList<XYChart.Series<Integer, Double>> listSD) {
+        this.listID = listID;
+    }
+
+    private void addSeries () {
+        for (XYChart.Series<Integer, Double> aListSD : listID) {
+            bubble.getData().add(aListSD);
+        }
     }
 }

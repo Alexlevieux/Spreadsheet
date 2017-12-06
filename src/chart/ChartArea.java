@@ -249,11 +249,11 @@ public class ChartArea extends FlowPane implements Initializable {
             if(catRange == null) setCatRange();
         }
         setDataRange();
-        if (seriesArray.size()==0) setSeriesArray();
-        else setSeriesArray(seriesArray);
-        if (catArray.size()==0) setCatArray();
-        else setCatArray(catArray);
         if (!isHistogram()) {
+            if (seriesArray.size()==0) setSeriesArray();
+            else setSeriesArray(seriesArray);
+            if (catArray.size()==0) setCatArray();
+            else setCatArray(catArray);
             showCat();
             showSeries();
         }
@@ -293,7 +293,7 @@ public class ChartArea extends FlowPane implements Initializable {
         remove.setDisable(true);
         edit.setDisable(true);
         cat.setDisable(true);
-        xLabel.setDisable(true);
+        yLabel.setDisable(true);
     }
 
     private void setNotHistogram() {
@@ -302,7 +302,7 @@ public class ChartArea extends FlowPane implements Initializable {
         remove.setDisable(false);
         edit.setDisable(false);
         cat.setDisable(false);
-        xLabel.setDisable(false);
+        yLabel.setDisable(false);
     }
 
     private void setxAxis(String xAxis) {
@@ -407,11 +407,12 @@ public class ChartArea extends FlowPane implements Initializable {
         });
 
         ok.setOnAction(e -> {
-            if (range.getText()!= null) setRangeArea(range.getText());
             setSelectedChoice();
-            if (!isHistogram() && xLabel!=null)setxAxis(xLabel.getText());
-            else setxAxis("");
-            if (yLabel.getText()!=null) setyAxis(yLabel.getText());
+            setRangeArea(range.getText());
+            setSelected(false);
+            if (!isHistogram() && yLabel!=null)setxAxis(yLabel.getText());
+            else setyAxis("");
+            if (xLabel.getText()!=null) setxAxis(xLabel.getText());
             if (title.getText()!=null) setTitleText(title.getText());
             else setTitleText("");
             generateChart();
@@ -424,7 +425,5 @@ public class ChartArea extends FlowPane implements Initializable {
             stage.showAndWait();
             System.out.println("Ok pressed");
         });
-
-        cancel.setCancelButton(true);
     }
 }

@@ -1,5 +1,7 @@
 package chart;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.chart.*;
 
 import java.util.ArrayList;
@@ -8,6 +10,8 @@ public class Scatter extends GenerateChart{
     private NumberAxis xAxis;
     private NumberAxis yAxis;
     private ScatterChart scatter;
+
+    private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
 
     public ScatterChart getScatter() {
         return scatter;
@@ -21,6 +25,8 @@ public class Scatter extends GenerateChart{
         setScatter();
         setChartTitle(title);
         generateChart (seriesList, catList, false);
+        setListID(getListID());
+        addSeries();
     }
 
     public Scatter (String xLabel, String yLabel) {
@@ -33,6 +39,8 @@ public class Scatter extends GenerateChart{
         setChartTitle(title);
         setXYLabel(xLabel, yLabel);
         generateChart (seriesList, catList, false);
+        setListID(getListID());
+        addSeries();
     }
 
     private void setScatter() {
@@ -48,5 +56,15 @@ public class Scatter extends GenerateChart{
     public void setXYLabel (String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
+    }
+
+    public void setListID(ObservableList<XYChart.Series<Integer, Double>> listSD) {
+        this.listID = listID;
+    }
+
+    private void addSeries () {
+        for (XYChart.Series<Integer, Double> aListSD : listID) {
+            scatter.getData().add(aListSD);
+        }
     }
 }

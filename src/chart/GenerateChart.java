@@ -1,5 +1,7 @@
 package chart;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
@@ -12,8 +14,21 @@ public class GenerateChart {
     private XYChart.Series<String, Double> seriesSD;
     private XYChart.Series<Integer, Double> seriesID;
 
+    private ObservableList<XYChart.Series<String, Double>> listSD  = FXCollections.observableArrayList();
+    private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
+
+    public ObservableList<XYChart.Series<Integer, Double>> getListID() {
+        return listID;
+    }
+
+    public ObservableList<XYChart.Series<String, Double>> getListSD() {
+        return listSD;
+    }
+
     public void generateChart (ArrayList<Series> seriesList, ArrayList<Category> catList, boolean SD) {
         //SD is a boolean to check if the input is (String, Double) or (Integer, Double)
+        listID.clear();
+        listSD.clear();
         if (SD) {
             for (chart.Series aSeriesList : seriesList) {
                 seriesSD = new XYChart.Series<>();
@@ -24,6 +39,7 @@ public class GenerateChart {
                         addDataSD(catList.get(j).getName(), ((NumberValue) temp).getValue());
                     }
                 }
+                listSD.add(seriesSD);
             }
         }
         else {
@@ -36,6 +52,7 @@ public class GenerateChart {
                         addDataID(Integer.valueOf(catList.get(j).getName()), ((NumberValue) temp).getValue());
                     }
                 }
+                listID.add(seriesID);
             }
         }
     }

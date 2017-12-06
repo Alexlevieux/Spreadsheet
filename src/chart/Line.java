@@ -1,5 +1,7 @@
 package chart;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.scene.chart.*;
 import java.util.ArrayList;
 
@@ -7,6 +9,8 @@ public class Line extends GenerateChart{
     private CategoryAxis xAxis;
     private NumberAxis yAxis;
     private LineChart line;
+
+    private ObservableList<XYChart.Series<String, Double>> listSD  = FXCollections.observableArrayList();
 
     public LineChart getLine() {
         return line;
@@ -20,6 +24,8 @@ public class Line extends GenerateChart{
         setLine();
         setChartTitle(title);
         generateChart (seriesList, catList, true);
+        setListSD(getListSD());
+        addSeries();
     }
 
     public Line (String xLabel, String yLabel) {
@@ -32,6 +38,8 @@ public class Line extends GenerateChart{
         setChartTitle(title);
         setXYLabel(xLabel, yLabel);
         generateChart (seriesList, catList, true);
+        setListSD(getListSD());
+        addSeries();
     }
 
     private void setLine() {
@@ -47,5 +55,15 @@ public class Line extends GenerateChart{
     public void setXYLabel (String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
+    }
+
+    public void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
+        this.listSD = listSD;
+    }
+
+    private void addSeries () {
+        for (XYChart.Series<String, Double> aListSD : listSD) {
+            line.getData().add(aListSD);
+        }
     }
 }

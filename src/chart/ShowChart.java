@@ -102,10 +102,9 @@ public class ShowChart extends StackPane implements Initializable {
     }
 
     public Scene showChart() {
-        AddLegends al = new AddLegends();
-        Scene scene = new Scene(al);
+        Scene scene = null;
         switch (getSelectedChoice()) {
-            case "Area":
+            case "Area Bar":
                 area.setVisible(true);
                 Area a = new Area(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
                 scene = new Scene(a.getArea());
@@ -113,7 +112,7 @@ public class ShowChart extends StackPane implements Initializable {
 
             case "Histogram":
                 bar.setVisible(true);
-                Histogram h = new Histogram(getTitleText(), getDataRange(), getxAxis(), getyAxis());
+                Histogram h = new Histogram(getTitleText(), getDataRange(), getxAxis());
                 scene = new Scene(h.getHistogram());
                 break;
 

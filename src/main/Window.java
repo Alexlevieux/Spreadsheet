@@ -1,5 +1,6 @@
 package main;
 
+import chart.ChartArea;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -134,7 +135,11 @@ public class Window extends Stage {
     }
 
     public void createChart() {
-
+        ChartArea ca = new ChartArea();
+        Stage sStage = new Stage();
+        sStage.setTitle("Edit Chart");
+        sStage.setScene(new Scene(ca));
+        sStage.show();
     }
 
     public boolean quit() {

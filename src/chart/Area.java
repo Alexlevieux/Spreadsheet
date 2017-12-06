@@ -1,5 +1,6 @@
 package chart;
 
+import javafx.collections.ObservableList;
 import javafx.scene.chart.*;
 import value.ComparableValue;
 import value.NumberValue;
@@ -10,6 +11,8 @@ public class Area extends GenerateChart {
     private CategoryAxis xAxis;
     private NumberAxis yAxis;
     private AreaChart area;
+
+    ObservableList<XYChart.Series<String, Double>> listSD;
 
     public AreaChart getArea() {
         return area;
@@ -23,6 +26,8 @@ public class Area extends GenerateChart {
         setArea();
         setChartTitle(title);
         generateChart (seriesList, catList, true);
+        setListSD(getListSD());
+        addSeries();
     }
 
     public Area (String xLabel, String yLabel) {
@@ -35,6 +40,8 @@ public class Area extends GenerateChart {
         setChartTitle(title);
         setXYLabel(xLabel, yLabel);
         generateChart (seriesList, catList, true);
+        setListSD(getListSD());
+        addSeries();
     }
 
     private void setArea() {
@@ -50,5 +57,15 @@ public class Area extends GenerateChart {
     public void setXYLabel (String xLabel, String yLabel) {
         xAxis.setLabel(xLabel);
         yAxis.setLabel(yLabel);
+    }
+
+    public void setListSD(ObservableList<XYChart.Series<String, Double>> listSD) {
+        this.listSD = listSD;
+    }
+
+    private void addSeries () {
+        for (XYChart.Series<String, Double> aListSD : listSD) {
+            area.getData().add(aListSD);
+        }
     }
 }

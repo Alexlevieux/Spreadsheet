@@ -7,6 +7,7 @@ import function.Evaluator;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
@@ -37,7 +38,7 @@ public class AddLegends extends Pane implements Initializable {
         return nameText;
     }
 
-    public void setNameText(String nameRange) {
+    private void setNameText(String nameRange) {
         this.nameText = nameRange;
     }
 
@@ -45,13 +46,13 @@ public class AddLegends extends Pane implements Initializable {
         return valueText;
     }
 
-    public void setValueText(String valueRange) {
+    private void setValueText(String valueRange) {
         this.valueText = valueRange;
     }
 
-    public Series getNewLegend() { return newLegend; }
+    Series getNewLegend() { return newLegend; }
 
-    public AddLegends() {
+    AddLegends() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AddLegend.fxml"));
         loader.setRoot(this);
         loader.setController(this);
@@ -71,14 +72,22 @@ public class AddLegends extends Pane implements Initializable {
             try {
                 nameCell = Evaluator.cellNameToReference(Main.getMainWindow().getSheetWindow().getSheet().getTable(), nameText);
             } catch (ParserException e1) {
-                // TODO: 04-Dec-17 Add alert on exception
+                Alert alert  = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Invalid selection");
+                alert.setContentText(e1.getMessage());
+                alert.setHeaderText(null);
+                alert.showAndWait();
                 e1.printStackTrace();
             }
 
             try {
                 valueRange = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), valueText);
             } catch (ParserException e1) {
-                // TODO: 04-Dec-17 Add alert on exception
+                Alert alert  = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Invalid selection");
+                alert.setContentText(e1.getMessage());
+                alert.setHeaderText(null);
+                alert.showAndWait();
                 e1.printStackTrace();
             }
 

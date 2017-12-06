@@ -73,7 +73,7 @@ public class ShowChart extends StackPane implements Initializable {
         return yAxis;
     }
 
-    public void setyAxis(String yAxis) {
+    private void setyAxis(String yAxis) {
         this.yAxis = yAxis;
     }
 
@@ -101,11 +101,10 @@ public class ShowChart extends StackPane implements Initializable {
         scatter.setVisible(false);
     }
 
-    public Scene showChart() {
-        AddLegends al = new AddLegends();
-        Scene scene = new Scene(al);
+    Scene showChart() {
+        Scene scene = null;
         switch (getSelectedChoice()) {
-            case "Area":
+            case "Area Bar":
                 area.setVisible(true);
                 Area a = new Area(getTitleText(), getSeriesArray(), getCatArray(), getxAxis(), getyAxis());
                 scene = new Scene(a.getArea());
@@ -113,7 +112,7 @@ public class ShowChart extends StackPane implements Initializable {
 
             case "Histogram":
                 bar.setVisible(true);
-                Histogram h = new Histogram(getTitleText(), getDataRange(), getxAxis(), getyAxis());
+                Histogram h = new Histogram(getTitleText(), getDataRange(), getxAxis());
                 scene = new Scene(h.getHistogram());
                 break;
 
@@ -144,7 +143,7 @@ public class ShowChart extends StackPane implements Initializable {
         return scene;
     }
 
-    public ShowChart(String selectedChoice, String titleText, CellRange dataRange, String xAxis, String yAxis, ArrayList<Category> catArray, ArrayList<Series> seriesArray) {
+    ShowChart(String selectedChoice, String titleText, CellRange dataRange, String xAxis, String yAxis, ArrayList<Category> catArray, ArrayList<Series> seriesArray) {
         setSelectedChoice(selectedChoice);
         setTitleText(titleText);
         setDataRange(dataRange);

@@ -11,7 +11,7 @@ public class Scatter extends GenerateChart{
     private NumberAxis yAxis;
     private ScatterChart scatter;
 
-    private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
+    private ObservableList<XYChart.Series<Double, Double>> listID  = FXCollections.observableArrayList();
 
     ScatterChart getScatter() {
         return scatter;
@@ -58,13 +58,13 @@ public class Scatter extends GenerateChart{
         yAxis.setLabel(yLabel);
     }
 
-    private void setListID(ObservableList<XYChart.Series<Integer, Double>> listSD) {
+    private void setListID(ObservableList<XYChart.Series<Double, Double>> listID) {
         this.listID = listID;
     }
 
     private void addSeries () {
-        for (XYChart.Series<Integer, Double> aListSD : listID) {
-            scatter.getData().add(aListSD);
+        for (XYChart.Series<Double, Double> aListID : listID) {
+            scatter.getData().add(aListID);
         }
     }
 }

@@ -14,7 +14,7 @@ public class Bubble extends GenerateChart{
     private NumberAxis yAxis;
     private BubbleChart bubble;
 
-    private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
+    private ObservableList<XYChart.Series<Double, Double>> listID  = FXCollections.observableArrayList();
 
     BubbleChart getBubble() {
         return bubble;
@@ -61,13 +61,13 @@ public class Bubble extends GenerateChart{
         yAxis.setLabel(yLabel);
     }
 
-    private void setListID(ObservableList<XYChart.Series<Integer, Double>> listSD) {
+    private void setListID(ObservableList<XYChart.Series<Double, Double>> listID) {
         this.listID = listID;
     }
 
     private void addSeries () {
-        for (XYChart.Series<Integer, Double> aListSD : listID) {
-            bubble.getData().add(aListSD);
+        for (XYChart.Series<Double, Double> aListID : listID) {
+            bubble.getData().add(aListID);
         }
     }
 }

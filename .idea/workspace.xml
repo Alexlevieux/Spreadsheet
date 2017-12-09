@@ -1,58 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Spreadsheet:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2961d27-6e66-45b7-84ee-758b560e39f5" name="Default" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/new.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/program.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/save.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/saveas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/MainLayout.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/MainLayoutController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Cell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/CellValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Sheet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Table.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/sample.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/layouts/MainWindow.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/layouts/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/CellValue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/sample.fxml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/layouts/SheetWindow.fxml" afterPath="$PROJECT_DIR$/src/table/SheetWindow.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Cell.java" afterPath="$PROJECT_DIR$/src/table/Cell.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Sheet.java" afterPath="$PROJECT_DIR$/src/table/Sheet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/SheetWindow.java" afterPath="$PROJECT_DIR$/src/table/SheetWindow.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/Table.java" afterPath="$PROJECT_DIR$/src/table/Table.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/assets/open.png" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/assets/open.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/AddLegends.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Bar.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Bar.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/EditCategories.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellRange.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellRange.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellReference.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/function/CellReference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Main.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Histogram.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Histogram.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Scatter.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Scatter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Series.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/Series.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/Window.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/Window.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/value/ComparableValue.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/value/ComparableValue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/value/NumberValue.class" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/value/NumberValue.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/chart/ChartArea.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Spreadsheet/main/MainLayout.fxml" afterPath="$PROJECT_DIR$/out/production/Spreadsheet/main/MainLayout.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/AddLegends.java" afterPath="$PROJECT_DIR$/src/chart/AddLegends.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/Bar.java" afterPath="$PROJECT_DIR$/src/chart/Bar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/Bubble.java" afterPath="$PROJECT_DIR$/src/chart/Bubble.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/ChartArea.java" afterPath="$PROJECT_DIR$/src/chart/ChartArea.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/EditCategories.java" afterPath="$PROJECT_DIR$/src/chart/EditCategories.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellRange.java" afterPath="$PROJECT_DIR$/src/function/CellRange.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellReference.java" afterPath="$PROJECT_DIR$/src/function/CellReference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/CellSingle.java" afterPath="$PROJECT_DIR$/src/function/CellSingle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/function/Evaluator.java" afterPath="$PROJECT_DIR$/src/function/Evaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Window.java" afterPath="$PROJECT_DIR$/src/main/Window.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/value/ComparableValue.java" afterPath="$PROJECT_DIR$/src/value/ComparableValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/value/NumberValue.java" afterPath="$PROJECT_DIR$/src/value/NumberValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/GenerateChart.java" afterPath="$PROJECT_DIR$/src/chart/GenerateChart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chart/Scatter.java" afterPath="$PROJECT_DIR$/src/chart/Scatter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,147 +38,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Sheet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/table/Sheet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SheetWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="65" column="75" lean-forward="false" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="method#main#0;class#Main#0" expanded="false" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Window.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/Window.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="148" column="41" lean-forward="true" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
-              <folding>
-                <element signature="method#save#0;class#Window#0" expanded="false" />
-                <element signature="method#saveAs#0;class#Window#0" expanded="false" />
-                <element signature="method#newFile#0;class#Window#0" expanded="false" />
-                <element signature="method#createChart#0;class#Window#0" expanded="false" />
-                <element signature="e#6230#6728#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainLayoutController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/MainLayoutController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="178" column="97" lean-forward="false" selection-start-line="178" selection-start-column="97" selection-end-line="178" selection-end-column="97" />
-              <folding>
-                <element signature="method#MainLayoutController#0;class#MainLayoutController#0" expanded="false" />
-                <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
-                <element signature="docComment;method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
-                <element signature="method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
-                <element signature="method#newDocument#0;class#MainLayoutController#0" expanded="false" />
-                <marker date="1512511409415" expanded="false" signature="2553:5720" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/value/Value.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComparableValue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/value/ComparableValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/table/Cell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-237">
-              <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-              <folding>
-                <element signature="method#Cell#0;class#Cell#0" expanded="false" />
-                <element signature="e#798#815#0" expanded="false" />
-                <element signature="e#842#1243#0" expanded="false" />
-                <element signature="e#1273#1512#0" expanded="false" />
-                <element signature="e#1553#2237#0" expanded="false" />
-                <element signature="e#2000#2064#0" expanded="false" />
-                <element signature="e#2265#2423#0" expanded="false" />
-                <element signature="e#2280#2304#0" expanded="false" />
-                <element signature="method#setValue#0;class#Cell#0" expanded="false" />
-                <element signature="method#notifyDependants#0;class#Cell#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Evaluator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="171" column="12" lean-forward="false" selection-start-line="171" selection-start-column="12" selection-end-line="177" selection-end-column="13" />
-              <folding>
-                <element signature="initializer##0;class#Evaluator#0" expanded="false" />
-                <element signature="method#split#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#toPostfix#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#cellNameToReference#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#cellNameToRange#0;class#Evaluator#0" expanded="false" />
-                <element signature="class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#Computer#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#compute#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#call#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#sum#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#average#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#variance#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#min#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#max#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#count#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-                <element signature="method#countblank#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -223,6 +55,10 @@
       <find>System</find>
       <find>showSav</find>
       <find>fileChooser.</find>
+      <find>return cancel;</find>
+      <find>new Scene</find>
+      <find>showC</find>
+      <find>notif</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -239,9 +75,6 @@
         <option value="$PROJECT_DIR$/src/function/CellSingle.java" />
         <option value="$PROJECT_DIR$/src/function/CellRange.java" />
         <option value="$PROJECT_DIR$/src/main/SheetWindow.java" />
-        <option value="$PROJECT_DIR$/src/chart/EditCategories.java" />
-        <option value="$PROJECT_DIR$/src/chart/AddLegends.java" />
-        <option value="$PROJECT_DIR$/src/chart/ChartArea.java" />
         <option value="$PROJECT_DIR$/src/layouts/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/src/layouts/styles.css" />
         <option value="$PROJECT_DIR$/src/value/NumberValue.java" />
@@ -252,12 +85,18 @@
         <option value="$PROJECT_DIR$/src/table/Sheet.java" />
         <option value="$PROJECT_DIR$/src/function/Evaluator.java" />
         <option value="$PROJECT_DIR$/src/main/MainWindowController.java" />
-        <option value="$PROJECT_DIR$/src/table/Cell.java" />
         <option value="$PROJECT_DIR$/src/value/Value.java" />
         <option value="$PROJECT_DIR$/src/value/ComparableValue.java" />
         <option value="$PROJECT_DIR$/src/main/MainLayoutController.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Window.java" />
+        <option value="$PROJECT_DIR$/src/chart/AddLegends.java" />
+        <option value="$PROJECT_DIR$/src/chart/EditCategories.java" />
+        <option value="$PROJECT_DIR$/src/chart/GenerateChart.java" />
+        <option value="$PROJECT_DIR$/src/chart/ChartArea.java" />
+        <option value="$PROJECT_DIR$/src/chart/Scatter.java" />
+        <option value="$PROJECT_DIR$/src/chart/Bubble.java" />
+        <option value="$PROJECT_DIR$/src/table/Cell.java" />
       </list>
     </option>
   </component>
@@ -290,9 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,30 +140,25 @@
             <path>
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="chart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spreadsheet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spreadsheet" type="b2602c69:ProjectViewProjectNode" />
@@ -348,12 +180,19 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -499,11 +338,14 @@
       <option name="presentableId" value="Default" />
       <updated>1512469491049</updated>
       <workItem from="1512469509940" duration="28097000" />
+      <workItem from="1512551875754" duration="957000" />
+      <workItem from="1512553440268" duration="104000" />
+      <workItem from="1512824122098" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31056000" />
+    <option name="totallyTimeSpent" value="36670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,24 +358,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567567" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26972973" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -547,10 +386,13 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -601,67 +443,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/exception/NumberException.java" />
-    <entry file="file://$PROJECT_DIR$/src/exception/InvalidArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#136#137#0" expanded="false" />
-            <element signature="e#166#167#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/BooleanValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#413#414#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#506#507#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/StringValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#480#481#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/ErrorValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/IncomparableValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/exception/ErrorType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4172">
           <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,18 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#574#575#0" expanded="false" />
-            <marker date="1512451551664" expanded="false" signature="619:630" ph=" { " />
-            <marker date="1512451551664" expanded="false" signature="646:652" ph=" }" />
-            <marker date="1512451551664" expanded="false" signature="706:716" ph=" { " />
-            <marker date="1512451551664" expanded="false" signature="736:742" ph=" }" />
-            <marker date="1512451551664" expanded="false" signature="797:808" ph=" { " />
-            <marker date="1512451551664" expanded="false" signature="831:837" ph=" }" />
-            <marker date="1512451551664" expanded="false" signature="860:870" ph=" { " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="2596" column="0" lean-forward="false" selection-start-line="2596" selection-start-column="0" selection-end-line="2596" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -708,45 +480,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/styles/css.java" />
-    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="e#221#222#0" expanded="false" />
-            <element signature="e#252#253#0" expanded="false" />
-            <marker date="1512496692709" expanded="false" signature="291:302" ph=" { " />
-            <marker date="1512496692709" expanded="false" signature="321:327" ph=" }" />
-            <marker date="1512496692709" expanded="false" signature="355:366" ph=" { " />
-            <marker date="1512496692709" expanded="false" signature="379:385" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.fxml" />
     <entry file="file://$PROJECT_DIR$/src/function/CellSingle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#CellSingle#0;class#CellSingle#0" expanded="false" />
-            <element signature="method#getValue#0;class#CellSingle#0" expanded="false" />
-            <element signature="method#getCell#0;class#CellSingle#0" expanded="false" />
-            <element signature="method#addDependant#0;class#CellSingle#0" expanded="false" />
-            <element signature="method#removeDependant#0;class#CellSingle#0" expanded="false" />
-            <element signature="method#equals#0;class#CellSingle#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,16 +492,249 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/Histogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13776">
+          <caret line="619" column="0" lean-forward="false" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/Control.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="412" column="0" lean-forward="false" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MainLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/CellValue.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sample.fxml" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/Pane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/GridPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="657" column="0" lean-forward="false" selection-start-line="657" selection-start-column="0" selection-end-line="657" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/temp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/NumberValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="487" column="40" lean-forward="false" selection-start-line="487" selection-start-column="40" selection-end-line="487" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/ComparableValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/Sheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/value/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MainLayoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="65" column="75" lean-forward="false" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-536">
+          <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/Symbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/GenerateChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chart/Scatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="60" column="73" lean-forward="false" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/function/CellReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/function/CellRange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="418">
           <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#addDependant#0;class#CellRange#0" expanded="false" />
             <element signature="method#removeDependant#0;class#CellRange#0" expanded="false" />
             <element signature="method#CellRange#0;class#CellRange#0" expanded="false" />
@@ -776,359 +747,1232 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chart/Histogram.java">
+    <entry file="file://$PROJECT_DIR$/src/chart/Bar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="22">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/image/Image.java">
+    <entry file="file://$PROJECT_DIR$/src/table/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13776">
-          <caret line="619" column="0" lean-forward="false" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/Control.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="412" column="0" lean-forward="false" selection-start-line="412" selection-start-column="0" selection-end-line="412" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        <state relative-caret-position="728">
+          <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
           <folding>
-            <element signature="e#3212#3213#0" expanded="false" />
-            <element signature="e#3264#3265#0" expanded="false" />
-            <element signature="e#4274#4275#0" expanded="false" />
+            <element signature="method#Cell#0;class#Cell#0" expanded="false" />
+            <element signature="e#832#849#0" expanded="false" />
+            <element signature="e#876#1277#0" expanded="false" />
+            <element signature="e#1307#1546#0" expanded="false" />
+            <element signature="e#1587#2271#0" expanded="false" />
+            <element signature="e#2034#2098#0" expanded="false" />
+            <element signature="e#2299#2457#0" expanded="false" />
+            <element signature="e#2314#2338#0" expanded="false" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Scene.java">
+    <entry file="file://$PROJECT_DIR$/src/chart/Bubble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="2494" column="0" lean-forward="false" selection-start-line="2494" selection-start-column="0" selection-end-line="2494" selection-end-column="0" />
-          <folding>
-            <element signature="e#66617#66618#0" expanded="false" />
-            <element signature="e#66663#66664#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chart/ChartArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="143" column="86" lean-forward="false" selection-start-line="143" selection-start-column="86" selection-end-line="143" selection-end-column="86" />
+        <state relative-caret-position="464">
+          <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chart/EditCategories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="57" column="90" lean-forward="false" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/MainLayout.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="508">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="22" />
           <folding>
-            <marker date="1512496571160" expanded="true" signature="6976:6987" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/CellValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/GridPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="329" column="34" lean-forward="true" selection-start-line="329" selection-start-column="34" selection-end-line="329" selection-end-column="34" />
-          <folding>
-            <element signature="e#14674#14675#0" expanded="false" />
-            <element signature="e#14751#14752#0" expanded="false" />
+            <element signature="method#getCatRange#0;class#EditCategories#0" expanded="false" />
+            <element signature="method#EditCategories#0;class#EditCategories#0" expanded="false" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="method#initialize#0;class#EditCategories#0" expanded="false" />
+            <element signature="e#1303#1597#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/table/Table.java">
+    <entry file="file://$PROJECT_DIR$/src/chart/Area.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="93" column="32" lean-forward="false" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
-          <folding>
-            <element signature="method#getCellByIndex#0;class#Table#0" expanded="false" />
-            <element signature="e#2297#3782#0" expanded="false" />
-            <element signature="e#2762#2799#0" expanded="false" />
-            <element signature="method#setFocusedColumn#0;class#Table#0" expanded="false" />
-            <element signature="method#getFocusedColumn#0;class#Table#0" expanded="false" />
-            <element signature="method#getFocusedRow#0;class#Table#0" expanded="false" />
-            <element signature="method#getFocusedCellText#0;class#Table#0" expanded="false" />
-            <element signature="method#addCell#0;class#Table#0" expanded="false" />
-            <element signature="method#initialize#0;class#Table#0" expanded="false" />
-            <element signature="e#7299#7300#0" expanded="true" />
-            <element signature="e#7336#7337#0" expanded="true" />
-            <element signature="e#7393#7394#0" expanded="true" />
-            <element signature="e#7448#7449#0" expanded="true" />
-            <element signature="e#7500#7501#0" expanded="true" />
-            <element signature="e#7534#7535#0" expanded="true" />
-            <element signature="e#7585#7586#0" expanded="true" />
-            <element signature="e#7634#7635#0" expanded="true" />
-            <element signature="e#7672#7673#0" expanded="true" />
-            <element signature="e#7715#7716#0" expanded="true" />
-            <element signature="e#7750#7751#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <marker date="1512499453222" expanded="true" signature="1710:1874" ph="{...}" />
-            <marker date="1512499453222" expanded="true" signature="1921:2083" ph="{...}" />
-            <marker date="1512499453222" expanded="false" signature="2127:2272" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="22">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="657" column="0" lean-forward="false" selection-start-line="657" selection-start-column="0" selection-end-line="657" selection-end-column="0" />
-          <folding />
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="1908.2212918660289" y="3546.5">function.Function</node>
+            <node x="2059.4582230766373" y="0.0">function.Token</node>
+            <node x="7500.95236240742" y="5197.0">chart.Scatter</node>
+            <node x="1220.2707230766373" y="2553.0">exception.ErrorType</node>
+            <node x="6592.338890313985" y="5894.0">chart.ShowChart</node>
+            <node x="3137.795560875619" y="1590.0">exception.CellReferenceFormatException</node>
+            <node x="8874.700647319063" y="1071.0">table.Table</node>
+            <node x="2472.2042749293696" y="3454.0">function.CellSingle</node>
+            <node x="8558.346480652395" y="7775.0">main.MainLayoutController</node>
+            <node x="4011.137958532696" y="565.0">value.ComparableValue</node>
+            <node x="6865.95236240742" y="5197.0">chart.Bar</node>
+            <node x="6224.95236240742" y="5197.0">chart.Line</node>
+            <node x="2834.971291866029" y="202.0">value.Value</node>
+            <node x="4964.022573917311" y="3583.5">chart.Series</node>
+            <node x="3687.5968429269005" y="1441.0">value.ListValue</node>
+            <node x="1328.7042749293691" y="3602.0">value.ErrorValue</node>
+            <node x="5578.95236240742" y="5197.0">chart.Area</node>
+            <node x="1580.2042749293691" y="202.0">function.Symbol</node>
+            <node x="565.3472953253804" y="4406.0">function.Evaluator.Computer</node>
+            <node x="463.0167749293687" y="1590.0">exception.UnsupportedOperationException</node>
+            <node x="2194.3709415960357" y="5308.5">function.Evaluator</node>
+            <node x="8846.783980652395" y="5215.5">table.Sheet</node>
+            <node x="8011.2479618842335" y="2293.0">function.CellRange</node>
+            <node x="5618.463890313985" y="7220.0">chart.ChartArea</node>
+            <node x="8495.310959911054" y="10549.0">table.Cell</node>
+            <node x="8282.810959911054" y="10179.0">main.Main</node>
+            <node x="2151.2042749293696" y="2422.5">function.FunctionType</node>
+            <node x="3715.971291866029" y="657.5">value.IncomparableValue</node>
+            <node x="8831.283980652395" y="6338.0">table.SheetWindow</node>
+            <node x="3133.971291866029" y="145.5">value.BooleanValue</node>
+            <node x="4079.591556409971" y="127.0">value.NumberValue</node>
+            <node x="4913.95236240742" y="5197.0">chart.Bubble</node>
+            <node x="1658.7042749293691" y="676.0">exception.ParserException</node>
+            <node x="972.7042749293687" y="3306.0">function.Operator</node>
+            <node x="8236.664628550901" y="9522.0">main.Window</node>
+            <node x="8631.310959911054" y="11391.0">function.CellReference</node>
+            <node x="7649.5604618842335" y="3583.5">chart.Category</node>
+            <node x="8312.660695740753" y="3269.0">chart.Histogram</node>
+            <node x="1821.2042749293696" y="1496.5">value.StringValue</node>
+            <node x="0.0" y="3695.5">exception.InvalidArgumentException</node>
+            <node x="5785.288890313985" y="4517.5">chart.GenerateChart</node>
+            <node x="3975.3809338359915" y="6264.0">chart.EditCategories</node>
+            <node x="4369.3809338359915" y="6153.0">chart.AddLegends</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="chart.ShowChart" target="chart.Category">
+              <point x="159.25000000000023" y="-598.0" />
+              <point x="7161.088890313985" y="5824.0" />
+              <point x="8170.035695740753" y="5824.0" />
+              <point x="8170.035695740753" y="4286.0" />
+              <point x="7836.8786437024155" y="4286.0" />
+              <point x="28.818181818181984" y="154.0" />
+            </edge>
+            <edge source="function.CellReference" target="exception.InvalidArgumentException">
+              <point x="-197.53846153846098" y="-191.0" />
+              <point x="8647.772498372593" y="11371.0" />
+              <point x="91.5" y="11371.0" />
+              <point x="-91.5" y="42.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="function.Operator">
+              <point x="84.21052631578948" y="-320.5" />
+              <point x="849.5578216411695" y="4306.0" />
+              <point x="1056.4542749293687" y="4306.0" />
+              <point x="-83.75" y="431.5" />
+            </edge>
+            <edge source="main.Window" target="main.MainLayoutController">
+              <point x="34.33333333333394" y="-283.5" />
+              <point x="8476.997961884234" y="9482.0" />
+              <point x="8585.060766366681" y="9482.0" />
+              <point x="-160.28571428571377" y="561.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="exception.ParserException">
+              <point x="-21.052631578947512" y="-320.5" />
+              <point x="744.2946637464329" y="4256.0" />
+              <point x="903.5167749293687" y="4256.0" />
+              <point x="903.5167749293687" y="971.0" />
+              <point x="1748.4315476566417" y="971.0" />
+              <point x="-51.27272727272748" y="42.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="function.Function">
+              <point x="147.36842105263156" y="-320.5" />
+              <point x="912.7157163780121" y="4346.0" />
+              <point x="1966.3879585326958" y="4346.0" />
+              <point x="-116.33333333333326" y="191.0" />
+            </edge>
+            <edge source="value.StringValue" target="value.ComparableValue">
+              <point x="-77.25" y="-135.5" />
+              <point x="1898.4542749293696" y="1011.0" />
+              <point x="4080.1764200711573" y="1011.0" />
+              <point x="-110.46153846153857" y="153.0" />
+            </edge>
+            <edge source="function.CellRange" target="table.Cell">
+              <point x="165.85714285714312" y="413.0" />
+              <point x="8370.605104741377" y="3179.0" />
+              <point x="9264.700647319063" y="3179.0" />
+              <point x="9264.700647319063" y="10479.0" />
+              <point x="8761.310959911054" y="10479.0" />
+              <point x="56.0" y="-376.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="exception.InvalidArgumentException">
+              <point x="-189.47368421052647" y="-320.5" />
+              <point x="575.8736111148537" y="4386.0" />
+              <point x="274.5" y="4386.0" />
+              <point x="91.5" y="42.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="chart.EditCategories">
+              <point x="-167.08333333333303" y="-1116.0" />
+              <point x="5651.880556980652" y="7180.0" />
+              <point x="4162.3809338359915" y="7180.0" />
+              <point x="0.0" y="228.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="function.CellReference">
+              <point x="-166.66666666666697" y="320.5" />
+              <point x="598.6806286587134" y="5157.0" />
+              <point x="190.85624939242734" y="5157.0" />
+              <point x="190.85624939242734" y="11361.0" />
+              <point x="8680.695575295671" y="11361.0" />
+              <point x="-164.61538461538476" y="-191.0" />
+            </edge>
+            <edge source="value.ErrorValue" target="exception.ErrorType">
+              <point x="-103.0" y="-135.5" />
+              <point x="1380.2042749293691" y="3239.0" />
+              <point x="1314.6457230766373" y="3239.0" />
+              <point x="18.875" y="153.0" />
+            </edge>
+            <edge source="main.MainLayoutController" target="table.SheetWindow">
+              <point x="163.625" y="-561.0" />
+              <point x="8908.971480652395" y="7200.0" />
+              <point x="9142.950647319061" y="7200.0" />
+              <point x="124.66666666666606" y="154.0" />
+            </edge>
+            <edge source="function.CellRange" target="value.ListValue">
+              <point x="-77.39999999999964" y="-413.0" />
+              <point x="8127.347961884234" y="2223.0" />
+              <point x="3893.5968429269005" y="2223.0" />
+              <point x="0.0" y="191.0" />
+            </edge>
+            <edge source="chart.Scatter" target="chart.Category">
+              <point x="214.66666666666697" y="-283.5" />
+              <point x="8037.619029074087" y="5177.0" />
+              <point x="7935.785695740753" y="5177.0" />
+              <point x="7935.785695740753" y="4296.0" />
+              <point x="7808.0604618842335" y="4296.0" />
+              <point x="0.0" y="154.0" />
+            </edge>
+            <edge source="exception.CellReferenceFormatException" target="exception.ParserException">
+              <point x="0.0" y="-42.0" />
+              <point x="3335.795560875619" y="981.0" />
+              <point x="1850.9770022020966" y="981.0" />
+              <point x="51.27272727272725" y="42.0" />
+            </edge>
+            <edge source="exception.InvalidArgumentException" target="exception.ParserException">
+              <point x="0.0" y="-42.0" />
+              <point x="183.0" y="941.0" />
+              <point x="1671.5224567475507" y="941.0" />
+              <point x="-128.18181818181847" y="42.0" />
+            </edge>
+            <edge source="main.MainLayoutController" target="function.CellSingle">
+              <point x="-163.625" y="-561.0" />
+              <point x="8581.721480652395" y="7200.0" />
+              <point x="8601.221480652395" y="7200.0" />
+              <point x="8601.221480652395" y="4236.0" />
+              <point x="2733.8292749293696" y="4236.0" />
+              <point x="100.625" y="283.5" />
+            </edge>
+            <edge source="chart.AddLegends" target="main.Main">
+              <point x="-124.66666666666697" y="339.0" />
+              <point x="4431.714267169325" y="7200.0" />
+              <point x="4317.672223647318" y="7200.0" />
+              <point x="4317.672223647318" y="10149.0" />
+              <point x="8360.060959911054" y="10149.0" />
+              <point x="-128.75" y="-135.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Line">
+              <point x="-113.75" y="-598.0" />
+              <point x="6888.088890313985" y="5814.0" />
+              <point x="6380.20236240742" y="5814.0" />
+              <point x="-155.25" y="283.5" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.NumberValue">
+              <point x="-42.105263157895024" y="-320.5" />
+              <point x="723.2420321674854" y="4246.0" />
+              <point x="892.5167749293687" y="4246.0" />
+              <point x="892.5167749293687" y="535.0" />
+              <point x="4145.805842124257" y="535.0" />
+              <point x="-88.28571428571468" y="154.0" />
+            </edge>
+            <edge source="chart.Bubble" target="chart.Category">
+              <point x="0.0" y="-283.5" />
+              <point x="5236.45236240742" y="4346.0" />
+              <point x="7663.9695527933245" y="4346.0" />
+              <point x="-144.090909090909" y="154.0" />
+            </edge>
+            <edge source="main.Window" target="table.Cell">
+              <point x="154.5" y="283.5" />
+              <point x="8597.164628550901" y="10139.0" />
+              <point x="8705.310959911054" y="10139.0" />
+              <point x="0.0" y="-376.0" />
+            </edge>
+            <edge source="function.Evaluator" target="value.BooleanValue">
+              <point x="113.5" y="-172.0" />
+              <point x="2534.8709415960357" y="5127.0" />
+              <point x="3127.295560875619" y="5127.0" />
+              <point x="3127.295560875619" y="515.0" />
+              <point x="3288.471291866029" y="515.0" />
+              <point x="0.0" y="135.5" />
+            </edge>
+            <edge source="function.Evaluator" target="function.Evaluator.Computer">
+              <point x="-196.0454545454545" y="-172.0" />
+              <point x="2225.325487050581" y="5157.0" />
+              <point x="932.0139619920474" y="5157.0" />
+              <point x="166.66666666666674" y="320.5" />
+            </edge>
+            <edge source="chart.AddLegends" target="function.CellRange">
+              <point x="0.0" y="-339.0" />
+              <point x="4556.3809338359915" y="5864.0" />
+              <point x="4620.023790978848" y="5864.0" />
+              <point x="4620.023790978848" y="3209.0" />
+              <point x="8112.605104741377" y="3209.0" />
+              <point x="-92.14285714285688" y="413.0" />
+            </edge>
+            <edge source="chart.Histogram" target="value.NumberValue">
+              <point x="153.0" y="-468.5" />
+              <point x="8669.660695740753" y="3249.0" />
+              <point x="8624.160695740753" y="3249.0" />
+              <point x="8624.160695740753" y="525.0" />
+              <point x="4366.520127838543" y="525.0" />
+              <point x="132.42857142857156" y="154.0" />
+            </edge>
+            <edge source="value.ErrorValue" target="value.ComparableValue">
+              <point x="103.0" y="-135.5" />
+              <point x="1586.2042749293691" y="3249.0" />
+              <point x="1544.8957230766373" y="3249.0" />
+              <point x="1544.8957230766373" y="1001.0" />
+              <point x="4052.561035455773" y="1001.0" />
+              <point x="-138.07692307692287" y="153.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Scatter">
+              <point x="68.25" y="-598.0" />
+              <point x="7070.088890313985" y="5804.0" />
+              <point x="7661.95236240742" y="5804.0" />
+              <point x="-161.0" y="283.5" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.Value">
+              <point x="-126.31578947368416" y="-320.5" />
+              <point x="639.0315058516962" y="4356.0" />
+              <point x="419.5167749293687" y="4356.0" />
+              <point x="419.5167749293687" y="475.0" />
+              <point x="2869.846291866029" y="475.0" />
+              <point x="-104.625" y="79.0" />
+            </edge>
+            <edge source="table.Cell" target="function.CellReference">
+              <point x="140.0" y="376.0" />
+              <point x="0.0" y="-191.0" />
+            </edge>
+            <edge source="main.Window" target="chart.ChartArea">
+              <point x="-171.66666666666606" y="-283.5" />
+              <point x="8270.997961884234" y="9502.0" />
+              <point x="5818.963890313985" y="9502.0" />
+              <point x="0.0" y="1116.0" />
+            </edge>
+            <edge source="function.Evaluator" target="exception.ErrorType">
+              <point x="-154.77272727272702" y="-172.0" />
+              <point x="2266.5982143233086" y="5137.0" />
+              <point x="1318.2042749293691" y="5137.0" />
+              <point x="1318.2042749293691" y="3249.0" />
+              <point x="1276.8957230766373" y="3249.0" />
+              <point x="-18.875" y="153.0" />
+            </edge>
+            <edge source="function.Evaluator" target="function.Token">
+              <point x="30.954545454545496" y="-172.0" />
+              <point x="2452.325487050581" y="5177.0" />
+              <point x="2461.7042749293696" y="5177.0" />
+              <point x="2461.7042749293696" y="97.0" />
+              <point x="2134.624889743304" y="97.0" />
+              <point x="13.666666666666515" y="23.5" />
+            </edge>
+            <edge source="value.NumberValue" target="value.ComparableValue">
+              <point x="44.14285714285688" y="154.0" />
+              <point x="4278.234413552827" y="545.0" />
+              <point x="4334.237958532696" y="545.0" />
+              <point x="143.60000000000036" y="-153.0" />
+            </edge>
+            <edge source="chart.Scatter" target="chart.Series">
+              <point x="0.0" y="-283.5" />
+              <point x="7822.95236240742" y="5177.0" />
+              <point x="7924.785695740753" y="5177.0" />
+              <point x="7924.785695740753" y="4306.0" />
+              <point x="5251.379716774454" y="4306.0" />
+              <point x="138.35714285714312" y="154.0" />
+            </edge>
+            <edge source="chart.GenerateChart" target="chart.Category">
+              <point x="240.75" y="-209.0" />
+              <point x="6347.038890313985" y="4356.0" />
+              <point x="7692.7877346115065" y="4356.0" />
+              <point x="-115.27272727272702" y="154.0" />
+            </edge>
+            <edge source="chart.Area" target="chart.Series">
+              <point x="-208.66666666666697" y="-283.5" />
+              <point x="5683.285695740753" y="5167.0" />
+              <point x="5069.95236240742" y="5167.0" />
+              <point x="5069.95236240742" y="4376.0" />
+              <point x="5166.2368596315955" y="4376.0" />
+              <point x="53.214285714285325" y="154.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="function.CellRange">
+              <point x="122.52777777777737" y="-1116.0" />
+              <point x="5941.491668091762" y="7170.0" />
+              <point x="8280.160695740753" y="7170.0" />
+              <point x="8280.160695740753" y="3249.0" />
+              <point x="8241.605104741377" y="3249.0" />
+              <point x="36.85714285714312" y="413.0" />
+            </edge>
+            <edge source="main.MainLayoutController" target="value.ComparableValue">
+              <point x="23.375" y="-561.0" />
+              <point x="8768.721480652395" y="7170.0" />
+              <point x="8820.783980652395" y="7170.0" />
+              <point x="8820.783980652395" y="911.0" />
+              <point x="4301.099496994234" y="911.0" />
+              <point x="110.46153846153811" y="153.0" />
+            </edge>
+            <edge source="table.Cell" target="exception.ParserException">
+              <point x="-196.0" y="-376.0" />
+              <point x="8509.310959911054" y="10529.0" />
+              <point x="376.5" y="10529.0" />
+              <point x="376.5" y="951.0" />
+              <point x="1697.1588203839146" y="951.0" />
+              <point x="-102.5454545454545" y="42.0" />
+            </edge>
+            <edge source="chart.EditCategories" target="function.Evaluator">
+              <point x="-140.25" y="-228.0" />
+              <point x="4022.1309338359915" y="5874.0" />
+              <point x="2512.170941596036" y="5874.0" />
+              <point x="90.80000000000018" y="172.0" />
+            </edge>
+            <edge source="chart.GenerateChart" target="value.ComparableValue">
+              <point x="-80.25" y="-209.0" />
+              <point x="6026.038890313985" y="4326.0" />
+              <point x="6282.158980652395" y="4326.0" />
+              <point x="6282.158980652395" y="941.0" />
+              <point x="4218.253343148081" y="941.0" />
+              <point x="27.615384615384755" y="153.0" />
+            </edge>
+            <edge source="chart.EditCategories" target="main.Main">
+              <point x="-124.66666666666652" y="228.0" />
+              <point x="4037.7142671693246" y="7200.0" />
+              <point x="3923.672223647318" y="7200.0" />
+              <point x="3923.672223647318" y="10159.0" />
+              <point x="8308.560959911054" y="10159.0" />
+              <point x="-180.25" y="-135.0" />
+            </edge>
+            <edge source="table.Cell" target="function.Evaluator">
+              <point x="-84.0" y="-376.0" />
+              <point x="8621.310959911054" y="10489.0" />
+              <point x="2319.570941596036" y="10489.0" />
+              <point x="2319.570941596036" y="5874.0" />
+              <point x="2239.7709415960358" y="5874.0" />
+              <point x="-181.5999999999999" y="172.0" />
+            </edge>
+            <edge source="function.Evaluator" target="function.FunctionType">
+              <point x="-10.318181818181529" y="-172.0" />
+              <point x="2411.052759777854" y="5067.0" />
+              <point x="2284.575458532696" y="5067.0" />
+              <point x="2284.575458532696" y="3149.0" />
+              <point x="2392.037608262703" y="3149.0" />
+              <point x="96.33333333333348" y="283.5" />
+            </edge>
+            <edge source="function.Evaluator" target="table.Cell">
+              <point x="-90.80000000000018" y="172.0" />
+              <point x="2330.570941596036" y="10479.0" />
+              <point x="8649.310959911054" y="10479.0" />
+              <point x="-56.0" y="-376.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="function.CellRange">
+              <point x="250.25000000000023" y="-598.0" />
+              <point x="7252.088890313985" y="5844.0" />
+              <point x="8192.035695740753" y="5844.0" />
+              <point x="8192.035695740753" y="3239.0" />
+              <point x="8204.747961884234" y="3239.0" />
+              <point x="0.0" y="413.0" />
+            </edge>
+            <edge source="function.Evaluator" target="function.Symbol">
+              <point x="-113.5" y="-172.0" />
+              <point x="2307.8709415960357" y="5117.0" />
+              <point x="1648.2042749293691" y="5117.0" />
+              <point x="0.0" y="79.0" />
+            </edge>
+            <edge source="value.IncomparableValue" target="value.Value">
+              <point x="0.0" y="-60.5" />
+              <point x="3847.971291866029" y="485.0" />
+              <point x="3009.346291866029" y="485.0" />
+              <point x="34.875" y="79.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="exception.ErrorType">
+              <point x="63.15789473684163" y="-320.5" />
+              <point x="828.505190062222" y="4296.0" />
+              <point x="962.2042749293687" y="4296.0" />
+              <point x="962.2042749293687" y="3249.0" />
+              <point x="1239.1457230766373" y="3249.0" />
+              <point x="-56.625" y="153.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="table.Cell">
+              <point x="33.33333333333303" y="320.5" />
+              <point x="798.6806286587134" y="5167.0" />
+              <point x="755.7312493924273" y="5167.0" />
+              <point x="755.7312493924273" y="10509.0" />
+              <point x="8565.310959911054" y="10509.0" />
+              <point x="-140.0" y="-376.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Bar">
+              <point x="-22.75" y="-598.0" />
+              <point x="6979.088890313985" y="5784.0" />
+              <point x="7019.70236240742" y="5784.0" />
+              <point x="-153.75" y="283.5" />
+            </edge>
+            <edge source="chart.Line" target="chart.Series">
+              <point x="-207.0" y="-283.5" />
+              <point x="6328.45236240742" y="5157.0" />
+              <point x="5080.95236240742" y="5157.0" />
+              <point x="5080.95236240742" y="4386.0" />
+              <point x="5187.522573917311" y="4386.0" />
+              <point x="74.5" y="154.0" />
+            </edge>
+            <edge source="function.Evaluator" target="table.Table">
+              <point x="175.409090909091" y="-172.0" />
+              <point x="2596.7800325051267" y="5157.0" />
+              <point x="4121.0968429269005" y="5157.0" />
+              <point x="4121.0968429269005" y="2263.0" />
+              <point x="8933.200647319063" y="2263.0" />
+              <point x="-156.0" y="561.0" />
+            </edge>
+            <edge source="table.Table" target="table.Cell">
+              <point x="78.0" y="561.0" />
+              <point x="9167.200647319063" y="2263.0" />
+              <point x="9286.700647319063" y="2263.0" />
+              <point x="9286.700647319063" y="10499.0" />
+              <point x="8817.310959911054" y="10499.0" />
+              <point x="112.0" y="-376.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.ListValue">
+              <point x="42.105263157895024" y="-320.5" />
+              <point x="807.4525584832754" y="4286.0" />
+              <point x="936.5167749293687" y="4286.0" />
+              <point x="936.5167749293687" y="2243.0" />
+              <point x="3756.263509593567" y="2243.0" />
+              <point x="-137.33333333333348" y="191.0" />
+            </edge>
+            <edge source="function.CellSingle" target="value.Value">
+              <point x="-107.33333333333348" y="-283.5" />
+              <point x="2525.870941596036" y="3149.0" />
+              <point x="2602.4582230766378" y="3149.0" />
+              <point x="2602.4582230766378" y="2223.0" />
+              <point x="2867.7667749293696" y="2223.0" />
+              <point x="2867.7667749293696" y="485.0" />
+              <point x="2939.596291866029" y="485.0" />
+              <point x="-34.875" y="79.0" />
+            </edge>
+            <edge source="function.CellSingle" target="exception.CellReferenceFormatException">
+              <point x="0.0" y="-283.5" />
+              <point x="2633.2042749293696" y="3149.0" />
+              <point x="2613.4582230766378" y="3149.0" />
+              <point x="2613.4582230766378" y="2233.0" />
+              <point x="3236.795560875619" y="2233.0" />
+              <point x="-99.0" y="42.0" />
+            </edge>
+            <edge source="chart.Histogram" target="function.CellRange">
+              <point x="-153.0" y="-468.5" />
+              <point x="8363.660695740753" y="3219.0" />
+              <point x="8296.89081902709" y="3219.0" />
+              <point x="92.14285714285688" y="413.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Histogram">
+              <point x="341.2500000000002" y="-598.0" />
+              <point x="7343.088890313985" y="5864.0" />
+              <point x="8214.035695740753" y="5864.0" />
+              <point x="8214.035695740753" y="4366.0" />
+              <point x="8380.660695740753" y="4366.0" />
+              <point x="-136.0" y="468.5" />
+            </edge>
+            <edge source="main.Window" target="table.Sheet">
+              <point x="-34.33333333333394" y="-283.5" />
+              <point x="8408.331295217566" y="9472.0" />
+              <point x="8521.179813985727" y="9472.0" />
+              <point x="8521.179813985727" y="5874.0" />
+              <point x="8881.083980652395" y="5874.0" />
+              <point x="-137.20000000000073" y="265.0" />
+            </edge>
+            <edge source="chart.Bar" target="chart.Series">
+              <point x="0.0" y="-283.5" />
+              <point x="7173.45236240742" y="5177.0" />
+              <point x="7270.45236240742" y="5177.0" />
+              <point x="7270.45236240742" y="4316.0" />
+              <point x="5230.094002488739" y="4316.0" />
+              <point x="117.07142857142844" y="154.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="chart.Series">
+              <point x="-11.138888888888687" y="-1116.0" />
+              <point x="5807.825001425096" y="7110.0" />
+              <point x="4881.45236240742" y="7110.0" />
+              <point x="4881.45236240742" y="4336.0" />
+              <point x="5081.094002488739" y="4336.0" />
+              <point x="-31.92857142857156" y="154.0" />
+            </edge>
+            <edge source="function.Function" target="exception.ParserException">
+              <point x="-130.875" y="-191.0" />
+              <point x="1951.8462918660289" y="3249.0" />
+              <point x="1810.7042749293696" y="3249.0" />
+              <point x="1810.7042749293696" y="981.0" />
+              <point x="1825.3406385657327" y="981.0" />
+              <point x="25.636363636363512" y="42.0" />
+            </edge>
+            <edge source="chart.Series" target="function.CellRange">
+              <point x="-74.5" y="-154.0" />
+              <point x="5038.522573917311" y="3219.0" />
+              <point x="8131.033676169948" y="3219.0" />
+              <point x="-73.71428571428532" y="413.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="function.CellRange">
+              <point x="168.4210526315792" y="-320.5" />
+              <point x="933.7683479569596" y="4356.0" />
+              <point x="2267.721291866029" y="4356.0" />
+              <point x="2267.721291866029" y="3159.0" />
+              <point x="8020.462247598519" y="3159.0" />
+              <point x="-184.28571428571468" y="413.0" />
+            </edge>
+            <edge source="chart.AddLegends" target="chart.Series">
+              <point x="160.28571428571468" y="-339.0" />
+              <point x="4716.666648121706" y="5864.0" />
+              <point x="4653.023790978848" y="5864.0" />
+              <point x="4653.023790978848" y="4306.0" />
+              <point x="5017.2368596315955" y="4306.0" />
+              <point x="-95.78571428571468" y="154.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Area">
+              <point x="-204.75" y="-598.0" />
+              <point x="6797.088890313985" y="5834.0" />
+              <point x="5735.45236240742" y="5834.0" />
+              <point x="-156.5" y="283.5" />
+            </edge>
+            <edge source="function.Function" target="function.FunctionType">
+              <point x="43.625" y="-191.0" />
+              <point x="2126.346291866029" y="3249.0" />
+              <point x="2199.370941596036" y="3249.0" />
+              <point x="-96.33333333333348" y="283.5" />
+            </edge>
+            <edge source="function.CellRange" target="exception.CellReferenceFormatException">
+              <point x="-154.80000000000018" y="-413.0" />
+              <point x="8049.947961884233" y="2233.0" />
+              <point x="3434.795560875619" y="2233.0" />
+              <point x="99.0" y="42.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="chart.Category">
+              <point x="100.25" y="-1116.0" />
+              <point x="5919.213890313985" y="7160.0" />
+              <point x="8269.160695740753" y="7160.0" />
+              <point x="8269.160695740753" y="4246.0" />
+              <point x="7952.1513709751425" y="4246.0" />
+              <point x="144.090909090909" y="154.0" />
+            </edge>
+            <edge source="chart.EditCategories" target="function.CellRange">
+              <point x="46.75" y="-228.0" />
+              <point x="4209.1309338359915" y="3189.0" />
+              <point x="8075.7479618842335" y="3189.0" />
+              <point x="-129.0" y="413.0" />
+            </edge>
+            <edge source="function.CellRange" target="value.ComparableValue">
+              <point x="77.39999999999964" y="-413.0" />
+              <point x="8282.147961884233" y="2243.0" />
+              <point x="8337.058980652395" y="2243.0" />
+              <point x="8337.058980652395" y="931.0" />
+              <point x="4245.868727763465" y="931.0" />
+              <point x="55.23076923076951" y="153.0" />
+            </edge>
+            <edge source="main.Main" target="main.Window">
+              <point x="-25.75" y="-135.0" />
+              <point x="8463.060959911054" y="10129.0" />
+              <point x="8288.164628550901" y="10129.0" />
+              <point x="-154.5" y="283.5" />
+            </edge>
+            <edge source="function.Evaluator" target="exception.ParserException">
+              <point x="-92.86363636363649" y="-172.0" />
+              <point x="2328.507305232399" y="5107.0" />
+              <point x="1722.1587918660289" y="5107.0" />
+              <point x="1722.1587918660289" y="981.0" />
+              <point x="1774.0679112930056" y="981.0" />
+              <point x="-25.636363636363512" y="42.0" />
+            </edge>
+            <edge source="chart.EditCategories" target="exception.ParserException">
+              <point x="-46.75" y="-228.0" />
+              <point x="4115.6309338359915" y="5874.0" />
+              <point x="4198.1309338359915" y="5874.0" />
+              <point x="4198.1309338359915" y="971.0" />
+              <point x="1876.6133658384601" y="971.0" />
+              <point x="76.90909090909099" y="42.0" />
+            </edge>
+            <edge source="main.MainLayoutController" target="function.CellRange">
+              <point x="-23.375" y="-561.0" />
+              <point x="8721.971480652395" y="7160.0" />
+              <point x="8809.783980652395" y="7160.0" />
+              <point x="8809.783980652395" y="3189.0" />
+              <point x="8352.176533312804" y="3189.0" />
+              <point x="147.42857142857065" y="413.0" />
+            </edge>
+            <edge source="chart.Histogram" target="chart.ChartArea">
+              <point x="136.0" y="468.5" />
+              <point x="8652.660695740753" y="4386.0" />
+              <point x="8504.860369541284" y="4386.0" />
+              <point x="8504.860369541284" y="7200.0" />
+              <point x="6008.325001425096" y="7200.0" />
+              <point x="189.3611111111113" y="-1116.0" />
+            </edge>
+            <edge source="main.MainLayoutController" target="function.CellReference">
+              <point x="160.28571428571377" y="561.0" />
+              <point x="8905.632194938109" y="9482.0" />
+              <point x="9342.950647319063" y="9482.0" />
+              <point x="9342.950647319063" y="11321.0" />
+              <point x="8878.234036834132" y="11321.0" />
+              <point x="32.92307692307622" y="-191.0" />
+            </edge>
+            <edge source="table.Cell" target="main.Main">
+              <point x="-28.0" y="-376.0" />
+              <point x="8677.310959911054" y="10469.0" />
+              <point x="8488.810959911054" y="10469.0" />
+              <point x="0.0" y="135.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="function.Token">
+              <point x="-147.36842105263167" y="-320.5" />
+              <point x="617.9788742727487" y="4366.0" />
+              <point x="408.5167749293687" y="4366.0" />
+              <point x="408.5167749293687" y="87.0" />
+              <point x="2079.9582230766373" y="87.0" />
+              <point x="-41.0" y="23.5" />
+            </edge>
+            <edge source="chart.Bar" target="chart.Category">
+              <point x="205.0" y="-283.5" />
+              <point x="7378.45236240742" y="5177.0" />
+              <point x="7326.588890313985" y="5177.0" />
+              <point x="7326.588890313985" y="4386.0" />
+              <point x="7779.2422800660515" y="4386.0" />
+              <point x="-28.818181818181984" y="154.0" />
+            </edge>
+            <edge source="function.Evaluator" target="function.Function">
+              <point x="-51.59090909090901" y="-172.0" />
+              <point x="2369.7800325051267" y="5087.0" />
+              <point x="2082.721291866029" y="5087.0" />
+              <point x="0.0" y="191.0" />
+            </edge>
+            <edge source="value.BooleanValue" target="value.ComparableValue">
+              <point x="123.59999999999991" y="135.5" />
+              <point x="3412.0712918660292" y="455.0" />
+              <point x="4190.637958532696" y="455.0" />
+              <point x="0.0" y="-153.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="main.Main">
+              <point x="-133.66666666666697" y="1116.0" />
+              <point x="5685.297223647318" y="10139.0" />
+              <point x="8411.560959911054" y="10139.0" />
+              <point x="-77.25" y="-135.0" />
+            </edge>
+            <edge source="function.CellReference" target="function.Token">
+              <point x="197.53846153846098" y="-191.0" />
+              <point x="9042.849421449515" y="11371.0" />
+              <point x="9397.950647319063" y="11371.0" />
+              <point x="9397.950647319063" y="67.0" />
+              <point x="2175.624889743304" y="67.0" />
+              <point x="54.666666666666515" y="23.5" />
+            </edge>
+            <edge source="function.Evaluator" target="function.CellRange">
+              <point x="216.68181818181802" y="-172.0" />
+              <point x="2638.0527597778537" y="5177.0" />
+              <point x="4143.0968429269005" y="5177.0" />
+              <point x="4143.0968429269005" y="3179.0" />
+              <point x="8057.319390455662" y="3179.0" />
+              <point x="-147.42857142857156" y="413.0" />
+            </edge>
+            <edge source="function.Symbol" target="function.Token">
+              <point x="0.0" y="-79.0" />
+              <point x="1648.2042749293691" y="107.0" />
+              <point x="2107.291556409971" y="107.0" />
+              <point x="-13.666666666666515" y="23.5" />
+            </edge>
+            <edge source="value.ComparableValue" target="value.NumberValue">
+              <point x="71.80000000000018" y="-153.0" />
+              <point x="4262.437958532696" y="545.0" />
+              <point x="4234.0915564099705" y="545.0" />
+              <point x="0.0" y="154.0" />
+            </edge>
+            <edge source="chart.Bubble" target="chart.Series">
+              <point x="-215.0" y="-283.5" />
+              <point x="5021.45236240742" y="5177.0" />
+              <point x="5058.95236240742" y="5177.0" />
+              <point x="5058.95236240742" y="4366.0" />
+              <point x="5144.951145345882" y="4366.0" />
+              <point x="31.92857142857156" y="154.0" />
+            </edge>
+            <edge source="value.ListValue" target="value.IncomparableValue">
+              <point x="-137.33333333333348" y="-191.0" />
+              <point x="3756.263509593567" y="981.0" />
+              <point x="3847.971291866029" y="981.0" />
+              <point x="0.0" y="60.5" />
+            </edge>
+            <edge source="chart.ChartArea" target="chart.ShowChart">
+              <point x="33.41666666666697" y="-1116.0" />
+              <point x="5852.380556980652" y="7130.0" />
+              <point x="7206.588890313985" y="7130.0" />
+              <point x="204.75" y="598.0" />
+            </edge>
+            <edge source="value.Value" target="function.Token">
+              <point x="0.0" y="-79.0" />
+              <point x="2974.471291866029" y="77.0" />
+              <point x="2161.9582230766373" y="77.0" />
+              <point x="41.0" y="23.5" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Series">
+              <point x="-341.25" y="-598.0" />
+              <point x="6660.588890313985" y="5864.0" />
+              <point x="4903.45236240742" y="5864.0" />
+              <point x="4903.45236240742" y="4356.0" />
+              <point x="5123.665431060168" y="4356.0" />
+              <point x="10.642857142856883" y="154.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.BooleanValue">
+              <point x="-84.21052631579005" y="-320.5" />
+              <point x="681.1367690095904" y="4336.0" />
+              <point x="441.5167749293687" y="4336.0" />
+              <point x="441.5167749293687" y="505.0" />
+              <point x="3226.6712918660287" y="505.0" />
+              <point x="-61.80000000000018" y="135.5" />
+            </edge>
+            <edge source="function.Operator" target="function.Token">
+              <point x="0.0" y="-431.5" />
+              <point x="1140.2042749293687" y="3239.0" />
+              <point x="1093.373024321796" y="3239.0" />
+              <point x="1093.373024321796" y="97.0" />
+              <point x="2093.624889743304" y="97.0" />
+              <point x="-27.333333333333485" y="23.5" />
+            </edge>
+            <edge source="chart.Area" target="chart.Category">
+              <point x="208.66666666666697" y="-283.5" />
+              <point x="6100.619029074087" y="5177.0" />
+              <point x="6580.038890313985" y="5177.0" />
+              <point x="6580.038890313985" y="4366.0" />
+              <point x="7721.6059164296885" y="4366.0" />
+              <point x="-86.45454545454504" y="154.0" />
+            </edge>
+            <edge source="function.Evaluator" target="value.NumberValue">
+              <point x="134.1363636363635" y="-172.0" />
+              <point x="2555.507305232399" y="5137.0" />
+              <point x="3544.295560875619" y="5137.0" />
+              <point x="3544.295560875619" y="545.0" />
+              <point x="4189.948699267114" y="545.0" />
+              <point x="-44.14285714285688" y="154.0" />
+            </edge>
+            <edge source="chart.ShowChart" target="chart.Bubble">
+              <point x="-250.25" y="-598.0" />
+              <point x="6751.588890313985" y="5844.0" />
+              <point x="5397.70236240742" y="5844.0" />
+              <point x="161.25" y="283.5" />
+            </edge>
+            <edge source="function.CellReference" target="table.Cell">
+              <point x="-65.84615384615427" y="-191.0" />
+              <point x="8779.464806064901" y="11331.0" />
+              <point x="8565.310959911054" y="11331.0" />
+              <point x="-140.0" y="376.0" />
+            </edge>
+            <edge source="value.ComparableValue" target="value.StringValue">
+              <point x="-82.84615384615427" y="153.0" />
+              <point x="4107.791804686542" y="1021.0" />
+              <point x="2052.9542749293696" y="1021.0" />
+              <point x="77.25" y="-135.5" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.ErrorValue">
+              <point x="105.26315789473688" y="-320.5" />
+              <point x="870.610453220117" y="4316.0" />
+              <point x="1380.2042749293691" y="4316.0" />
+              <point x="-103.0" y="135.5" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="function.CellSingle">
+              <point x="189.47368421052636" y="-320.5" />
+              <point x="954.8209795359071" y="4366.0" />
+              <point x="2492.3292749293696" y="4366.0" />
+              <point x="-140.875" y="283.5" />
+            </edge>
+            <edge source="main.MainLayoutController" target="table.Cell">
+              <point x="106.85714285714312" y="561.0" />
+              <point x="8852.203623509538" y="9492.0" />
+              <point x="8908.86781201255" y="9492.0" />
+              <point x="8908.86781201255" y="10469.0" />
+              <point x="8733.310959911054" y="10469.0" />
+              <point x="28.0" y="-376.0" />
+            </edge>
+            <edge source="table.SheetWindow" target="table.Sheet">
+              <point x="-124.66666666666606" y="-154.0" />
+              <point x="8893.61731398573" y="5874.0" />
+              <point x="8949.683980652395" y="5874.0" />
+              <point x="-68.60000000000036" y="265.0" />
+            </edge>
+            <edge source="exception.UnsupportedOperationException" target="exception.ParserException">
+              <point x="0.0" y="-42.0" />
+              <point x="672.5167749293687" y="961.0" />
+              <point x="1722.7951840202782" y="961.0" />
+              <point x="-76.90909090909099" y="42.0" />
+            </edge>
+            <edge source="chart.Area" target="chart.GenerateChart">
+              <point x="0.0" y="-283.5" />
+              <point x="5891.95236240742" y="5177.0" />
+              <point x="5977.888890313985" y="5177.0" />
+              <point x="-128.39999999999964" y="209.0" />
+            </edge>
+            <edge source="function.Evaluator" target="function.CellSingle">
+              <point x="51.59090909090901" y="-172.0" />
+              <point x="2472.9618506869447" y="5097.0" />
+              <point x="2627.7042749293696" y="5097.0" />
+              <point x="2627.7042749293696" y="4386.0" />
+              <point x="2613.0792749293696" y="4386.0" />
+              <point x="-20.125" y="283.5" />
+            </edge>
+            <edge source="function.CellRange" target="table.Table">
+              <point x="154.79999999999927" y="-413.0" />
+              <point x="8359.547961884233" y="2273.0" />
+              <point x="8972.200647319063" y="2273.0" />
+              <point x="-117.0" y="561.0" />
+            </edge>
+            <edge source="function.Evaluator" target="value.ErrorValue">
+              <point x="-134.1363636363635" y="-172.0" />
+              <point x="2287.234577959672" y="5127.0" />
+              <point x="1477.6137426938003" y="5127.0" />
+              <point x="1477.6137426938003" y="4336.0" />
+              <point x="1586.2042749293691" y="4336.0" />
+              <point x="103.0" y="135.5" />
+            </edge>
+            <edge source="table.Cell" target="value.ComparableValue">
+              <point x="168.0" y="-376.0" />
+              <point x="8873.310959911054" y="10519.0" />
+              <point x="9314.200647319063" y="10519.0" />
+              <point x="9314.200647319063" y="901.0" />
+              <point x="4328.714881609619" y="901.0" />
+              <point x="138.07692307692287" y="153.0" />
+            </edge>
+            <edge source="chart.GenerateChart" target="value.NumberValue">
+              <point x="80.25" y="-209.0" />
+              <point x="6186.538890313985" y="4336.0" />
+              <point x="6293.158980652395" y="4336.0" />
+              <point x="6293.158980652395" y="535.0" />
+              <point x="4322.377270695686" y="535.0" />
+              <point x="88.28571428571468" y="154.0" />
+            </edge>
+            <edge source="value.ComparableValue" target="value.BooleanValue">
+              <point x="-71.80000000000018" y="-153.0" />
+              <point x="4118.837958532696" y="465.0" />
+              <point x="3350.271291866029" y="465.0" />
+              <point x="61.80000000000018" y="135.5" />
+            </edge>
+            <edge source="chart.Scatter" target="chart.GenerateChart">
+              <point x="-214.66666666666697" y="-283.5" />
+              <point x="7608.285695740753" y="5127.0" />
+              <point x="6363.088890313985" y="5127.0" />
+              <point x="256.8000000000002" y="209.0" />
+            </edge>
+            <edge source="chart.Line" target="chart.Category">
+              <point x="207.0" y="-283.5" />
+              <point x="6742.45236240742" y="5177.0" />
+              <point x="6653.9633922871635" y="5177.0" />
+              <point x="6653.9633922871635" y="4376.0" />
+              <point x="7750.42409824787" y="4376.0" />
+              <point x="-57.63636363636397" y="154.0" />
+            </edge>
+            <edge source="value.ComparableValue" target="value.Value">
+              <point x="-143.5999999999999" y="-153.0" />
+              <point x="4047.037958532696" y="475.0" />
+              <point x="3079.096291866029" y="475.0" />
+              <point x="104.625" y="79.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="chart.AddLegends">
+              <point x="-122.52777777777737" y="-1116.0" />
+              <point x="5696.4361125362075" y="7160.0" />
+              <point x="4556.3809338359915" y="7160.0" />
+              <point x="0.0" y="339.0" />
+            </edge>
+            <edge source="function.CellReference" target="table.Table">
+              <point x="164.61538461538476" y="-191.0" />
+              <point x="9009.92634452644" y="11361.0" />
+              <point x="9386.950647319063" y="11361.0" />
+              <point x="9386.950647319063" y="2233.0" />
+              <point x="9284.200647319063" y="2233.0" />
+              <point x="195.0" y="561.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="exception.ParserException">
+              <point x="-77.97222222222172" y="-1116.0" />
+              <point x="5740.991668091763" y="7140.0" />
+              <point x="4753.8809338359915" y="7140.0" />
+              <point x="4753.8809338359915" y="951.0" />
+              <point x="1927.8860931111872" y="951.0" />
+              <point x="128.18181818181802" y="42.0" />
+            </edge>
+            <edge source="main.Main" target="main.MainLayoutController">
+              <point x="128.75" y="-135.0" />
+              <point x="8617.560959911054" y="10149.0" />
+              <point x="8745.346480652395" y="10149.0" />
+              <point x="0.0" y="561.0" />
+            </edge>
+            <edge source="table.Sheet" target="function.CellReference">
+              <point x="137.20000000000073" y="265.0" />
+              <point x="9155.483980652396" y="5874.0" />
+              <point x="9353.950647319063" y="5874.0" />
+              <point x="9353.950647319063" y="11331.0" />
+              <point x="8911.15711375721" y="11331.0" />
+              <point x="65.84615384615427" y="-191.0" />
+            </edge>
+            <edge source="chart.Bar" target="chart.GenerateChart">
+              <point x="-205.0" y="-283.5" />
+              <point x="6968.45236240742" y="5137.0" />
+              <point x="6234.688890313984" y="5137.0" />
+              <point x="128.39999999999964" y="209.0" />
+            </edge>
+            <edge source="function.CellSingle" target="table.Cell">
+              <point x="-60.375" y="283.5" />
+              <point x="2572.8292749293696" y="4386.0" />
+              <point x="1033.0512426938003" y="4386.0" />
+              <point x="1033.0512426938003" y="10499.0" />
+              <point x="8593.310959911054" y="10499.0" />
+              <point x="-112.0" y="-376.0" />
+            </edge>
+            <edge source="function.Function" target="function.Token">
+              <point x="-43.625" y="-191.0" />
+              <point x="2039.0962918660289" y="3239.0" />
+              <point x="2140.7042749293696" y="3239.0" />
+              <point x="2140.7042749293696" y="107.0" />
+              <point x="2120.9582230766373" y="107.0" />
+              <point x="0.0" y="23.5" />
+            </edge>
+            <edge source="table.Sheet" target="table.Table">
+              <point x="114.33333333333394" y="-265.0" />
+              <point x="9132.61731398573" y="5177.0" />
+              <point x="9087.806529074087" y="5177.0" />
+              <point x="9087.806529074087" y="2273.0" />
+              <point x="9089.200647319063" y="2273.0" />
+              <point x="0.0" y="561.0" />
+            </edge>
+            <edge source="chart.Line" target="chart.GenerateChart">
+              <point x="0.0" y="-283.5" />
+              <point x="6535.45236240742" y="5147.0" />
+              <point x="6106.288890313985" y="5147.0" />
+              <point x="0.0" y="209.0" />
+            </edge>
+            <edge source="chart.AddLegends" target="exception.ParserException">
+              <point x="-53.42857142857156" y="-339.0" />
+              <point x="4502.95236240742" y="5864.0" />
+              <point x="4416.148790978848" y="5864.0" />
+              <point x="4416.148790978848" y="961.0" />
+              <point x="1902.2497294748237" y="961.0" />
+              <point x="102.5454545454545" y="42.0" />
+            </edge>
+            <edge source="chart.Category" target="function.CellRange">
+              <point x="-79.25" y="-154.0" />
+              <point x="7728.8104618842335" y="3239.0" />
+              <point x="8167.89081902709" y="3239.0" />
+              <point x="-36.85714285714312" y="413.0" />
+            </edge>
+            <edge source="function.Evaluator" target="value.StringValue">
+              <point x="10.318181818181984" y="-172.0" />
+              <point x="2431.6891234142176" y="5167.0" />
+              <point x="2450.7042749293696" y="5167.0" />
+              <point x="2450.7042749293696" y="2233.0" />
+              <point x="2052.9542749293696" y="2233.0" />
+              <point x="77.25" y="135.5" />
+            </edge>
+            <edge source="chart.AddLegends" target="function.CellSingle">
+              <point x="-106.85714285714312" y="-339.0" />
+              <point x="4449.523790978848" y="5874.0" />
+              <point x="4405.148790978848" y="5874.0" />
+              <point x="4405.148790978848" y="4386.0" />
+              <point x="2693.5792749293696" y="4386.0" />
+              <point x="60.375" y="283.5" />
+            </edge>
+            <edge source="function.Evaluator" target="value.ComparableValue">
+              <point x="154.77272727272748" y="-172.0" />
+              <point x="2576.143668868763" y="5147.0" />
+              <point x="4110.0968429269005" y="5147.0" />
+              <point x="4110.0968429269005" y="1051.0" />
+              <point x="4190.637958532696" y="1051.0" />
+              <point x="0.0" y="153.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.StringValue">
+              <point x="21.052631578947512" y="-320.5" />
+              <point x="786.3999269043279" y="4276.0" />
+              <point x="925.5167749293687" y="4276.0" />
+              <point x="925.5167749293687" y="2233.0" />
+              <point x="1898.4542749293696" y="2233.0" />
+              <point x="-77.25" y="135.5" />
+            </edge>
+            <edge source="function.CellSingle" target="table.Table">
+              <point x="107.33333333333348" y="-283.5" />
+              <point x="2740.537608262703" y="3139.0" />
+              <point x="2624.4582230766378" y="3139.0" />
+              <point x="2624.4582230766378" y="2253.0" />
+              <point x="8894.200647319063" y="2253.0" />
+              <point x="-195.0" y="561.0" />
+            </edge>
+            <edge source="function.CellSingle" target="function.CellReference">
+              <point x="-100.625" y="283.5" />
+              <point x="2532.5792749293696" y="4376.0" />
+              <point x="1022.0512426938003" y="4376.0" />
+              <point x="1022.0512426938003" y="5177.0" />
+              <point x="212.85624939242734" y="5177.0" />
+              <point x="212.85624939242734" y="11341.0" />
+              <point x="8746.541729141823" y="11341.0" />
+              <point x="-98.76923076923049" y="-191.0" />
+            </edge>
+            <edge source="function.Evaluator.Computer" target="value.ComparableValue">
+              <point x="0.0" y="-320.5" />
+              <point x="765.3472953253804" y="4266.0" />
+              <point x="914.5167749293687" y="4266.0" />
+              <point x="914.5167749293687" y="991.0" />
+              <point x="4024.945650840388" y="991.0" />
+              <point x="-165.69230769230762" y="153.0" />
+            </edge>
+            <edge source="chart.ChartArea" target="function.Evaluator">
+              <point x="-189.3611111111113" y="-1116.0" />
+              <point x="5629.6027792028735" y="7190.0" />
+              <point x="2341.570941596036" y="7190.0" />
+              <point x="2341.570941596036" y="5874.0" />
+              <point x="2421.3709415960357" y="5874.0" />
+              <point x="0.0" y="172.0" />
+            </edge>
+            <edge source="chart.Bubble" target="chart.GenerateChart">
+              <point x="215.0" y="-283.5" />
+              <point x="5451.45236240742" y="5177.0" />
+              <point x="5849.4888903139845" y="5177.0" />
+              <point x="-256.8000000000002" y="209.0" />
+            </edge>
+            <edge source="chart.AddLegends" target="function.Evaluator">
+              <point x="-160.28571428571468" y="-339.0" />
+              <point x="4396.095219550277" y="5864.0" />
+              <point x="2602.9709415960356" y="5864.0" />
+              <point x="181.5999999999999" y="172.0" />
+            </edge>
+            <edge source="chart.GenerateChart" target="chart.Series">
+              <point x="-240.75" y="-209.0" />
+              <point x="5865.538890313985" y="4336.0" />
+              <point x="5208.808288203025" y="4336.0" />
+              <point x="95.78571428571468" y="154.0" />
+            </edge>
+            <edge source="function.CellRange" target="function.CellReference">
+              <point x="184.28571428571377" y="413.0" />
+              <point x="8389.033676169947" y="3169.0" />
+              <point x="9364.950647319063" y="3169.0" />
+              <point x="9364.950647319063" y="11341.0" />
+              <point x="8944.080190680284" y="11341.0" />
+              <point x="98.76923076923049" y="-191.0" />
+            </edge>
+            <edge source="value.ListValue" target="value.ComparableValue">
+              <point x="137.33333333333348" y="-191.0" />
+              <point x="4030.930176260234" y="1041.0" />
+              <point x="4163.022573917311" y="1041.0" />
+              <point x="-27.615384615384755" y="153.0" />
+            </edge>
+            <edge source="function.Evaluator" target="function.Operator">
+              <point x="-175.40909090909054" y="-172.0" />
+              <point x="2245.961850686945" y="5147.0" />
+              <point x="1223.9542749293691" y="5147.0" />
+              <point x="83.75" y="431.5" />
+            </edge>
+            <edge source="chart.Histogram" target="value.ComparableValue">
+              <point x="51.0" y="-468.5" />
+              <point x="8567.660695740753" y="3249.0" />
+              <point x="8613.160695740753" y="3249.0" />
+              <point x="8613.160695740753" y="921.0" />
+              <point x="4273.48411237885" y="921.0" />
+              <point x="82.84615384615427" y="153.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.1" x="2829.0" y="1328.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/temp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chart/AddLegends.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/NumberValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/function/Evaluator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="171" column="12" lean-forward="false" selection-start-line="171" selection-start-column="12" selection-end-line="177" selection-end-column="13" />
-          <folding>
-            <element signature="initializer##0;class#Evaluator#0" expanded="false" />
-            <element signature="method#split#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#toPostfix#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#cellNameToReference#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#cellNameToRange#0;class#Evaluator#0" expanded="false" />
-            <element signature="class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#Computer#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#compute#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#call#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#sum#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#average#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#variance#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#min#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#max#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#count#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-            <element signature="method#countblank#0;class#Computer#0;class#Evaluator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/table/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="97" column="25" lean-forward="false" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
-          <folding>
-            <element signature="method#Cell#0;class#Cell#0" expanded="false" />
-            <element signature="e#798#815#0" expanded="false" />
-            <element signature="e#842#1243#0" expanded="false" />
-            <element signature="e#1273#1512#0" expanded="false" />
-            <element signature="e#1553#2237#0" expanded="false" />
-            <element signature="e#2000#2064#0" expanded="false" />
-            <element signature="e#2265#2423#0" expanded="false" />
-            <element signature="e#2280#2304#0" expanded="false" />
-            <element signature="method#setValue#0;class#Cell#0" expanded="false" />
-            <element signature="method#notifyDependants#0;class#Cell#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/ComparableValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/table/Sheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/value/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/MainLayoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="178" column="97" lean-forward="false" selection-start-line="178" selection-start-column="97" selection-end-line="178" selection-end-column="97" />
-          <folding>
-            <element signature="method#MainLayoutController#0;class#MainLayoutController#0" expanded="false" />
-            <element signature="method#initialize#0;class#MainLayoutController#0" expanded="false" />
-            <element signature="docComment;method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
-            <element signature="method#writeToFile#0;class#MainLayoutController#0" expanded="false" />
-            <element signature="method#newDocument#0;class#MainLayoutController#0" expanded="false" />
-            <marker date="1512511409415" expanded="false" signature="2553:5720" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/table/SheetWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="65" column="75" lean-forward="false" selection-start-line="65" selection-start-column="75" selection-end-line="65" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="148" column="41" lean-forward="true" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
-          <folding>
-            <element signature="method#save#0;class#Window#0" expanded="false" />
-            <element signature="method#saveAs#0;class#Window#0" expanded="false" />
-            <element signature="method#newFile#0;class#Window#0" expanded="false" />
-            <element signature="method#createChart#0;class#Window#0" expanded="false" />
-            <element signature="e#6230#6728#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Spreadsheet:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.4.9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spreadsheet</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

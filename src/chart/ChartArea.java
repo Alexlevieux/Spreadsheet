@@ -1,6 +1,7 @@
 package chart;
 
 import java.lang.String;
+
 import exception.ParserException;
 import function.CellRange;
 import function.Evaluator;
@@ -65,15 +66,16 @@ public class ChartArea extends FlowPane implements Initializable {
     private String titleText = "";
     private ObservableList<String> choiceData = FXCollections.observableArrayList();
 
-    private void setChoiceData () {
+    private void setChoiceData() {
         choiceData.add("Bar Chart");
         choiceData.add("Line Chart");
         choiceData.add("Scatter Chart");
         choiceData.add("Bubble Chart");
-        choiceData.add("Area Chart");
+//        choiceData.add("Area Chart");
         choiceData.add("Histogram");
     }
-    private void setSelectedChoice () {
+
+    private void setSelectedChoice() {
         selectedChoice = choice.getSelectionModel().getSelectedItem();
     }
 
@@ -81,12 +83,12 @@ public class ChartArea extends FlowPane implements Initializable {
         return selectedChoice;
     }
 
-    private boolean isHistogram () {
+    private boolean isHistogram() {
         return selectedChoice.equals("Histogram");
     }
 
     private void setRangeArea(String rangeArea) {
-        if(rangeArea!=null) this.rangeArea = rangeArea;
+        if (rangeArea != null) this.rangeArea = rangeArea;
     }
 
     private String getRangeArea() {
@@ -98,7 +100,7 @@ public class ChartArea extends FlowPane implements Initializable {
     }
 
     private void setSeriesArray(ArrayList<Series> seriesArray) {
-        if(seriesArray!=null) this.seriesArray = seriesArray;
+        if (seriesArray != null) this.seriesArray = seriesArray;
     }
 
     private void setSeriesArray() {
@@ -160,39 +162,37 @@ public class ChartArea extends FlowPane implements Initializable {
     }
 
     private void setSelected(boolean seriesChanged) {
-       if (selected == null){
-           try {
-               if (getRangeArea()!=null)
-                   selected = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), getRangeArea());
-               else System.out.println("rangeArea is null");
-           } catch (ParserException e1) {
-               Alert alert  = new Alert(Alert.AlertType.WARNING);
-               alert.setTitle("Invalid selection");
-               alert.setContentText(e1.getMessage());
-               alert.setHeaderText(null);
-               alert.showAndWait();
-           }
-       }
-       else {
-           if (seriesChanged) {
-               selected = new CellRange(
-                       Main.getMainWindow().getSheetWindow().getSheet().getTable(),
-                       selected.getLeftCol(),
-                       selected.getTopRow(),
-                       selected.getRightCol()+1,
-                       selected.getBottomRow()
-               );
-           }
-           else {
-               selected = new CellRange(
-                       Main.getMainWindow().getSheetWindow().getSheet().getTable(),
-                       selected.getLeftCol(),
-                       selected.getTopRow(),
-                       selected.getRightCol(),
-                       selected.getBottomRow()+1
-               );
-           }
-       }
+        if (selected == null) {
+            try {
+                if (getRangeArea() != null)
+                    selected = Evaluator.cellNameToRange(Main.getMainWindow().getSheetWindow().getSheet().getTable(), getRangeArea());
+                else System.out.println("rangeArea is null");
+            } catch (ParserException e1) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Invalid selection");
+                alert.setContentText(e1.getMessage());
+                alert.setHeaderText(null);
+                alert.showAndWait();
+            }
+        } else {
+            if (seriesChanged) {
+                selected = new CellRange(
+                        Main.getMainWindow().getSheetWindow().getSheet().getTable(),
+                        selected.getLeftCol(),
+                        selected.getTopRow(),
+                        selected.getRightCol() + 1,
+                        selected.getBottomRow()
+                );
+            } else {
+                selected = new CellRange(
+                        Main.getMainWindow().getSheetWindow().getSheet().getTable(),
+                        selected.getLeftCol(),
+                        selected.getTopRow(),
+                        selected.getRightCol(),
+                        selected.getBottomRow() + 1
+                );
+            }
+        }
     }
 
     private void setSeriesRange() {
@@ -247,27 +247,27 @@ public class ChartArea extends FlowPane implements Initializable {
     private void generateChart() {
         if (!isHistogram()) {
             setSeriesRange();
-            if(catRange == null) setCatRange();
+            if (catRange == null) setCatRange();
         }
         setDataRange();
         if (!isHistogram()) {
-            if (seriesArray.size()==0) setSeriesArray();
+            if (seriesArray.size() == 0) setSeriesArray();
             else setSeriesArray(seriesArray);
-            if (catArray.size()==0) setCatArray();
+            if (catArray.size() == 0) setCatArray();
             else setCatArray(catArray);
             showCat();
             showSeries();
         }
     }
 
-    private void showSeries () {
+    private void showSeries() {
         seriesLabels.getChildren().clear();
         for (Series aSeriesArray : seriesArray) {
             seriesLabels.getChildren().add(new Label(aSeriesArray.getName()));
         }
     }
 
-    private void showCat () {
+    private void showCat() {
         categoryLabels.getChildren().clear();
         for (Category aCatArray : catArray) {
             categoryLabels.getChildren().add(new Label(aCatArray.getName()));
@@ -319,12 +319,16 @@ public class ChartArea extends FlowPane implements Initializable {
         this.yAxis = yAxis;
     }
 
-    private void setTitleText (String titleText) {
+    private void setTitleText(String titleText) {
         this.titleText = titleText;
     }
 
     private String getTitleText() {
         return titleText;
+    }
+
+    public Button getCancel() {
+        return cancel;
     }
 
     @FXML
@@ -349,7 +353,7 @@ public class ChartArea extends FlowPane implements Initializable {
 
         choice.setOnAction((event) -> {
             setSelectedChoice();
-            if(isHistogram()) setHistogram();
+            if (isHistogram()) setHistogram();
             else setNotHistogram();
             System.out.println("Choice pressed");
         });
@@ -372,10 +376,13 @@ public class ChartArea extends FlowPane implements Initializable {
             System.out.println("Add pressed");
             AddLegends al = new AddLegends();
             Stage stage = new Stage();
+            al.getCancel().setOnAction(ee -> {
+                stage.close();
+            });
             stage.setTitle("Edit Series");
             stage.setScene(new Scene(al));
+            stage.setAlwaysOnTop(true);
             stage.showAndWait();
-            stage.close();
             System.out.println("Add pressed");
             if (al.getNewLegend() != null) {
                 addSeries(al.getNewLegend());
@@ -387,8 +394,12 @@ public class ChartArea extends FlowPane implements Initializable {
         edit.setOnAction(e -> {
             EditCategories ec = new EditCategories();
             Stage stage = new Stage();
+            ec.getCancel().setOnAction(ee->{
+                stage.close();
+            });
             stage.setTitle("Axis Labels");
             stage.setScene(new Scene(ec));
+            stage.setAlwaysOnTop(true);
             stage.showAndWait();
             if (ec.getCatRange() != null) {
                 setCatRange(ec.getCatRange());
@@ -402,10 +413,10 @@ public class ChartArea extends FlowPane implements Initializable {
             setSelectedChoice();
             setRangeArea(range.getText());
             setSelected(false);
-            if (!isHistogram() && yLabel!=null)setxAxis(yLabel.getText());
+            if (!isHistogram() && yLabel != null) setxAxis(yLabel.getText());
             else setyAxis("");
-            if (xLabel.getText()!=null) setxAxis(xLabel.getText());
-            if (title.getText()!=null) setTitleText(title.getText());
+            if (xLabel.getText() != null) setxAxis(xLabel.getText());
+            if (title.getText() != null) setTitleText(title.getText());
             else setTitleText("");
             generateChart();
 
@@ -414,6 +425,7 @@ public class ChartArea extends FlowPane implements Initializable {
             stage.setTitle("Chart");
             Scene scene = sc.showChart();
             stage.setScene(scene);
+            stage.setAlwaysOnTop(true);
             stage.showAndWait();
             System.out.println("Ok pressed");
         });

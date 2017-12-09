@@ -63,6 +63,10 @@ public class AddLegends extends Pane implements Initializable {
         }
     }
 
+    public Button getCancel() {
+        return cancel;
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         ok.setOnAction(e -> {

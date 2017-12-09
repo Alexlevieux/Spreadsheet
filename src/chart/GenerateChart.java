@@ -12,12 +12,12 @@ import java.util.ArrayList;
 
 class GenerateChart {
     private XYChart.Series<String, Double> seriesSD;
-    private XYChart.Series<Integer, Double> seriesID;
+    private XYChart.Series<Double, Double> seriesID;
 
     private ObservableList<XYChart.Series<String, Double>> listSD  = FXCollections.observableArrayList();
-    private ObservableList<XYChart.Series<Integer, Double>> listID  = FXCollections.observableArrayList();
+    private ObservableList<XYChart.Series<Double, Double>> listID  = FXCollections.observableArrayList();
 
-    ObservableList<XYChart.Series<Integer, Double>> getListID() {
+    ObservableList<XYChart.Series<Double, Double>> getListID() {
         return listID;
     }
 
@@ -49,7 +49,7 @@ class GenerateChart {
                 for (int j = 0; j < catList.size(); j++) {
                     ComparableValue temp = aSeriesList.getValues().getValue().get(j);
                     if (temp instanceof NumberValue) {
-                        addDataID(Integer.valueOf(catList.get(j).getName()), ((NumberValue) temp).getValue());
+                        addDataID(Double.valueOf(catList.get(j).getName()), ((NumberValue) temp).getValue());
                     }
                 }
                 listID.add(seriesID);
@@ -66,7 +66,7 @@ class GenerateChart {
         seriesSD.getData().add(new XYChart.Data<>(category, value));
     }
 
-    private void addDataID (Integer category, Double value) {
+    private void addDataID (Double category, Double value) {
         seriesID.getData().add(new XYChart.Data<>(category, value));
     }
 
